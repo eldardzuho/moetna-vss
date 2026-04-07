@@ -1,5 +1,5 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { IOrderModuleService, IPromotionModuleService } from "@medusajs/types"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
+import { IOrderModuleService, IPromotionModuleService } from "@moetnavss/types"
 import {
   ContainerRegistrationKeys,
   Modules,
@@ -8,7 +8,7 @@ import {
   PromotionStatus,
   PromotionType,
   RuleOperator,
-} from "@medusajs/utils"
+} from "@moetnavss/utils"
 import {
   adminHeaders,
   createAdminUser,

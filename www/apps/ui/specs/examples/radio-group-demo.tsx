@@ -1,4 +1,4 @@
-import { Label, RadioGroup } from "@medusajs/ui"
+import { Label, RadioGroup } from "@moetnavss/ui"
 
 export default function RadioGroupDemo() {
   return (

@@ -1,15 +1,15 @@
 import {
   createRbacPoliciesWorkflow,
   createRbacRolesWorkflow,
-} from "@medusajs/core-flows"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { IRbacModuleService, MedusaContainer } from "@medusajs/types"
+} from "@moetnavss/core-flows"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
+import { IRbacModuleService, MedusaContainer } from "@moetnavss/types"
 import {
   ContainerRegistrationKeys,
   definePolicies,
   Modules,
   Policy,
-} from "@medusajs/utils"
+} from "@moetnavss/utils"
 
 jest.setTimeout(60000)
 

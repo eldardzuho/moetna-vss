@@ -1,10 +1,10 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 
-import { addOrRemoveCampaignPromotionsWorkflow } from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/framework/types"
+import { addOrRemoveCampaignPromotionsWorkflow } from "@moetnavss/core-flows"
+import { HttpTypes } from "@moetnavss/framework/types"
 import { refetchCampaign } from "../../helpers"
 
 export const POST = async (

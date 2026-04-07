@@ -1,12 +1,12 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { HttpTypes } from "@medusajs/types"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
+import { HttpTypes } from "@moetnavss/types"
 import {
   ApiKeyType,
   ModuleRegistrationName,
   ProductStatus,
   PromotionStatus,
   PromotionType,
-} from "@medusajs/utils"
+} from "@moetnavss/utils"
 import {
   adminHeaders,
   createAdminUser,

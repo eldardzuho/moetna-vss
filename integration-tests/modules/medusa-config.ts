@@ -1,6 +1,6 @@
-import { defineConfig } from "@medusajs/utils"
+import { defineConfig } from "@moetnavss/utils"
 
-const { Modules } = require("@medusajs/utils")
+const { Modules } = require("@moetnavss/utils")
 
 const DB_HOST = process.env.DB_HOST
 const DB_USERNAME = process.env.DB_USERNAME
@@ -12,20 +12,20 @@ process.env.LOG_LEVEL = "error"
 
 const customTaxProviderRegistration = {
   resolve: {
-    services: [require("@medusajs/tax/dist/providers/system").default],
+    services: [require("@moetnavss/tax/dist/providers/system").default],
   },
   id: "system_2",
 }
 
 const customPaymentProvider = {
   resolve: {
-    services: [require("@medusajs/payment/dist/providers/system").default],
+    services: [require("@moetnavss/payment/dist/providers/system").default],
   },
   id: "default_2",
 }
 
 const customFulfillmentProvider = {
-  resolve: "@medusajs/fulfillment-manual",
+  resolve: "@moetnavss/fulfillment-manual",
   id: "test-provider",
 }
 
@@ -56,12 +56,12 @@ module.exports = defineConfig({
     },
     {
       key: "auth",
-      resolve: "@medusajs/auth",
+      resolve: "@moetnavss/auth",
       options: {
         providers: [
           {
             id: "emailpass",
-            resolve: "@medusajs/auth-emailpass",
+            resolve: "@moetnavss/auth-emailpass",
           },
         ],
       },
@@ -69,95 +69,95 @@ module.exports = defineConfig({
     {
       key: Modules.USER,
       scope: "internal",
-      resolve: "@medusajs/user",
+      resolve: "@moetnavss/user",
       options: {
         jwt_secret: "test",
       },
     },
     {
       key: Modules.CACHE,
-      resolve: "@medusajs/cache-inmemory",
+      resolve: "@moetnavss/cache-inmemory",
       options: { ttl: 0 }, // Cache disabled
     },
     {
       key: Modules.LOCKING,
-      resolve: "@medusajs/locking",
+      resolve: "@moetnavss/locking",
     },
     {
       key: Modules.STOCK_LOCATION,
-      resolve: "@medusajs/stock-location",
+      resolve: "@moetnavss/stock-location",
       options: {},
     },
     {
       key: Modules.INVENTORY,
-      resolve: "@medusajs/inventory",
+      resolve: "@moetnavss/inventory",
       options: {},
     },
     {
       key: Modules.PRODUCT,
-      resolve: "@medusajs/product",
+      resolve: "@moetnavss/product",
     },
     {
       key: Modules.PRICING,
-      resolve: "@medusajs/pricing",
+      resolve: "@moetnavss/pricing",
     },
     {
       key: Modules.PROMOTION,
-      resolve: "@medusajs/promotion",
+      resolve: "@moetnavss/promotion",
     },
     {
       key: Modules.REGION,
-      resolve: "@medusajs/region",
+      resolve: "@moetnavss/region",
     },
     {
       key: Modules.CUSTOMER,
-      resolve: "@medusajs/customer",
+      resolve: "@moetnavss/customer",
     },
     {
       key: Modules.SALES_CHANNEL,
-      resolve: "@medusajs/sales-channel",
+      resolve: "@moetnavss/sales-channel",
     },
     {
       key: Modules.CART,
-      resolve: "@medusajs/cart",
+      resolve: "@moetnavss/cart",
     },
     {
       key: Modules.WORKFLOW_ENGINE,
-      resolve: "@medusajs/workflow-engine-inmemory",
+      resolve: "@moetnavss/workflow-engine-inmemory",
     },
     {
       key: Modules.API_KEY,
-      resolve: "@medusajs/api-key",
+      resolve: "@moetnavss/api-key",
     },
     {
       key: Modules.STORE,
-      resolve: "@medusajs/store",
+      resolve: "@moetnavss/store",
     },
     {
       key: Modules.TAX,
-      resolve: "@medusajs/tax",
+      resolve: "@moetnavss/tax",
       options: {
         providers: [customTaxProviderRegistration],
       },
     },
     {
       key: Modules.CURRENCY,
-      resolve: "@medusajs/currency",
+      resolve: "@moetnavss/currency",
     },
     {
       key: Modules.ORDER,
-      resolve: "@medusajs/order",
+      resolve: "@moetnavss/order",
     },
     {
       key: Modules.PAYMENT,
-      resolve: "@medusajs/payment",
+      resolve: "@moetnavss/payment",
       options: {
         providers: [customPaymentProvider],
       },
     },
     {
       key: Modules.FULFILLMENT,
-      resolve: "@medusajs/fulfillment",
+      resolve: "@moetnavss/fulfillment",
       options: {
         providers: [
           customFulfillmentProvider,
@@ -170,7 +170,7 @@ module.exports = defineConfig({
       options: {
         providers: [
           {
-            resolve: "@medusajs/notification-local",
+            resolve: "@moetnavss/notification-local",
             id: "local-notification-provider",
             options: {
               name: "Local Notification Provider",
@@ -182,7 +182,7 @@ module.exports = defineConfig({
     },
     {
       key: Modules.INDEX,
-      resolve: "@medusajs/index",
+      resolve: "@moetnavss/index",
       disable: process.env.ENABLE_INDEX_MODULE !== "true",
     },
     {
@@ -191,7 +191,7 @@ module.exports = defineConfig({
     },
     {
       key: Modules.RBAC,
-      resolve: "@medusajs/rbac",
+      resolve: "@moetnavss/rbac",
     },
   ],
 })

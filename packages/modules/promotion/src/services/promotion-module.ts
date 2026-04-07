@@ -10,7 +10,7 @@ import {
   ModulesSdkTypes,
   PromotionDTO,
   PromotionTypes,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   ApplicationMethodAllocation,
   ApplicationMethodTargetType,
@@ -32,7 +32,7 @@ import {
   PromotionType,
   toMikroORMEntity,
   transformPropertiesToBigNumber,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import {
   ApplicationMethod,
   Campaign,

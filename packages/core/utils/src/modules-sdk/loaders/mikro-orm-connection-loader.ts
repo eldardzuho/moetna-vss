@@ -1,9 +1,9 @@
-import { Logger, MedusaContainer, ModulesSdkTypes } from "@medusajs/types"
+import { Logger, MedusaContainer, ModulesSdkTypes } from "@moetnavss/types"
 import {
   PostgreSqlDriver,
   SqlEntityManager,
-} from "@medusajs/deps/mikro-orm/postgresql"
-import { asValue } from "@medusajs/deps/awilix"
+} from "@moetnavss/deps/mikro-orm/postgresql"
+import { asValue } from "@moetnavss/deps/awilix"
 import { ContainerRegistrationKeys, MedusaError } from "../../common"
 import { mikroOrmCreateConnection } from "../../dal"
 import { isSharedConnectionSymbol } from "../create-pg-connection"

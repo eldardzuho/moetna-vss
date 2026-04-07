@@ -1,18 +1,18 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 
 import {
   deleteStockLocationsWorkflow,
   updateStockLocationsWorkflow,
-} from "@medusajs/core-flows"
-import { MedusaError } from "@medusajs/framework/utils"
+} from "@moetnavss/core-flows"
+import { MedusaError } from "@moetnavss/framework/utils"
 import { refetchStockLocation } from "../helpers"
 import {
   AdminGetStockLocationParamsType,
 } from "../validators"
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@moetnavss/framework/types"
 
 export const POST = async (
   req: AuthenticatedMedusaRequest<

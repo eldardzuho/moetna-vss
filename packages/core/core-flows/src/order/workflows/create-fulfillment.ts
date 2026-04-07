@@ -10,13 +10,13 @@ import {
   ProductVariantDTO,
   ReservationItemDTO,
   ShippingProfileDTO,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   MathBN,
   MedusaError,
   Modules,
   OrderWorkflowEvents,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import {
   createHook,
   createStep,
@@ -25,7 +25,7 @@ import {
   transform,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import {
   createRemoteLinkStep,
   emitEventStep,

@@ -1,6 +1,6 @@
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
-import { IProductModuleService } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+import { createStep, StepResponse } from "@moetnavss/framework/workflows-sdk"
+import { IProductModuleService } from "@moetnavss/framework/types"
+import { Modules } from "@moetnavss/framework/utils"
 
 export const removeImagesFromVariantStepId = "remove-images-from-variant"
 

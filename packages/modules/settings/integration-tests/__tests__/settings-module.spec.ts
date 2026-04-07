@@ -1,6 +1,6 @@
-import { Modules } from "@medusajs/utils"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
-import { SettingsTypes } from "@medusajs/types"
+import { Modules } from "@moetnavss/utils"
+import { moduleIntegrationTestRunner } from "@moetnavss/test-utils"
+import { SettingsTypes } from "@moetnavss/types"
 
 jest.setTimeout(30000)
 

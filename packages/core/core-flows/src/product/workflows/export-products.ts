@@ -2,8 +2,8 @@ import {
   WorkflowData,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
-import type { WorkflowTypes } from "@medusajs/framework/types"
+} from "@moetnavss/framework/workflows-sdk"
+import type { WorkflowTypes } from "@moetnavss/framework/types"
 import { exportProductsStep } from "../steps"
 import { useQueryGraphStep } from "../../common"
 import { notifyOnFailureStep, sendNotificationsStep } from "../../notification"

@@ -1,9 +1,9 @@
-import { deleteRbacRolePoliciesWorkflow } from "@medusajs/core-flows"
+import { deleteRbacRolePoliciesWorkflow } from "@moetnavss/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { defineFileConfig, FeatureFlag } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/http"
+import { defineFileConfig, FeatureFlag } from "@moetnavss/framework/utils"
 import RbacFeatureFlag from "../../../../../../../feature-flags/rbac"
 
 export const DELETE = async (

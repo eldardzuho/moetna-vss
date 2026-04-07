@@ -2,11 +2,11 @@ import {
   createWorkflow,
   parallelize,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import {
   UpdateTranslationSettingsDTO,
   CreateTranslationSettingsDTO,
-} from "@medusajs/types"
+} from "@moetnavss/types"
 import {
   createTranslationSettingsStep,
   deleteTranslationSettingsStep,

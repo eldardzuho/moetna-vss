@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/modules-sdk",
+  "name": "@moetnavss/modules-sdk",
   "version": "2.13.3",
   "description": "SDK for medusa modules",
   "main": "dist/index.js",
@@ -31,11 +31,11 @@
     "watch": "yarn run -T tsc --build --watch"
   },
   "devDependencies": {
-    "@medusajs/types": "2.13.3"
+    "@moetnavss/types": "2.13.3"
   },
   "dependencies": {
-    "@medusajs/deps": "2.13.3",
-    "@medusajs/orchestration": "2.13.3",
-    "@medusajs/utils": "2.13.3"
+    "@moetnavss/deps": "2.13.3",
+    "@moetnavss/orchestration": "2.13.3",
+    "@moetnavss/utils": "2.13.3"
   }
 }

@@ -57,12 +57,12 @@ module.exports = defineConfig({
   // ...
   modules: [
     {
-      resolve: "@medusajs/medusa/notification",
+      resolve: "@moetnavss/medusa/notification",
       options: {
         providers: [
           // ...
           {
-            resolve: "@medusajs/medusa/notification-local",
+            resolve: "@moetnavss/medusa/notification-local",
             id: "local",
             options: {
               channels: ["email"],
@@ -100,8 +100,8 @@ export const highlights=[
 import {
   SubscriberArgs,
   type SubscriberConfig,
-} from "@medusajs/medusa"
-import { Modules } from "@medusajs/framework/utils"
+} from "@moetnavss/medusa"
+import { Modules } from "@moetnavss/framework/utils"
 
 export default async function resetPasswordTokenHandler({
   event: { data: {

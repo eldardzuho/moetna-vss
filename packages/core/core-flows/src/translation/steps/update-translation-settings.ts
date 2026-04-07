@@ -1,6 +1,6 @@
-import { Modules } from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
-import { UpdateTranslationSettingsDTO } from "@medusajs/types"
+import { Modules } from "@moetnavss/framework/utils"
+import { createStep, StepResponse } from "@moetnavss/framework/workflows-sdk"
+import { UpdateTranslationSettingsDTO } from "@moetnavss/types"
 
 export const updateTranslationSettingsStepId = "update-translation-settings"
 

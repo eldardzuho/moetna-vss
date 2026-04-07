@@ -1,6 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod"
-import { HttpTypes, SalesChannelDTO } from "@medusajs/types"
-import { Button, Checkbox, Hint, Tooltip, toast } from "@medusajs/ui"
+import { HttpTypes, SalesChannelDTO } from "@moetnavss/types"
+import { Button, Checkbox, Hint, Tooltip, toast } from "@moetnavss/ui"
 import { keepPreviousData } from "@tanstack/react-query"
 import {
   OnChangeFn,

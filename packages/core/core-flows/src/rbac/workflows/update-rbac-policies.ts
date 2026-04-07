@@ -2,8 +2,8 @@ import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
-} from "@medusajs/framework/workflows-sdk"
-import { UpdateRbacPolicyDTO } from "@medusajs/types"
+} from "@moetnavss/framework/workflows-sdk"
+import { UpdateRbacPolicyDTO } from "@moetnavss/types"
 import { updateRbacPoliciesStep } from "../steps/update-rbac-policies"
 
 export type UpdateRbacPoliciesWorkflowInput = {

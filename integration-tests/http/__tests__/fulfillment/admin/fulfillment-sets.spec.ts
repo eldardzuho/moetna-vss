@@ -1,11 +1,11 @@
-import { IFulfillmentModuleService } from "@medusajs/types"
-import { Modules } from "@medusajs/utils"
+import { IFulfillmentModuleService } from "@moetnavss/types"
+import { Modules } from "@moetnavss/utils"
 import {
   adminHeaders,
   createAdminUser,
 } from "../../../../helpers/create-admin-user"
 
-const { medusaIntegrationTestRunner } = require("@medusajs/test-utils")
+const { medusaIntegrationTestRunner } = require("@moetnavss/test-utils")
 
 jest.setTimeout(30000)
 

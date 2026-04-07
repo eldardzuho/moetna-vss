@@ -9,14 +9,14 @@
  * Usage: npx tsx packages/medusa/src/migration-scripts/create-super-admin-role.ts
  */
 
-import { MedusaModule } from "@medusajs/framework/modules-sdk"
-import { ExecArgs } from "@medusajs/framework/types"
+import { MedusaModule } from "@moetnavss/framework/modules-sdk"
+import { ExecArgs } from "@moetnavss/framework/types"
 import {
   ContainerRegistrationKeys,
   defineFileConfig,
   FeatureFlag,
   Modules,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import dotenv from "dotenv"
 
 dotenv.config()

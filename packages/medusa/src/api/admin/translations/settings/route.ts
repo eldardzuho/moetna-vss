@@ -1,17 +1,17 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 import {
   AdminTranslationSettings,
   HttpTypes,
   ITranslationModuleService,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   defineFileConfig,
   FeatureFlag,
   Modules,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import TranslationFeatureFlag from "../../../../feature-flags/translation"
 import { AdminTranslationSettingsParamsType } from "../validators"
 

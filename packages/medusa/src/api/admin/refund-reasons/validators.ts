@@ -1,4 +1,4 @@
-import { z } from "@medusajs/framework/zod"
+import { z } from "@moetnavss/framework/zod"
 import { createFindParams, createOperatorMap, createSelectParams } from "../../utils/validators"
 
 export type AdminCreatePaymentRefundReasonType = z.infer<

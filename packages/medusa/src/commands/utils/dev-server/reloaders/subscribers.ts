@@ -1,10 +1,10 @@
-import { SubscriberLoader } from "@medusajs/framework/subscribers"
+import { SubscriberLoader } from "@moetnavss/framework/subscribers"
 import {
   IEventBusModuleService,
   Logger,
   MedusaContainer,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { Modules } from "@moetnavss/framework/utils"
 import { ResourceRegistry } from "../resource-registry"
 import { CONFIG, FileChangeAction } from "../types"
 import { BaseReloader } from "./base"

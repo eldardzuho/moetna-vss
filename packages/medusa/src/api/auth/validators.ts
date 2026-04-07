@@ -1,4 +1,4 @@
-import { z } from "@medusajs/framework/zod"
+import { z } from "@moetnavss/framework/zod"
 
 export const ResetPasswordRequest = z.object({
   identifier: z.string(),

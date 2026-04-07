@@ -2,9 +2,9 @@ import {
   CreateOrderDTO,
   IOrderModuleService,
   OrderDTO,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@moetnavss/framework/types"
+import { Modules } from "@moetnavss/framework/utils"
+import { moduleIntegrationTestRunner } from "@moetnavss/test-utils"
 
 jest.setTimeout(100000)
 

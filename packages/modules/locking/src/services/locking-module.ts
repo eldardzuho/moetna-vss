@@ -3,8 +3,8 @@ import {
   ILockingModule,
   InternalModuleDeclaration,
   Logger,
-} from "@medusajs/types"
-import { EntityManager } from "@medusajs/framework/mikro-orm/core"
+} from "@moetnavss/types"
+import { EntityManager } from "@moetnavss/framework/mikro-orm/core"
 import { LockingDefaultProvider } from "@types"
 import LockingProviderService from "./locking-provider"
 

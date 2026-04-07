@@ -2,7 +2,7 @@ import type {
   PluginDetails,
   ConfigModule,
   InputConfigModules,
-} from "@medusajs/types"
+} from "@moetnavss/types"
 import { transformModules } from "./define-config"
 
 /**

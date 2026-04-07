@@ -4,7 +4,7 @@ import {
   AuthIdentityProviderService,
   AuthTypes,
   Logger,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import { AuthProviderRegistrationPrefix } from "@types"
 
 type InjectedDependencies = {

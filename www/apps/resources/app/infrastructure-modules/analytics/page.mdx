@@ -74,11 +74,11 @@ module.exports = defineConfig({
   // ...
   modules: [
     {
-      resolve: "@medusajs/medusa/analytics",
+      resolve: "@moetnavss/medusa/analytics",
       options: {
         providers: [
           {
-            resolve: "@medusajs/medusa/analytics-local",
+            resolve: "@moetnavss/medusa/analytics-local",
             id: "local",
           },
         ],
@@ -104,11 +104,11 @@ export const workflowHighlights = [
 ]
 
 ```ts title="src/workflows/track-order-placed.ts" highlights={workflowHighlights}
-import { createWorkflow } from "@medusajs/framework/workflows-sdk"
-import { createStep } from "@medusajs/framework/workflows-sdk"
-import { useQueryGraphStep } from "@medusajs/medusa/core-flows"
-import { Modules } from "@medusajs/framework/utils"
-import { OrderDTO } from "@medusajs/framework/types"
+import { createWorkflow } from "@moetnavss/framework/workflows-sdk"
+import { createStep } from "@moetnavss/framework/workflows-sdk"
+import { useQueryGraphStep } from "@moetnavss/medusa/core-flows"
+import { Modules } from "@moetnavss/framework/utils"
+import { OrderDTO } from "@moetnavss/framework/types"
 
 type StepInput = {
   order: OrderDTO
@@ -175,7 +175,7 @@ create a subscriber at `src/subscribers/order-placed.ts` with the following cont
 import type {
   SubscriberArgs,
   SubscriberConfig,
-} from "@medusajs/framework"
+} from "@moetnavss/framework"
 import { trackOrderPlacedWorkflow } from "../workflows/track-order-placed"
 
 export default async function orderPlacedHandler({

@@ -1,5 +1,5 @@
-import { XMark } from "@medusajs/icons"
-import { HttpTypes } from "@medusajs/types"
+import { XMark } from "@moetnavss/icons"
+import { HttpTypes } from "@moetnavss/types"
 import {
   Button,
   clx,
@@ -10,7 +10,7 @@ import {
   Label,
   Text,
   toast,
-} from "@medusajs/ui"
+} from "@moetnavss/ui"
 import { useState } from "react"
 import { useParams } from "react-router-dom"
 import { KeyboundForm } from "../../../../components/common/keybound-form"

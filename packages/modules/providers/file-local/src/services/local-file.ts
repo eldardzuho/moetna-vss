@@ -1,8 +1,8 @@
-import { FileTypes, LocalFileServiceOptions } from "@medusajs/framework/types"
+import { FileTypes, LocalFileServiceOptions } from "@moetnavss/framework/types"
 import {
   AbstractFileProviderService,
   MedusaError,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import { createReadStream, createWriteStream } from "fs"
 import fs from "fs/promises"
 import path from "path"

@@ -8,7 +8,7 @@ products:
 ---
 
 import { Prerequisites, InlineIcon } from "docs-ui"
-import { EllipsisHorizontal } from "@medusajs/icons"
+import { EllipsisHorizontal } from "@moetnavss/icons"
 
 export const ogImage = "https://res.cloudinary.com/dza7lstvk/image/upload/v1734007558/Medusa%20Resources/integrations-stripe_qfnwtf.jpg"
 
@@ -122,11 +122,11 @@ module.exports = defineConfig({
   // ...
   modules: [
     {
-      resolve: "@medusajs/medusa/payment",
+      resolve: "@moetnavss/medusa/payment",
       options: {
         providers: [
           {
-            resolve: "@medusajs/medusa/payment-stripe",
+            resolve: "@moetnavss/medusa/payment-stripe",
             id: "stripe",
             options: {
               apiKey: process.env.STRIPE_API_KEY,
@@ -440,8 +440,8 @@ Feel free to remove unused imports, variables, and functions in the file.
 
 import { isStripe as isStripeFunc, paymentInfoMap } from "@lib/constants"
 import { initiatePaymentSession } from "@lib/data/cart"
-import { CheckCircleSolid, CreditCard } from "@medusajs/icons"
-import { Button, Container, Heading, Text, clx } from "@medusajs/ui"
+import { CheckCircleSolid, CreditCard } from "@moetnavss/icons"
+import { Button, Container, Heading, Text, clx } from "@moetnavss/ui"
 import ErrorMessage from "@modules/checkout/components/error-message"
 import Divider from "@modules/common/components/divider"
 import { usePathname, useRouter, useSearchParams } from "next/navigation"
@@ -939,8 +939,8 @@ You still need to add the redirect URL route before you can test the payment but
 
 import { isManual, isStripe } from "@lib/constants"
 import { placeOrder } from "@lib/data/cart"
-import { HttpTypes } from "@medusajs/types"
-import { Button } from "@medusajs/ui"
+import { HttpTypes } from "@moetnavss/types"
+import { Button } from "@moetnavss/ui"
 import { useElements, useStripe } from "@stripe/react-stripe-js"
 import React, { useState, useEffect } from "react"
 import ErrorMessage from "../error-message"

@@ -1,4 +1,4 @@
-import { ModuleDefinition } from "@medusajs/types"
+import { ModuleDefinition } from "@moetnavss/types"
 import { ModulesDefinition } from "../../definitions"
 import { MODULE_SCOPE } from "../../types"
 import { registerMedusaModule } from "../register-modules"

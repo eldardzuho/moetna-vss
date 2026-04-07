@@ -1,6 +1,6 @@
-import TaxModule from "@medusajs/tax"
+import TaxModule from "@moetnavss/tax"
 
-export * from "@medusajs/tax"
+export * from "@moetnavss/tax"
 
 export default TaxModule
-export const discoveryPath = require.resolve("@medusajs/tax")
+export const discoveryPath = require.resolve("@moetnavss/tax")

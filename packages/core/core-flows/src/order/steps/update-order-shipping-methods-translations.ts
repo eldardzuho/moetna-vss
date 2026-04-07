@@ -2,9 +2,9 @@ import {
   ContainerRegistrationKeys,
   FeatureFlag,
   Modules,
-} from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
-import { OrderShippingMethodDTO } from "@medusajs/types"
+} from "@moetnavss/framework/utils"
+import { createStep, StepResponse } from "@moetnavss/framework/workflows-sdk"
+import { OrderShippingMethodDTO } from "@moetnavss/types"
 
 export const updateOrderShippingMethodsTranslationsStepId =
   "update-order-shipping-methods-translations"

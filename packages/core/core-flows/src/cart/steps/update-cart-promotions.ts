@@ -2,8 +2,8 @@ import {
   ContainerRegistrationKeys,
   Modules,
   PromotionActions,
-} from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/utils"
+import { StepResponse, createStep } from "@moetnavss/framework/workflows-sdk"
 
 /**
  * The details of the promotion codes to apply on a cart.

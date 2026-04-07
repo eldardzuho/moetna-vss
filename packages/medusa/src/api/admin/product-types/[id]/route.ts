@@ -1,15 +1,15 @@
 import {
   deleteProductTypesWorkflow,
   updateProductTypesWorkflow,
-} from "@medusajs/core-flows"
+} from "@moetnavss/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 
 import { refetchProductType } from "../helpers"
-import { HttpTypes } from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+import { HttpTypes } from "@moetnavss/framework/types"
+import { MedusaError } from "@moetnavss/framework/utils"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<

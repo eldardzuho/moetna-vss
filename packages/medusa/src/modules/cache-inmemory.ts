@@ -1,6 +1,6 @@
-import InMemoryCacheModule from "@medusajs/cache-inmemory"
+import InMemoryCacheModule from "@moetnavss/cache-inmemory"
 
-export * from "@medusajs/cache-inmemory"
+export * from "@moetnavss/cache-inmemory"
 
 export default InMemoryCacheModule
-export const discoveryPath = require.resolve("@medusajs/cache-inmemory")
+export const discoveryPath = require.resolve("@moetnavss/cache-inmemory")

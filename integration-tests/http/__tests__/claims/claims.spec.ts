@@ -1,4 +1,4 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
 import {
   ClaimReason,
   ClaimType,
@@ -6,7 +6,7 @@ import {
   Modules,
   ProductStatus,
   RuleOperator,
-} from "@medusajs/utils"
+} from "@moetnavss/utils"
 import {
   adminHeaders,
   createAdminUser,

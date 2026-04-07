@@ -2,7 +2,7 @@ import {
   FindParams,
   HttpTypes,
   SelectParams,
-} from "@medusajs/types"
+} from "@moetnavss/types"
 import { Client } from "../client"
 import { ClientHeaders } from "../types"
 

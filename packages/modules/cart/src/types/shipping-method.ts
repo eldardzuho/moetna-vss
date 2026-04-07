@@ -1,4 +1,4 @@
-import { BigNumberInput } from "@medusajs/framework/types"
+import { BigNumberInput } from "@moetnavss/framework/types"
 
 export interface CreateShippingMethodDTO {
   name: string

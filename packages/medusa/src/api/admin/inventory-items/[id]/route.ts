@@ -1,11 +1,11 @@
-import { MedusaError } from "@medusajs/framework/utils"
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
+import { MedusaError } from "@moetnavss/framework/utils"
+import { MedusaRequest, MedusaResponse } from "@moetnavss/framework/http"
 import {
   deleteInventoryItemWorkflow,
   updateInventoryItemsWorkflow,
-} from "@medusajs/core-flows"
+} from "@moetnavss/core-flows"
 import { refetchInventoryItem } from "../helpers"
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@moetnavss/framework/types"
 
 export const GET = async (
   req: MedusaRequest<HttpTypes.SelectParams>,

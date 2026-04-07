@@ -1,5 +1,5 @@
-import { IModuleService, ModuleJoinerConfig } from "@medusajs/types"
-import { defineJoinerConfig } from "@medusajs/utils"
+import { IModuleService, ModuleJoinerConfig } from "@moetnavss/types"
+import { defineJoinerConfig } from "@moetnavss/utils"
 
 export class ModuleService implements IModuleService {
   __joinerConfig(): ModuleJoinerConfig {

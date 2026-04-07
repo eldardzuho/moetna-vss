@@ -1,9 +1,9 @@
 import {
   CreateLineItemAdjustmentDTO,
   ICartModuleService,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/types"
+import { Modules } from "@moetnavss/framework/utils"
+import { StepResponse, createStep } from "@moetnavss/framework/workflows-sdk"
 
 /**
  * The details of the line item adjustments to create.

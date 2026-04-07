@@ -1,5 +1,5 @@
-import { MiddlewareRoute } from "@medusajs/framework/http"
-import { validateAndTransformQuery } from "@medusajs/framework"
+import { MiddlewareRoute } from "@moetnavss/framework/http"
+import { validateAndTransformQuery } from "@moetnavss/framework"
 import * as QueryConfig from "./query-config"
 import { StoreProductTagsParams, StoreProductTagParams } from "./validators"
 

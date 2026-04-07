@@ -1,9 +1,9 @@
-import { IUserModuleService } from "@medusajs/framework/types"
-import { Modules, UserEvents } from "@medusajs/framework/utils"
+import { IUserModuleService } from "@moetnavss/framework/types"
+import { Modules, UserEvents } from "@moetnavss/framework/utils"
 import {
   MockEventBusService,
   moduleIntegrationTestRunner,
-} from "@medusajs/test-utils"
+} from "@moetnavss/test-utils"
 import jwt, { JwtPayload } from "jsonwebtoken"
 
 jest.setTimeout(30000)

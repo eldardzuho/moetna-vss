@@ -8,7 +8,7 @@ import {
   ModuleJoinerConfig,
   RestoreReturn,
   SoftDeleteReturn,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   CommonEvents,
   EmitEvents,
@@ -22,7 +22,7 @@ import {
   moduleEventBuilderFactory,
   Modules,
   ModulesSdkUtils,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import { LinkService } from "@services"
 
 type InjectedDependencies = {

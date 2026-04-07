@@ -1,14 +1,14 @@
 import {
   Modules,
   ProductVariantWorkflowEvents,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
   createHook,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import {
   emitEventStep,
   removeRemoteLinkStep,

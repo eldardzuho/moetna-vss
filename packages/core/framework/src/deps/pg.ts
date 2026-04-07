@@ -1,1 +1,1 @@
-export * from "@medusajs/deps/pg"
+export * from "@moetnavss/deps/pg"

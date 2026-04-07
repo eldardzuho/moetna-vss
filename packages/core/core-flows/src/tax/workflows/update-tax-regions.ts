@@ -1,12 +1,12 @@
 import type {
   TaxRegionDTO,
   UpdateTaxRegionDTO,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import { updateTaxRegionsStep } from "../steps/update-tax-regions"
 
 /**

@@ -1,6 +1,6 @@
 import { MedusaRequest, MedusaResponse } from "../types"
 import { applyLocale } from "../middlewares/apply-locale"
-import { MedusaContainer } from "@medusajs/types"
+import { MedusaContainer } from "@moetnavss/types"
 
 describe("applyLocale", () => {
   let mockRequest: Partial<MedusaRequest>

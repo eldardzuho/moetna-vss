@@ -5,7 +5,7 @@ import {
   AdminOrderLineItem,
   DateComparisonOperator,
   NumericalComparisonOperator,
-} from "@medusajs/types"
+} from "@moetnavss/types"
 
 import { useTranslation } from "react-i18next"
 import { _DataTable } from "../../../../../components/table/data-table"

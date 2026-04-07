@@ -1,3 +1,3 @@
-import logger from "@medusajs/cli/dist/reporter"
+import logger from "@moetnavss/cli/dist/reporter"
 
 export { logger }

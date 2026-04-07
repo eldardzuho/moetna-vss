@@ -4,8 +4,8 @@ import {
   InformationCircle,
   Spinner,
   XCircle,
-} from "@medusajs/icons"
-import { Button, toast } from "@medusajs/ui"
+} from "@moetnavss/icons"
+import { Button, toast } from "@moetnavss/ui"
 
 export default function ToasterAllVariants() {
   return (

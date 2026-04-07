@@ -1,9 +1,9 @@
-import { Modules } from "@medusajs/framework/utils"
+import { Modules } from "@moetnavss/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import { deleteEntitiesStep } from "../../common/steps/delete-entities"
 
 export const deleteCartCreditLinesWorkflowId = "delete-cart-credit-lines"

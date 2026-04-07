@@ -1,5 +1,5 @@
-import type { RemovePromotionRulesWorkflowDTO } from "@medusajs/framework/types"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+import type { RemovePromotionRulesWorkflowDTO } from "@moetnavss/framework/types"
+import { StepResponse, createStep } from "@moetnavss/framework/workflows-sdk"
 import { deletePromotionRulesWorkflow } from "../workflows/delete-promotion-rules"
 
 export const deletePromotionRulesWorkflowStepId =

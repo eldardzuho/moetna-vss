@@ -1,4 +1,4 @@
-import { StatusBadge } from "@medusajs/ui"
+import { StatusBadge } from "@moetnavss/ui"
 
 export default function StatusBadgeAllColors() {
   return (

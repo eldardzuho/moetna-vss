@@ -1,16 +1,16 @@
 import {
   JoinerRelationship,
   ModuleJoinerConfig,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   composeTableName,
   compressName,
   mikroOrmSoftDeletableFilterOptions,
   simpleHash,
   SoftDeletableFilterKey,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 
-import { EntitySchema } from "@medusajs/framework/mikro-orm/core"
+import { EntitySchema } from "@moetnavss/framework/mikro-orm/core"
 
 function getClass(...properties) {
   return class LinkModel {

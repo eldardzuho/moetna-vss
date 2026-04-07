@@ -1,6 +1,6 @@
-import { ITranslationModuleService } from "@medusajs/framework/types"
-import { DmlEntity, Module, Modules } from "@medusajs/framework/utils"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
+import { ITranslationModuleService } from "@moetnavss/framework/types"
+import { DmlEntity, Module, Modules } from "@moetnavss/framework/utils"
+import { moduleIntegrationTestRunner } from "@moetnavss/test-utils"
 import TranslationModuleService from "@services/translation-module"
 import { createLocaleFixture, createTranslationFixture } from "../__fixtures__"
 

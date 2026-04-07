@@ -1,9 +1,9 @@
-import { MedusaContainer } from "@medusajs/framework/types"
+import { MedusaContainer } from "@moetnavss/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 
 export const refetchCart = async (
   id: string,

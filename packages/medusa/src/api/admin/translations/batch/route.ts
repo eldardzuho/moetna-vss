@@ -1,11 +1,11 @@
-import { batchTranslationsWorkflow } from "@medusajs/core-flows"
-import { AuthenticatedMedusaRequest, MedusaResponse } from "@medusajs/framework"
+import { batchTranslationsWorkflow } from "@moetnavss/core-flows"
+import { AuthenticatedMedusaRequest, MedusaResponse } from "@moetnavss/framework"
 import {
   ContainerRegistrationKeys,
   defineFileConfig,
   FeatureFlag,
-} from "@medusajs/framework/utils"
-import { BatchMethodRequest, HttpTypes } from "@medusajs/types"
+} from "@moetnavss/framework/utils"
+import { BatchMethodRequest, HttpTypes } from "@moetnavss/types"
 import TranslationFeatureFlag from "../../../../feature-flags/translation"
 import { defaultAdminTranslationFields } from "../query-config"
 import {

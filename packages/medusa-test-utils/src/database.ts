@@ -1,12 +1,12 @@
-import { logger } from "@medusajs/framework/logger"
-import { CustomDBMigrator } from "@medusajs/framework/utils"
+import { logger } from "@moetnavss/framework/logger"
+import { CustomDBMigrator } from "@moetnavss/framework/utils"
 
 import {
   defineConfig,
   MikroORM,
   Options,
   SqlEntityManager,
-} from "@medusajs/framework/mikro-orm/postgresql"
+} from "@moetnavss/framework/mikro-orm/postgresql"
 import { createDatabase, dropDatabase } from "pg-god"
 import { execOrTimeout } from "./medusa-test-runner-utils"
 

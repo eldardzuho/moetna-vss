@@ -1,7 +1,7 @@
 import {
   ModuleProviderExports,
   ModuleServiceInitializeOptions,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 
 export const FileProviderIdentifierRegistrationName =
   "file_providers_identifier"
@@ -28,9 +28,9 @@ export type FileModuleOptions = Partial<ModuleServiceInitializeOptions> & {
   }
 }
 
-declare module "@medusajs/types" {
+declare module "@moetnavss/types" {
   interface ModuleOptions {
-    "@medusajs/file": FileModuleOptions
-    "@medusajs/medusa/file": FileModuleOptions
+    "@moetnavss/file": FileModuleOptions
+    "@moetnavss/medusa/file": FileModuleOptions
   }
 }

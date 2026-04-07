@@ -1,12 +1,12 @@
 import {
   OrderChangeActionDTO,
   UpdateOrderChangeActionDTO,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import { updateOrderChangeActionsStep } from "../steps"
 
 export const updateOrderChangeActionsWorkflowId = "update-order-change-actions"

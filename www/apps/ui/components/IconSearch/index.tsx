@@ -1,7 +1,7 @@
 "use client"
 
-import * as Icons from "@medusajs/icons"
-import { Container, Input, Text } from "@medusajs/ui"
+import * as Icons from "@moetnavss/icons"
+import { Container, Input, Text } from "@moetnavss/ui"
 import clsx from "clsx"
 import { CopyButton } from "docs-ui"
 import * as React from "react"

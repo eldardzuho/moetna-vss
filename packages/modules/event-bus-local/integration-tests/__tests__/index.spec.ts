@@ -2,9 +2,9 @@ import {
   CommonEvents,
   composeMessage,
   Modules,
-} from "@medusajs/framework/utils"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
-import { IEventBusModuleService } from "@medusajs/types"
+} from "@moetnavss/framework/utils"
+import { moduleIntegrationTestRunner } from "@moetnavss/test-utils"
+import { IEventBusModuleService } from "@moetnavss/types"
 
 moduleIntegrationTestRunner<IEventBusModuleService>({
   moduleName: Modules.EVENT_BUS,

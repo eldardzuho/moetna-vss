@@ -1,5 +1,5 @@
-import { PlusMini } from "@medusajs/icons"
-import { IconButton } from "@medusajs/ui"
+import { PlusMini } from "@moetnavss/icons"
+import { IconButton } from "@moetnavss/ui"
 
 export default function IconButtonDisabled() {
   return (

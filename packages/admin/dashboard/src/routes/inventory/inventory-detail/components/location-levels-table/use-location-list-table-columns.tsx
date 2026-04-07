@@ -1,8 +1,8 @@
-import { InventoryTypes, StockLocationDTO } from "@medusajs/types"
-import { PencilSquare, Trash } from "@medusajs/icons"
+import { InventoryTypes, StockLocationDTO } from "@moetnavss/types"
+import { PencilSquare, Trash } from "@moetnavss/icons"
 
 import { useMemo } from "react"
-import { createDataTableColumnHelper, toast, usePrompt } from "@medusajs/ui"
+import { createDataTableColumnHelper, toast, usePrompt } from "@moetnavss/ui"
 import { useTranslation } from "react-i18next"
 import { PlaceholderCell } from "../../../../../components/table/table-cells/common/placeholder-cell"
 import {

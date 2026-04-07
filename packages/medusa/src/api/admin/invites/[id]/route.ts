@@ -1,11 +1,11 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { MedusaError } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/http"
+import { MedusaError } from "@moetnavss/framework/utils"
 
-import { deleteInvitesWorkflow } from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/framework/types"
+import { deleteInvitesWorkflow } from "@moetnavss/core-flows"
+import { HttpTypes } from "@moetnavss/framework/types"
 import { refetchInvite } from "../helpers"
 
 export const GET = async (

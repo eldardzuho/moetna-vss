@@ -38,7 +38,7 @@ By following this guide, you'll learn how to:
 This guide assumes you already have a custom [module](!docs!/learn/fundamentals/modules) with a data model. The guide will use a Blog Module with the following `Post` data model as an example:
 
 ```ts title="src/modules/blog/models/post.ts"
-import { model } from "@medusajs/framework/utils"
+import { model } from "@moetnavss/framework/utils"
 
 const Post = model.define("post", {
   id: model.id().primaryKey(),
@@ -81,7 +81,7 @@ export const translatableModifierHighlights = [
 ]
 
 ```ts title="src/modules/blog/models/post.ts" highlights={translatableModifierHighlights}
-import { model } from "@medusajs/framework/utils"
+import { model } from "@moetnavss/framework/utils"
 
 const Post = model.define("post", {
   id: model.id().primaryKey(),
@@ -123,7 +123,7 @@ module.exports = defineConfig({
   modules: [
     // other modules...
     {
-      resolve: "@medusajs/medusa/translation",
+      resolve: "@moetnavss/medusa/translation",
       options: {
         entities: [
           {
@@ -204,7 +204,7 @@ You must pass a publishable API key in the request header to store API routes. L
 If your API route isn't under the `/store` prefix, you must apply the `applyLocale` middleware. For example, add the middleware to the `src/api/middlewares.ts` file:
 
 ```ts title="src/api/middlewares.ts"
-import { applyLocale, defineMiddlewares } from "@medusajs/framework/http"
+import { applyLocale, defineMiddlewares } from "@moetnavss/framework/http"
 
 export default defineMiddlewares({
   routes: [
@@ -229,7 +229,7 @@ export const apiRouteHighlights = [
 ]
 
 ```ts title="src/api/routes/store/posts.ts" highlights={apiRouteHighlights}
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
+import { MedusaRequest, MedusaResponse } from "@moetnavss/framework/http"
 
 export async function GET(
   req: MedusaRequest,
@@ -301,8 +301,8 @@ export const workflowHighlights = [
 ]
 
 ```ts title="src/workflows/handle-posts.ts" highlights={workflowHighlights}
-import { createWorkflow, WorkflowResponse } from "@medusajs/framework/workflows-sdk"
-import { useQueryGraphStep } from "@medusajs/medusa/core-flows"
+import { createWorkflow, WorkflowResponse } from "@moetnavss/framework/workflows-sdk"
+import { useQueryGraphStep } from "@moetnavss/medusa/core-flows"
 
 type WorkflowInput = {
   locale: string;
@@ -335,7 +335,7 @@ The returned posts will have their `title` field set to the translated value if 
 You can execute the workflow in your custom API routes and pass the request locale as an input parameter:
 
 ```ts title="src/api/routes/store/posts.ts"
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
+import { MedusaRequest, MedusaResponse } from "@moetnavss/framework/http"
 import { handlePostsWorkflow } from "../../workflows/handle-posts"
 
 export async function GET(

@@ -3,14 +3,14 @@ import {
   ComputeActionItemLine,
   InferEntityType,
   PromotionTypes,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   ApplicationMethodTargetType,
   ComputedActions,
   MathBN,
   MedusaError,
   PromotionType,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import { areRulesValidForContext } from "../validations"
 import { computeActionForBudgetExceeded } from "./usage"
 import { Promotion } from "@models"

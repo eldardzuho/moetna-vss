@@ -1,4 +1,4 @@
-import { RelationshipMetadata } from "@medusajs/types"
+import { RelationshipMetadata } from "@moetnavss/types"
 import { camelToSnakeCase } from "../../../common/camel-to-snake-case"
 
 /**

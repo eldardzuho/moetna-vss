@@ -1,5 +1,5 @@
-import { ArrowsPointingOut, CircleSliders } from "@medusajs/icons"
-import { clx } from "@medusajs/ui"
+import { ArrowsPointingOut, CircleSliders } from "@moetnavss/icons"
+import { clx } from "@moetnavss/ui"
 import { useCallback, useEffect, useRef, useState } from "react"
 import CurrencyInput, {
   CurrencyInputProps,

@@ -10,7 +10,7 @@ import {
   RemoteQueryInput,
   RemoteQueryObjectConfig,
   RemoteQueryObjectFromStringResult,
-} from "@medusajs/types"
+} from "@moetnavss/types"
 import {
   Cached,
   MedusaError,
@@ -18,7 +18,7 @@ import {
   isObject,
   remoteQueryObjectFromString,
   unflattenObjectKeys,
-} from "@medusajs/utils"
+} from "@moetnavss/utils"
 import { RemoteQuery } from "./remote-query"
 import { toRemoteQuery } from "./to-remote-query"
 

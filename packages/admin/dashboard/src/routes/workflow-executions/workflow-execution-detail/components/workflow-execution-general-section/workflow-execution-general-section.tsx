@@ -6,10 +6,10 @@ import {
   StatusBadge,
   Text,
   clx,
-} from "@medusajs/ui"
+} from "@moetnavss/ui"
 import { useTranslation } from "react-i18next"
 import { getTransactionState, getTransactionStateColor } from "../../../utils"
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 import { TransactionState, TransactionStepState } from "../../../types"
 
 type WorkflowExecutionGeneralSectionProps = {

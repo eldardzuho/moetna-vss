@@ -1,6 +1,6 @@
-import type { IProductModuleService } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+import type { IProductModuleService } from "@moetnavss/framework/types"
+import { Modules } from "@moetnavss/framework/utils"
+import { createStep, StepResponse } from "@moetnavss/framework/workflows-sdk"
 
 /**
  * Configurations to retrieve products.

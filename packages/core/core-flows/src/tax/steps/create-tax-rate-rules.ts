@@ -1,9 +1,9 @@
 import {
   CreateTaxRateRuleDTO,
   ITaxModuleService,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/types"
+import { Modules } from "@moetnavss/framework/utils"
+import { StepResponse, createStep } from "@moetnavss/framework/workflows-sdk"
 
 export const createTaxRateRulesStepId = "create-tax-rate-rules"
 /**

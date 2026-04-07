@@ -1,9 +1,9 @@
 import * as QueryConfig from "./query-config"
 import { Entities } from "./query-config"
 
-import { validateAndTransformQuery } from "@medusajs/framework"
-import { MiddlewareRoute } from "@medusajs/framework/http"
-import { PolicyOperation } from "@medusajs/framework/utils"
+import { validateAndTransformQuery } from "@moetnavss/framework"
+import { MiddlewareRoute } from "@moetnavss/framework/http"
+import { PolicyOperation } from "@moetnavss/framework/utils"
 
 import { AdminGetTaxProvidersParams } from "./validators"
 

@@ -5,8 +5,8 @@ import {
   PromotionRuleOperator,
   PromotionStatus,
   PromotionType,
-} from "@medusajs/framework/utils"
-import { z } from "@medusajs/framework/zod"
+} from "@moetnavss/framework/utils"
+import { z } from "@moetnavss/framework/zod"
 import { applyAndAndOrOperators } from "../../utils/common-validators"
 import {
   createFindParams,

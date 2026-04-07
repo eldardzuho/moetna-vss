@@ -1,7 +1,7 @@
-import { Container, Heading, Text, Tooltip } from "@medusajs/ui"
+import { Container, Heading, Text, Tooltip } from "@moetnavss/ui"
 import { useTranslation } from "react-i18next"
-import { HttpTypes } from "@medusajs/types"
-import { PencilSquare, ThumbnailBadge } from "@medusajs/icons"
+import { HttpTypes } from "@moetnavss/types"
+import { PencilSquare, ThumbnailBadge } from "@moetnavss/icons"
 
 import { ActionMenu } from "../../../../../components/common/action-menu"
 

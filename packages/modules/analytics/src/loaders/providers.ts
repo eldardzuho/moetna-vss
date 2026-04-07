@@ -1,10 +1,10 @@
-import { moduleProviderLoader } from "@medusajs/framework/modules-sdk"
+import { moduleProviderLoader } from "@moetnavss/framework/modules-sdk"
 import {
   LoaderOptions,
   ModuleProvider,
   ModulesSdkTypes,
-} from "@medusajs/framework/types"
-import { asFunction, asValue, Lifetime } from "@medusajs/framework/awilix"
+} from "@moetnavss/framework/types"
+import { asFunction, asValue, Lifetime } from "@moetnavss/framework/awilix"
 import ProviderService, {
   AnalyticsProviderIdentifierRegistrationName,
   AnalyticsProviderRegistrationPrefix,

@@ -1,9 +1,9 @@
-import { FetchError } from "@medusajs/js-sdk"
+import { FetchError } from "@moetnavss/js-sdk"
 import {
   AdminSalesChannelListResponse,
   AdminSalesChannelResponse,
   HttpTypes,
-} from "@medusajs/types"
+} from "@moetnavss/types"
 import {
   QueryKey,
   UseMutationOptions,

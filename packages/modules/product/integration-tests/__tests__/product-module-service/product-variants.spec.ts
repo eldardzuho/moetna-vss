@@ -5,9 +5,9 @@ import {
   ProductDTO,
   ProductVariantDTO,
   UpdateProductVariantDTO,
-} from "@medusajs/framework/types"
-import { Modules, ProductStatus } from "@medusajs/framework/utils"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@moetnavss/framework/types"
+import { Modules, ProductStatus } from "@moetnavss/framework/utils"
+import { moduleIntegrationTestRunner } from "@moetnavss/test-utils"
 
 jest.setTimeout(30000)
 

@@ -1,13 +1,13 @@
 import {
   BigNumberInput,
   ConfirmVariantInventoryWorkflowInputDTO,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   BigNumber,
   MathBN,
   MedusaError,
   deepFlatMap,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 
 export const requiredOrderFieldsForInventoryConfirmation = [
   "id",

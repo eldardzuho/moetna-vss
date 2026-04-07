@@ -1,4 +1,4 @@
-import { FileTypes, IFileProvider } from "@medusajs/types"
+import { FileTypes, IFileProvider } from "@moetnavss/types"
 import type { Readable, Writable } from "stream"
 
 /**
@@ -12,8 +12,8 @@ import type { Readable, Writable } from "stream"
  * #### Example
  *
  * ```ts
- * import { Logger } from "@medusajs/framework/types"
- * import { AbstractFileProviderService } from "@medusajs/framework/utils"
+ * import { Logger } from "@moetnavss/framework/types"
+ * import { AbstractFileProviderService } from "@moetnavss/framework/utils"
  *
  * type InjectedDependencies = {
  *   logger: Logger

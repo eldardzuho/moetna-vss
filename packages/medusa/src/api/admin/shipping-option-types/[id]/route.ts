@@ -1,18 +1,18 @@
 import {
   deleteShippingOptionTypesWorkflow,
   updateShippingOptionTypesWorkflow,
-} from "@medusajs/core-flows"
+} from "@moetnavss/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 
 import { refetchShippingOptionType } from "../helpers"
 import {
   AdminGetShippingOptionTypeParamsType,
 } from "../validators"
-import { HttpTypes } from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+import { HttpTypes } from "@moetnavss/framework/types"
+import { MedusaError } from "@moetnavss/framework/utils"
 
 /**
  * @since 2.10.0

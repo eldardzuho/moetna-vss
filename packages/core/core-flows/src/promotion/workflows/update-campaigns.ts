@@ -1,13 +1,13 @@
 import type {
   AdditionalData,
   UpdateCampaignDTO,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   WorkflowData,
   WorkflowResponse,
   createHook,
   createWorkflow,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import { updateCampaignsStep } from "../steps"
 
 /**

@@ -161,8 +161,8 @@ For example, you can create the following workflow:
 import { 
   createStep, createWorkflow, StepResponse, 
   transform, WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
-import { createProductsWorkflow } from "@medusajs/medusa/core-flows"
+} from "@moetnavss/framework/workflows-sdk"
+import { createProductsWorkflow } from "@moetnavss/medusa/core-flows"
 
 const getProductsFromErpStep = createStep(
   "get-products-from-erp",
@@ -235,7 +235,7 @@ For example, you can create the following scheduled job:
 ```ts title="src/scheduled-jobs/sync-products.ts"
 import {
   MedusaContainer,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import { syncFromErpWorkflow } from "../workflows/sync-from-erp"
 
 export default async function syncProductsJob(container: MedusaContainer) {
@@ -271,8 +271,8 @@ You can also follow [this guide](../../examples/guides/custom-item-price/page.md
 One of the steps in the custom add-to-cart workflow is to retrieve the custom price of the product variant from the ERP system. The step's implementation will differ based on the ERP system you're integrating. Here's a general implementation of how the step would look like:
 
 ```ts title="src/workflows/steps/get-erp-price.ts"
-import { MedusaError } from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+import { MedusaError } from "@moetnavss/framework/utils"
+import { createStep, StepResponse } from "@moetnavss/framework/workflows-sdk"
 
 export type GetVariantErpPriceStepInput = {
   variant_external_id: string
@@ -310,8 +310,8 @@ You can now create the custom workflow that uses the previous step to retrieve a
 For example, you can create the following workflow:
 
 ```ts title="src/workflows/add-custom-to-cart.ts"
-import { createWorkflow, transform, WorkflowResponse } from "@medusajs/framework/workflows-sdk"
-import { addToCartWorkflow, useQueryGraphStep } from "@medusajs/medusa/core-flows"
+import { createWorkflow, transform, WorkflowResponse } from "@moetnavss/framework/workflows-sdk"
+import { addToCartWorkflow, useQueryGraphStep } from "@moetnavss/medusa/core-flows"
 import { getVariantErpPriceStep } from "./steps/get-erp-price"
 
 type AddCustomToCartWorkflowInput = {
@@ -391,8 +391,8 @@ To allow clients to add products to the cart with custom prices, you can create 
 For example, you can create the following API route:
 
 ```ts title="src/api/store/cart/[id]/custom-line-items/route.ts"
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework"
-import { HttpTypes } from "@medusajs/framework/types"
+import { MedusaRequest, MedusaResponse } from "@moetnavss/framework"
+import { HttpTypes } from "@moetnavss/framework/types"
 import { addCustomToCartWorkflow } from "../../../../../workflows/add-custom-to-cart"
 
 export const POST = async (
@@ -429,8 +429,8 @@ Since Medusa implements the add-to-cart functionality within a workflow, it allo
 So, to implement the use case of product-purchase restriction, you can use the `validate` hook of the `addToCartWorkflow` or the [completeCartWorkflow](/references/medusa-workflows/completeCartWorkflow) to check if the customer is allowed to purchase the product. For example:
 
 ```ts title="src/workflows/hooks/validate-purchase.ts"
-import { MedusaError } from "@medusajs/framework/utils"
-import { addToCartWorkflow } from "@medusajs/medusa/core-flows"
+import { MedusaError } from "@moetnavss/framework/utils"
+import { addToCartWorkflow } from "@moetnavss/medusa/core-flows"
 
 addToCartWorkflow.hooks.validate(
   async ({ input, cart }, { container }) => {
@@ -495,9 +495,9 @@ As explained earlier, workflows facilitate the orchestration of operations acros
 To sync the order from Medusa to the ERP system, you can create a custom workflow that sends the order's details from Medusa to the ERP system. For example:
 
 ```ts title="src/workflows/sync-order-to-erp.ts"
-import { createStep, createWorkflow, StepResponse, WorkflowResponse } from "@medusajs/framework/workflows-sdk"
-import { updateOrderWorkflow, useQueryGraphStep } from "@medusajs/medusa/core-flows"
-import { OrderDTO } from "@medusajs/framework/types"
+import { createStep, createWorkflow, StepResponse, WorkflowResponse } from "@moetnavss/framework/workflows-sdk"
+import { updateOrderWorkflow, useQueryGraphStep } from "@moetnavss/medusa/core-flows"
+import { OrderDTO } from "@moetnavss/framework/types"
 
 type StepInput = {
   order: OrderDTO
@@ -582,7 +582,7 @@ You can now use this workflow whenever an order is placed. To do that, you can c
 import type {
   SubscriberArgs,
   SubscriberConfig,
-} from "@medusajs/framework"
+} from "@moetnavss/framework"
 import { syncOrderToErpWorkflow } from "../workflows/sync-order-to-erp"
 
 export default async function productCreateHandler({
@@ -613,8 +613,8 @@ Learn more about events and subscribers in [this documentation](!docs!/learn/fun
 To sync the order from the ERP system back to Medusa, create first the workflow that receives the updated order data and reflects them in Medusa:
 
 ```ts title="src/workflows/sync-order-from-erp.ts"
-import { createWorkflow, transform, WorkflowResponse } from "@medusajs/framework/workflows-sdk"
-import { updateOrderWorkflow, useQueryGraphStep } from "@medusajs/medusa/core-flows"
+import { createWorkflow, transform, WorkflowResponse } from "@moetnavss/framework/workflows-sdk"
+import { updateOrderWorkflow, useQueryGraphStep } from "@moetnavss/medusa/core-flows"
 
 type Input = {
   order_erp_data: any
@@ -659,7 +659,7 @@ In the workflow, you retrieve the order from the database using the `useQueryGra
 You can now create an API route that receives webhook updates from the ERP system and executes the workflow:
 
 ```ts title="src/api/erp/order-updates/route.ts"
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
+import { MedusaRequest, MedusaResponse } from "@moetnavss/framework/http"
 import { syncOrderFromErpWorkflow } from "../../workflows/sync-order-from-erp"
 
 export async function POST(
@@ -686,7 +686,7 @@ Then, you call the `syncOrderFromErpWorkflow` to sync the order from the ERP sys
 Finally, to ensure the webhook's raw data is received, you need to configure the middleware that runs before the route handler to preserve the raw body data. To do that, add the following middleware configuration in `src/api/middlewares.ts`:
 
 ```ts title="src/api/middlewares.ts"
-import { defineMiddlewares } from "@medusajs/framework/http"
+import { defineMiddlewares } from "@moetnavss/framework/http"
 
 export default defineMiddlewares({
   routes: [
@@ -718,8 +718,8 @@ An ERP system often manages the inventory of products, with the ability to track
 Similar to the [product-purchase restriction](#restrict-purchase-with-custom-erp-rules) use case, you can use the `validate` hook of the `addToCartWorkflow` or the [completeCartWorkflow](/references/medusa-workflows/completeCartWorkflow) to check the product's availability in the ERP system. For example:
 
 ```ts title="src/workflows/hooks/validate-inventory.ts"
-import { MedusaError } from "@medusajs/framework/utils"
-import { addToCartWorkflow } from "@medusajs/medusa/core-flows"
+import { MedusaError } from "@moetnavss/framework/utils"
+import { addToCartWorkflow } from "@moetnavss/medusa/core-flows"
 
 addToCartWorkflow.hooks.validate(
   async ({ input }, { container }) => {

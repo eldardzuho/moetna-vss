@@ -31,12 +31,12 @@ module.exports = defineConfig({
   // ...
   modules: [
     {
-      resolve: "@medusajs/medusa/notification",
+      resolve: "@moetnavss/medusa/notification",
       options: {
         providers: [
           // ...
           {
-            resolve: "@medusajs/medusa/notification-local",
+            resolve: "@moetnavss/medusa/notification-local",
             id: "local",
             options: {
               channels: ["email"],
@@ -100,8 +100,8 @@ export const highlights = [
 import type {
   SubscriberArgs,
   SubscriberConfig,
-} from "@medusajs/framework"
-import { Modules } from "@medusajs/framework/utils"
+} from "@moetnavss/framework"
+import { Modules } from "@moetnavss/framework/utils"
 
 export default async function orderPlacedHandler({
   event: { data },

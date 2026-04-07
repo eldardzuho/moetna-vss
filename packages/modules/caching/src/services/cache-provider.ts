@@ -2,8 +2,8 @@ import {
   Constructor,
   ICachingProviderService,
   Logger,
-} from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { MedusaError } from "@moetnavss/framework/utils"
 import { CachingProviderRegistrationPrefix } from "../types"
 
 type InjectedDependencies = {

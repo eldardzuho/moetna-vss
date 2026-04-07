@@ -3,9 +3,9 @@ import {
   RemoteJoinerOptions,
   RemoteQueryFunction,
   RemoteQueryInput,
-} from "@medusajs/framework/types"
-import { createStep, StepFunction, StepResponse } from "@medusajs/workflows-sdk"
-import { ContainerRegistrationKeys } from "@medusajs/utils"
+} from "@moetnavss/framework/types"
+import { createStep, StepFunction, StepResponse } from "@moetnavss/workflows-sdk"
+import { ContainerRegistrationKeys } from "@moetnavss/utils"
 
 export type UseQueryGraphStepInput<
   TEntry extends string,

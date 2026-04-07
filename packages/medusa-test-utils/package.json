@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/test-utils",
+  "name": "@moetnavss/test-utils",
   "version": "2.13.3",
   "description": "Test utils for Medusa",
   "main": "dist/index.js",
@@ -25,8 +25,8 @@
   "author": "Medusa",
   "license": "MIT",
   "devDependencies": {
-    "@medusajs/core-flows": "2.13.3",
-    "@medusajs/framework": "2.13.3"
+    "@moetnavss/core-flows": "2.13.3",
+    "@moetnavss/framework": "2.13.3"
   },
   "dependencies": {
     "@types/express": "^4.17.21",
@@ -36,15 +36,15 @@
     "ulid": "^2.3.0"
   },
   "peerDependencies": {
-    "@medusajs/core-flows": "2.13.3",
-    "@medusajs/framework": "2.13.3",
-    "@medusajs/medusa": "2.13.3"
+    "@moetnavss/core-flows": "2.13.3",
+    "@moetnavss/framework": "2.13.3",
+    "@moetnavss/medusa": "2.13.3"
   },
   "peerDependenciesMeta": {
-    "@medusajs/core-flows": {
+    "@moetnavss/core-flows": {
       "optional": true
     },
-    "@medusajs/medusa": {
+    "@moetnavss/medusa": {
       "optional": true
     }
   },

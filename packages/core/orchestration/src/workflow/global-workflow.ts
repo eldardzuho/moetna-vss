@@ -1,6 +1,6 @@
-import { Context, LoadedModule, MedusaContainer } from "@medusajs/types"
-import { createMedusaContainer } from "@medusajs/utils"
-import { asValue } from "@medusajs/deps/awilix"
+import { Context, LoadedModule, MedusaContainer } from "@moetnavss/types"
+import { createMedusaContainer } from "@moetnavss/utils"
+import { asValue } from "@moetnavss/deps/awilix"
 
 import {
   DistributedTransactionEvents,

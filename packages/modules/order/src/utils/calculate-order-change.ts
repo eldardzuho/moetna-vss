@@ -2,14 +2,14 @@ import {
   BigNumberInput,
   OrderDTO,
   OrderSummaryDTO,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   BigNumber,
   ChangeActionType,
   MathBN,
   isPresent,
   transformPropertiesToBigNumber,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import {
   ActionTypeDefinition,
   EVENT_STATUS,

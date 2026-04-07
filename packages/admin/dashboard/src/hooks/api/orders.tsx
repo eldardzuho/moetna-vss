@@ -1,5 +1,5 @@
-import { FetchError } from "@medusajs/js-sdk"
-import { CreateOrderCreditLineDTO, HttpTypes } from "@medusajs/types"
+import { FetchError } from "@moetnavss/js-sdk"
+import { CreateOrderCreditLineDTO, HttpTypes } from "@moetnavss/types"
 import {
   QueryKey,
   useMutation,

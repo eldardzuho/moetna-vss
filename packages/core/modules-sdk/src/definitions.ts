@@ -1,10 +1,10 @@
-import { ModuleDefinition } from "@medusajs/types"
+import { ModuleDefinition } from "@moetnavss/types"
 import {
   ContainerRegistrationKeys,
   MODULE_PACKAGE_NAMES,
   Modules,
   upperCaseFirst,
-} from "@medusajs/utils"
+} from "@moetnavss/utils"
 import { MODULE_SCOPE } from "./types"
 
 export const ModulesDefinition: {

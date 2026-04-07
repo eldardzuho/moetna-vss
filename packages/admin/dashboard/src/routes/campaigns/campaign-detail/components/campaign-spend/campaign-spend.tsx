@@ -1,6 +1,6 @@
-import { CurrencyDollar } from "@medusajs/icons"
-import { AdminCampaign } from "@medusajs/types"
-import { Container, Heading, Text } from "@medusajs/ui"
+import { CurrencyDollar } from "@moetnavss/icons"
+import { AdminCampaign } from "@moetnavss/types"
+import { Container, Heading, Text } from "@moetnavss/ui"
 import { Trans, useTranslation } from "react-i18next"
 
 type CampaignSpendProps = {

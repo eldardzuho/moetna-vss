@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "moetnavss-root",
   "private": true,
   "workspaces": {
     "packages": [
@@ -163,6 +163,8 @@
   "dependencies": {
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.0",
+    "@moetnavss/cli": "workspace:*",
+    "@moetnavss/medusa": "workspace:*",
     "import-from": "^3.0.0"
   },
   "resolutions": {

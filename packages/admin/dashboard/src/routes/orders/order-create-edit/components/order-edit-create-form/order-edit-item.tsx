@@ -3,9 +3,9 @@ import {
   DocumentSeries,
   ReceiptPercent,
   XCircle,
-} from "@medusajs/icons"
-import { AdminOrderLineItem } from "@medusajs/types"
-import { Badge, Input, Text, toast, Tooltip } from "@medusajs/ui"
+} from "@moetnavss/icons"
+import { AdminOrderLineItem } from "@moetnavss/types"
+import { Badge, Input, Text, toast, Tooltip } from "@moetnavss/ui"
 import { useTranslation } from "react-i18next"
 
 import { ActionMenu } from "../../../../../components/common/action-menu"

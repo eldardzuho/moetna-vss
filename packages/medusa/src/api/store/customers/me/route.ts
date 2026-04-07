@@ -1,15 +1,15 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 
 import {
   StoreGetCustomerParamsType,
 } from "../validators"
 import { refetchCustomer } from "../helpers"
-import { MedusaError } from "@medusajs/framework/utils"
-import { updateCustomersWorkflow } from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/framework/types"
+import { MedusaError } from "@moetnavss/framework/utils"
+import { updateCustomersWorkflow } from "@moetnavss/core-flows"
+import { HttpTypes } from "@moetnavss/framework/types"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<StoreGetCustomerParamsType>,

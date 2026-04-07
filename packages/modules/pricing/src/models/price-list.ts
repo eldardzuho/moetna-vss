@@ -2,7 +2,7 @@ import {
   model,
   PriceListStatus,
   PriceListType,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import Price from "./price"
 import PriceListRule from "./price-list-rule"
 

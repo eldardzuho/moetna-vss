@@ -1,7 +1,7 @@
 import {
   createWorkflow,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import {
   setAuthAppMetadataStep,
   SetAuthAppMetadataStepInput,

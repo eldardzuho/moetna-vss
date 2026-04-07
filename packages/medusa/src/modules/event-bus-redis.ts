@@ -1,6 +1,6 @@
-import RedisEventBusModule from "@medusajs/event-bus-redis"
+import RedisEventBusModule from "@moetnavss/event-bus-redis"
 
-export * from "@medusajs/event-bus-redis"
+export * from "@moetnavss/event-bus-redis"
 
 export default RedisEventBusModule
-export const discoveryPath = require.resolve("@medusajs/event-bus-redis")
+export const discoveryPath = require.resolve("@moetnavss/event-bus-redis")

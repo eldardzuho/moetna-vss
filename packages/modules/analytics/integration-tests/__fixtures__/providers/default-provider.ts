@@ -1,8 +1,8 @@
 import {
   ProviderIdentifyAnalyticsEventDTO,
   ProviderTrackAnalyticsEventDTO,
-} from "@medusajs/framework/types"
-import { AbstractAnalyticsProviderService } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { AbstractAnalyticsProviderService } from "@moetnavss/framework/utils"
 
 export class AnalyticsProviderServiceFixtures extends AbstractAnalyticsProviderService {
   static identifier = "fixtures-analytics-provider"

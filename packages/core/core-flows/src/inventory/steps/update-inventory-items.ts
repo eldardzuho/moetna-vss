@@ -1,14 +1,14 @@
 import type {
   IInventoryService,
   InventoryTypes,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   convertItemResponseToUpdateRequest,
   getSelectsAndRelationsFromObjectArray,
-} from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/utils"
+import { StepResponse, createStep } from "@moetnavss/framework/workflows-sdk"
 
-import { Modules } from "@medusajs/framework/utils"
+import { Modules } from "@moetnavss/framework/utils"
 
 /**
  * The data to update the inventory items.

@@ -1,12 +1,12 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
 import {
   ICartModuleService,
   ICustomerModuleService,
   IPaymentModuleService,
   IRegionModuleService,
   ISalesChannelModuleService,
-} from "@medusajs/types"
-import { Modules } from "@medusajs/utils"
+} from "@moetnavss/types"
+import { Modules } from "@moetnavss/utils"
 
 jest.setTimeout(50000)
 

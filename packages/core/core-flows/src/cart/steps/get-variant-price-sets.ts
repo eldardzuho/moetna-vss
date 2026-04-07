@@ -1,14 +1,14 @@
-import { MedusaContainer, Query } from "@medusajs/framework"
+import { MedusaContainer, Query } from "@moetnavss/framework"
 import {
   CalculatedPriceSet,
   IPricingModuleService,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
   Modules,
-} from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/utils"
+import { createStep, StepResponse } from "@moetnavss/framework/workflows-sdk"
 
 /**
  * The details of the variants to get price sets for.

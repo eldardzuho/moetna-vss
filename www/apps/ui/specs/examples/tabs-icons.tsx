@@ -1,5 +1,5 @@
-import { Tabs, Text } from "@medusajs/ui"
-import { TruckFast, CreditCard, InformationCircle } from "@medusajs/icons"
+import { Tabs, Text } from "@moetnavss/ui"
+import { TruckFast, CreditCard, InformationCircle } from "@moetnavss/icons"
 
 export default function TabsIcons() {
   return (

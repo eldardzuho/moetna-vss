@@ -8,15 +8,15 @@ import {
   PriceDTO,
   PriceSetDTO,
   RemoteQueryFunction,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   ContainerRegistrationKeys,
   LINKS,
   Modules,
   isDefined,
   isString,
-} from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/utils"
+import { StepResponse, createStep } from "@moetnavss/framework/workflows-sdk"
 
 interface PriceRegionId {
   region_id: string

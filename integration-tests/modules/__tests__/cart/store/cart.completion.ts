@@ -10,8 +10,8 @@ import {
   listShippingOptionsForCartWorkflow,
   orderEditAddNewItemWorkflow,
   processPaymentWorkflow,
-} from "@medusajs/core-flows"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@moetnavss/core-flows"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
 import {
   ICartModuleService,
   ICustomerModuleService,
@@ -25,14 +25,14 @@ import {
   ISalesChannelModuleService,
   IStockLocationService,
   Message,
-} from "@medusajs/types"
+} from "@moetnavss/types"
 import {
   ContainerRegistrationKeys,
   Modules,
   PaymentCollectionStatus,
   ProductStatus,
   remoteQueryObjectFromString,
-} from "@medusajs/utils"
+} from "@moetnavss/utils"
 import {
   adminHeaders,
   createAdminUser,

@@ -1,7 +1,5 @@
-import compression from "compression"
-import { IRouter, Request, Response, Router, static as static_ } from "express"
+import express, { IRouter, Router } from "express"
 import fs from "fs"
-import { ServerResponse } from "http"
 import path from "path"
 
 type ServeOptions = {
@@ -11,46 +9,32 @@ type ServeOptions = {
 const router = Router()
 
 export async function serve(options: ServeOptions): Promise<IRouter> {
-  const htmlPath = path.resolve(options.outDir, "index.html")
+  const staticDir = path.resolve(process.cwd(), options.outDir)
 
-  /**
-   * The admin UI should always be built at this point, but in the
-   * rare case that another plugin terminated a previous startup, the admin
-   * may not have been built correctly. Here we check if the admin UI
-   * build files exist, and if not, we throw an error, providing the
-   * user with instructions on how to fix their build.
-   */
-
-  const indexExists = fs.existsSync(htmlPath)
-
-  if (!indexExists) {
+  if (!fs.existsSync(staticDir)) {
     throw new Error(
-      `Could not find index.html in the admin build directory. Make sure to run 'medusa build' before starting the server.`
+      `Could not find admin build output at "${staticDir}". Make sure to run 'medusa build' before starting the server.`
     )
   }
 
-  const html = fs.readFileSync(htmlPath, "utf-8")
+  // Serve the statically exported Next.js build with Express
+  router.use(express.static(staticDir, { extensions: ["html"] }))
 
-  const sendHtml = (_req: Request, res: Response) => {
-    res.setHeader("Cache-Control", "no-cache")
-    res.setHeader("Vary", "Origin, Cache-Control")
-    res.send(html)
-  }
-
-  const setStaticHeaders = (res: ServerResponse) => {
-    res.setHeader("Cache-Control", "max-age=31536000, immutable")
-    res.setHeader("Vary", "Origin, Cache-Control")
-  }
-
-  router.use(compression() as any)
-
-  router.get("/", sendHtml)
-  router.use(
-    static_(options.outDir, {
-      setHeaders: setStaticHeaders,
-    })
-  )
-  router.get(`/*`, sendHtml)
+  // SPA fallback: serve index.html for any non-file route
+  router.get("*", (_req, res) => {
+    const indexPath = path.join(staticDir, "index.html")
+    if (fs.existsSync(indexPath)) {
+      res.sendFile(indexPath)
+    } else {
+      // For catch-all route, Next.js export generates [[...slug]].html
+      const catchAllPath = path.join(staticDir, "[[...slug]].html")
+      if (fs.existsSync(catchAllPath)) {
+        res.sendFile(catchAllPath)
+      } else {
+        res.status(404).send("Admin page not found")
+      }
+    }
+  })
 
   return router
 }

@@ -1,5 +1,5 @@
-import { ApiLoader } from "@medusajs/framework"
-import { Logger } from "@medusajs/framework/types"
+import { ApiLoader } from "@moetnavss/framework"
+import { Logger } from "@moetnavss/framework/types"
 
 /**
  * Action types that can be performed on files

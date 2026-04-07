@@ -1,4 +1,4 @@
-import { Button, Text, Tooltip, clx, toast, usePrompt } from "@medusajs/ui"
+import { Button, Text, Tooltip, clx, toast, usePrompt } from "@moetnavss/ui"
 import { Collapsible as RadixCollapsible } from "radix-ui"
 
 import { PropsWithChildren, ReactNode, useMemo, useState } from "react"
@@ -10,10 +10,10 @@ import {
   AdminOrder,
   AdminOrderChange,
   AdminReturn,
-} from "@medusajs/types"
+} from "@moetnavss/types"
 import { useTranslation } from "react-i18next"
 
-import { AdminOrderLineItem } from "@medusajs/types"
+import { AdminOrderLineItem } from "@moetnavss/types"
 import { By } from "../../../../../components/common/user-link"
 import {
   useCancelOrderTransfer,

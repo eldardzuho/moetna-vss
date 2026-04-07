@@ -1,9 +1,9 @@
 import {
   getSelectsAndRelationsFromObjectArray,
   Modules,
-} from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
-import { IRbacModuleService, UpdateRbacPolicyDTO } from "@medusajs/types"
+} from "@moetnavss/framework/utils"
+import { createStep, StepResponse } from "@moetnavss/framework/workflows-sdk"
+import { IRbacModuleService, UpdateRbacPolicyDTO } from "@moetnavss/types"
 
 export type UpdateRbacPoliciesStepInput = {
   selector: Record<string, any>

@@ -2,11 +2,11 @@ import {
   LoaderOptions,
   Logger,
   ModulesSdkTypes,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   ContainerRegistrationKeys,
   DefaultsUtils,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import { Country } from "@models"
 
 export default async ({ container }: LoaderOptions): Promise<void> => {

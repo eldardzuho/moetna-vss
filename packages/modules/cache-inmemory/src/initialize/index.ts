@@ -1,10 +1,10 @@
-import { MedusaModule } from "@medusajs/framework/modules-sdk"
+import { MedusaModule } from "@moetnavss/framework/modules-sdk"
 import {
   ExternalModuleDeclaration,
   ICacheService,
   InternalModuleDeclaration,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { Modules } from "@moetnavss/framework/utils"
 import { InMemoryCacheModuleOptions } from "../types"
 
 export const initialize = async (
@@ -13,7 +13,7 @@ export const initialize = async (
   const serviceKey = Modules.CACHE
   const loaded = await MedusaModule.bootstrap<ICacheService>({
     moduleKey: serviceKey,
-    defaultPath: "@medusajs//cache-inmemory",
+    defaultPath: "@moetnavss//cache-inmemory",
     declaration: options as
       | InternalModuleDeclaration
       | ExternalModuleDeclaration,

@@ -1,8 +1,8 @@
-import { MathBN } from "@medusajs/framework/utils"
+import { MathBN } from "@moetnavss/framework/utils"
 import {
     ComputeActionItemLine,
     ComputeActionShippingLine,
-} from "@medusajs/types"
+} from "@moetnavss/types"
 
 export function sortLineItemByPriceAscending(
   a: ComputeActionItemLine,

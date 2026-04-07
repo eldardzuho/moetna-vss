@@ -52,7 +52,7 @@ The UI project (`www/apps/ui`) has a unique structure:
    ## Usage
 
    ```tsx
-   import { {ComponentName} } from "@medusajs/ui"
+   import { {ComponentName} } from "@moetnavss/ui"
 
    export default function MyComponent() {
      return <{ComponentName}>{content}</{ComponentName}>
@@ -90,7 +90,7 @@ The UI project (`www/apps/ui`) has a unique structure:
 
    **Basic demo example**:
    ```tsx
-   import { {ComponentName} } from "@medusajs/ui"
+   import { {ComponentName} } from "@moetnavss/ui"
 
    export default function {ComponentName}Demo() {
      return <{ComponentName}>Default</{ComponentName}>
@@ -99,7 +99,7 @@ The UI project (`www/apps/ui`) has a unique structure:
 
    **Variants example**:
    ```tsx
-   import { {ComponentName} } from "@medusajs/ui"
+   import { {ComponentName} } from "@moetnavss/ui"
 
    export default function {ComponentName}AllVariants() {
      return (
@@ -114,7 +114,7 @@ The UI project (`www/apps/ui`) has a unique structure:
 
    **Controlled/interactive example**:
    ```tsx
-   import { {ComponentName} } from "@medusajs/ui"
+   import { {ComponentName} } from "@moetnavss/ui"
    import { useState } from "react"
 
    export default function {ComponentName}Controlled() {

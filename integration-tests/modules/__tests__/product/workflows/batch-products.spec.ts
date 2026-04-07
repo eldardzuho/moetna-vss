@@ -3,13 +3,13 @@ import {
   batchProductsWorkflowId,
   batchProductVariantsWorkflow,
   batchProductVariantsWorkflowId,
-} from "@medusajs/core-flows"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@moetnavss/core-flows"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
 import {
   IFulfillmentModuleService,
   IProductModuleService,
-} from "@medusajs/types"
-import { Modules } from "@medusajs/utils"
+} from "@moetnavss/types"
+import { Modules } from "@moetnavss/utils"
 
 jest.setTimeout(50000)
 

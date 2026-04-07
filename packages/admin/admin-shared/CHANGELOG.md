@@ -1,4 +1,4 @@
-# @medusajs/admin-shared
+# @moetnavss/admin-shared
 
 ## 2.13.3
 

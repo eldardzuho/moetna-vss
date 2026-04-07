@@ -5,8 +5,8 @@ import {
   useRef,
 } from "react"
 
-import { TrianglesMini } from "@medusajs/icons"
-import { clx } from "@medusajs/ui"
+import { TrianglesMini } from "@moetnavss/icons"
+import { clx } from "@moetnavss/ui"
 import { countries } from "../../lib/data/countries"
 
 export const CountrySelect = forwardRef<

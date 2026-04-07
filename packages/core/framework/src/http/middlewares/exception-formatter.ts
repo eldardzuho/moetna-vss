@@ -1,4 +1,4 @@
-import { MedusaError } from "@medusajs/utils"
+import { MedusaError } from "@moetnavss/utils"
 
 export enum PostgresError {
   DUPLICATE_ERROR = "23505",

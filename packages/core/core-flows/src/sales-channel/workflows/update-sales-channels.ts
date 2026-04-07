@@ -2,14 +2,14 @@ import {
   FilterableSalesChannelProps,
   SalesChannelDTO,
   UpdateSalesChannelDTO,
-} from "@medusajs/framework/types"
-import { SalesChannelWorkflowEvents } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { SalesChannelWorkflowEvents } from "@moetnavss/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import { emitEventStep } from "../../common"
 import { updateSalesChannelsStep } from "../steps/update-sales-channels"
 

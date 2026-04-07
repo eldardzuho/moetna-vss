@@ -1,1 +1,1 @@
-# @medusajs/admin-shared
+# @moetnavss/admin-shared

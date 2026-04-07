@@ -1,8 +1,8 @@
 import {
   validateAndTransformBody,
   validateAndTransformQuery,
-} from "@medusajs/framework"
-import { MiddlewareRoute } from "@medusajs/framework/http"
+} from "@moetnavss/framework"
+import { MiddlewareRoute } from "@moetnavss/framework/http"
 import * as QueryConfig from "./query-config"
 import { ReturnsParams, StorePostReturnsReqSchema } from "./validators"
 

@@ -1,1 +1,1 @@
-export * from "@medusajs/deps/opentelemetry/sdk-node"
+export * from "@moetnavss/deps/opentelemetry/sdk-node"

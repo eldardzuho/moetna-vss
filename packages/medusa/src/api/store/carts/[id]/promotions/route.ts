@@ -1,7 +1,7 @@
-import { updateCartPromotionsWorkflowId } from "@medusajs/core-flows"
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
-import { Modules, PromotionActions } from "@medusajs/framework/utils"
+import { updateCartPromotionsWorkflowId } from "@moetnavss/core-flows"
+import { MedusaRequest, MedusaResponse } from "@moetnavss/framework/http"
+import { HttpTypes } from "@moetnavss/framework/types"
+import { Modules, PromotionActions } from "@moetnavss/framework/utils"
 import { refetchCart } from "../../helpers"
 
 export const POST = async (

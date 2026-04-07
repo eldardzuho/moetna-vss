@@ -1,10 +1,10 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
 import {
   Modules,
   ProductStatus,
   PromotionStatus,
   PromotionType,
-} from "@medusajs/utils"
+} from "@moetnavss/utils"
 import {
   createAdminUser,
   generatePublishableKey,
@@ -16,7 +16,7 @@ import {
   updateCampaignsWorkflow,
   updatePromotionRulesWorkflow,
   updatePromotionsWorkflow,
-} from "@medusajs/core-flows"
+} from "@moetnavss/core-flows"
 
 jest.setTimeout(500000)
 

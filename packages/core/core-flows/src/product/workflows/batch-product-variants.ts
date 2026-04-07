@@ -4,14 +4,14 @@ import {
   createWorkflow,
   parallelize,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import {
   BatchWorkflowInput,
   BatchWorkflowOutput,
   ProductTypes,
   UpdateProductVariantWorkflowInputDTO,
   CreateProductVariantWorkflowInputDTO,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import { createProductVariantsWorkflow } from "./create-product-variants"
 import { updateProductVariantsWorkflow } from "./update-product-variants"
 import { deleteProductVariantsWorkflow } from "./delete-product-variants"

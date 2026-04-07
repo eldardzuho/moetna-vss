@@ -1,5 +1,5 @@
-import { AdminApiKeyResponse } from "@medusajs/types"
-import { Badge } from "@medusajs/ui"
+import { AdminApiKeyResponse } from "@moetnavss/types"
+import { Badge } from "@moetnavss/ui"
 import { createColumnHelper } from "@tanstack/react-table"
 import { useMemo } from "react"
 import { useTranslation } from "react-i18next"

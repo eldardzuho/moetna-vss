@@ -1,14 +1,14 @@
 import {
   createPaymentSessionsWorkflow,
   createPaymentSessionsWorkflowId,
-} from "@medusajs/core-flows"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@moetnavss/core-flows"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
 import {
   ICustomerModuleService,
   IPaymentModuleService,
   IRegionModuleService,
-} from "@medusajs/types"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/utils"
+} from "@moetnavss/types"
+import { ContainerRegistrationKeys, Modules } from "@moetnavss/utils"
 
 jest.setTimeout(50000)
 

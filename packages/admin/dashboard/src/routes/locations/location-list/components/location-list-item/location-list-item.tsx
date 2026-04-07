@@ -1,6 +1,6 @@
-import { Buildings, PencilSquare, Trash } from "@medusajs/icons"
-import { HttpTypes } from "@medusajs/types"
-import { Container, StatusBadge, Text, toast, usePrompt } from "@medusajs/ui"
+import { Buildings, PencilSquare, Trash } from "@moetnavss/icons"
+import { HttpTypes } from "@moetnavss/types"
+import { Container, StatusBadge, Text, toast, usePrompt } from "@moetnavss/ui"
 import { useTranslation } from "react-i18next"
 
 import { ActionMenu } from "../../../../../components/common/action-menu"

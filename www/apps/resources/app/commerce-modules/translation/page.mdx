@@ -60,7 +60,7 @@ module.exports = defineConfig({
   modules: [
     // other modules...
     {
-      resolve: "@medusajs/medusa/translation",
+      resolve: "@moetnavss/medusa/translation",
     },
   ],
   featureFlags: {
@@ -83,7 +83,7 @@ You can then use the Translation Module in your Medusa application.
 
 In your Medusa application, you build flows around Commerce Modules. A flow is built as a [Workflow](!docs!/learn/fundamentals/workflows), which is a special function composed of a series of steps that guarantees data consistency and a reliable rollback mechanism. 
 
-You can build custom workflows and steps. You can also re-use Medusa's workflows and steps, which are provided by the `@medusajs/medusa/core-flows` package.
+You can build custom workflows and steps. You can also re-use Medusa's workflows and steps, which are provided by the `@moetnavss/medusa/core-flows` package.
 
 For example:
 
@@ -97,8 +97,8 @@ import {
   WorkflowResponse,
   createStep,
   StepResponse,
-} from "@medusajs/framework/workflows-sdk"
-import { Modules } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/workflows-sdk"
+import { Modules } from "@moetnavss/framework/utils"
 
 const createTranslationStep = createStep(
   "create-translation",
@@ -145,7 +145,7 @@ You can then execute the workflow in your custom API routes, scheduled jobs, or 
 import type {
   MedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 import { createTranslationWorkflow } from "../../workflows/create-translation"
 
 export async function GET(
@@ -166,7 +166,7 @@ export async function GET(
 import {
   type SubscriberConfig,
   type SubscriberArgs,
-} from "@medusajs/framework"
+} from "@moetnavss/framework"
 import { createTranslationWorkflow } from "../workflows/create-translation"
 
 export default async function handleUserCreated({
@@ -188,7 +188,7 @@ export const config: SubscriberConfig = {
   <CodeTab label="Scheduled Job" value="scheduled-job">
     
 ```ts title="src/jobs/run-daily.ts" highlights={[["7"], ["8"]]}
-import { MedusaContainer } from "@medusajs/framework/types"
+import { MedusaContainer } from "@moetnavss/framework/types"
 import { createTranslationWorkflow } from "../workflows/create-translation"
 
 export default async function myCustomJob(

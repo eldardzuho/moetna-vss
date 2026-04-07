@@ -1,7 +1,7 @@
-import { Modules } from "@medusajs/framework/utils"
-import { ProviderLoaderOptions } from "@medusajs/types"
+import { Modules } from "@moetnavss/framework/utils"
+import { ProviderLoaderOptions } from "@moetnavss/types"
 import { RedisCacheModuleOptions } from "@types"
-import { asValue } from "@medusajs/framework/awilix"
+import { asValue } from "@moetnavss/framework/awilix"
 import Redis from "ioredis"
 
 export default async ({

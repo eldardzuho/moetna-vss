@@ -3,9 +3,9 @@ import {
   WorkflowResponse,
   createHook,
   createWorkflow,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 
-import type { CreateStockLocationInput } from "@medusajs/framework/types"
+import type { CreateStockLocationInput } from "@moetnavss/framework/types"
 import { createStockLocations } from "../steps"
 
 /**

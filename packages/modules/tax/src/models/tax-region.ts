@@ -1,4 +1,4 @@
-import { model } from "@medusajs/framework/utils"
+import { model } from "@moetnavss/framework/utils"
 import TaxProvider from "./tax-provider"
 import TaxRate from "./tax-rate"
 

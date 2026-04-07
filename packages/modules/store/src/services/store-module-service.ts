@@ -6,7 +6,7 @@ import {
   IStoreModuleService,
   ModulesSdkTypes,
   StoreTypes,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   EmitEvents,
   getDuplicates,
@@ -18,7 +18,7 @@ import {
   MedusaService,
   promiseAll,
   removeUndefined,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 
 import { Store, StoreCurrency, StoreLocale } from "@models"
 import { UpdateStoreInput } from "@types"

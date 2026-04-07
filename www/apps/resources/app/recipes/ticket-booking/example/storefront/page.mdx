@@ -63,7 +63,7 @@ Before you customize the storefront, you'll create some types and utility functi
 Create the file `src/lib/util/ticket-product.ts` with the following content:
 
 ```ts title="src/lib/util/ticket-product.ts"
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 
 export interface TicketProductAvailability {
   date: string
@@ -231,9 +231,9 @@ Create the file `src/modules/products/components/ticket-product-layout/date-quan
 
 import { getTicketProductAvailability } from "@lib/data/ticket-products"
 import { TicketProductAvailability } from "@lib/util/ticket-product"
-import { HttpTypes } from "@medusajs/types"
-import { Button, Calendar, Label, IconButton, toast } from "@medusajs/ui"
-import { Minus, Plus } from "@medusajs/icons"
+import { HttpTypes } from "@moetnavss/types"
+import { Button, Calendar, Label, IconButton, toast } from "@moetnavss/ui"
+import { Minus, Plus } from "@moetnavss/icons"
 import { useState, useEffect } from "react"
 
 type TicketDateSelectionProps = {
@@ -462,8 +462,8 @@ You'll first create the seat chart component that displays the seating layout an
 "use client"
 
 import { TicketProductSeatsData } from "@lib/util/ticket-product"
-import { Tooltip, TooltipProvider } from "@medusajs/ui"
-import { HttpTypes } from "@medusajs/types"
+import { Tooltip, TooltipProvider } from "@moetnavss/ui"
+import { HttpTypes } from "@moetnavss/types"
 import { convertToLocale } from "../../../../lib/util/money"
 
 export type SelectedSeat = {
@@ -707,8 +707,8 @@ Next, you'll create the seat selector modal component that renders the `SeatSele
 import { addToCart } from "@lib/data/cart"
 import { getTicketProductSeats } from "@lib/data/ticket-products"
 import { TicketProductSeatsData } from "@lib/util/ticket-product"
-import { HttpTypes } from "@medusajs/types"
-import { Button, toast } from "@medusajs/ui"
+import { HttpTypes } from "@moetnavss/types"
+import { Button, toast } from "@moetnavss/ui"
 import { useParams, useRouter } from "next/navigation"
 import { useEffect, useMemo, useState } from "react"
 import { convertToLocale } from "@lib/util/money"
@@ -946,7 +946,7 @@ Create the file `src/modules/products/components/ticket-product-layout/index.tsx
 "use client"
 
 import React, { useState } from "react"
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 import TicketDateSelection from "./date-quantity-selection"
 import SeatSelectionModal from "./seat-selection-modal"
 
@@ -1012,7 +1012,7 @@ import RelatedProducts from "@modules/products/components/related-products"
 import ProductInfo from "@modules/products/templates/product-info"
 import SkeletonRelatedProducts from "@modules/skeletons/templates/skeleton-related-products"
 import { notFound } from "next/navigation"
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 import TicketLayout from "../components/ticket-product-layout"
 
 type ProductTemplateProps = {
@@ -1131,7 +1131,7 @@ Since you used the `toast` function in your customization to show toast messages
 In `src/app/layout.tsx`, add the following import at the top of the file:
 
 ```tsx title="src/app/layout.tsx"
-import { Toaster } from "@medusajs/ui"
+import { Toaster } from "@moetnavss/ui"
 ```
 
 Then, add the `<Toaster />` component at the end of the body tag in the `return` statement:
@@ -1263,8 +1263,8 @@ Next, you'll add a component that shows a step to enter the billing address duri
 Create the file `src/modules/checkout/components/billing-address/index.tsx` with the following content:
 
 ```tsx title="src/modules/checkout/components/billing-address/index.tsx" collapsibleLines="1-8" expandButtonLabel="Show Imports"
-import { HttpTypes } from "@medusajs/types"
-import { Container } from "@medusajs/ui"
+import { HttpTypes } from "@moetnavss/types"
+import { Container } from "@moetnavss/ui"
 import Input from "@modules/common/components/input"
 import { mapKeys } from "lodash"
 import React, { useEffect, useMemo, useState } from "react"
@@ -1786,8 +1786,8 @@ Create the file `src/modules/order/components/billing-details/index.tsx` with th
 
 ```tsx title="src/modules/order/components/billing-details/index.tsx"
 import { convertToLocale } from "@lib/util/money"
-import { HttpTypes } from "@medusajs/types"
-import { Heading, Text } from "@medusajs/ui"
+import { HttpTypes } from "@moetnavss/types"
+import { Heading, Text } from "@moetnavss/ui"
 
 import Divider from "@modules/common/components/divider"
 

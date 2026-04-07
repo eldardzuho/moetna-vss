@@ -1,6 +1,6 @@
 import { SettingsModuleService } from "@/services"
-import { Module } from "@medusajs/framework/utils"
-import { Modules } from "@medusajs/utils"
+import { Module } from "@moetnavss/framework/utils"
+import { Modules } from "@moetnavss/utils"
 
 export default Module(Modules.SETTINGS, {
   service: SettingsModuleService,

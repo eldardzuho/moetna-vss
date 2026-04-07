@@ -1,4 +1,4 @@
-import { RadioGroup } from "@medusajs/ui"
+import { RadioGroup } from "@moetnavss/ui"
 
 export default function RadioGroupChoiceBox() {
   return (

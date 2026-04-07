@@ -1,6 +1,6 @@
-import { createDefaultsWorkflow } from "@medusajs/core-flows"
-import { Query } from "@medusajs/modules-sdk"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { createDefaultsWorkflow } from "@moetnavss/core-flows"
+import { Query } from "@moetnavss/modules-sdk"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
 
 jest.setTimeout(50000)
 

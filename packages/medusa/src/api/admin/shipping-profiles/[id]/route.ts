@@ -1,13 +1,13 @@
 import {
   deleteShippingProfileWorkflow,
   updateShippingProfilesWorkflow,
-} from "@medusajs/core-flows"
-import { HttpTypes, IFulfillmentModuleService } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+} from "@moetnavss/core-flows"
+import { HttpTypes, IFulfillmentModuleService } from "@moetnavss/framework/types"
+import { Modules } from "@moetnavss/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 import { refetchShippingProfile } from "../helpers"
 
 export const GET = async (

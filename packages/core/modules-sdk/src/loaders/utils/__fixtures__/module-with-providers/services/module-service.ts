@@ -1,4 +1,4 @@
-import { InternalModuleDeclaration } from "@medusajs/types"
+import { InternalModuleDeclaration } from "@moetnavss/types"
 
 export class ModuleService {
   constructor(

@@ -1,12 +1,12 @@
 import type {
   FulfillmentTypes,
   IFulfillmentModuleService,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   getSelectsAndRelationsFromObjectArray,
   Modules,
-} from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/utils"
+import { createStep, StepResponse } from "@moetnavss/framework/workflows-sdk"
 
 /**
  * The data to identify and update the shipping option types.

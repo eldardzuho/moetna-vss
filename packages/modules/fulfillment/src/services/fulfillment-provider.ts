@@ -12,12 +12,12 @@ import {
   IFulfillmentProvider,
   Logger,
   ValidateFulfillmentDataContext,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   MedusaError,
   ModulesSdkUtils,
   promiseAll,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import { FulfillmentProvider } from "@models"
 
 type InjectedDependencies = {

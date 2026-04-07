@@ -1,5 +1,5 @@
-import { FetchError } from "@medusajs/js-sdk"
-import { HttpTypes, LinkMethodRequest } from "@medusajs/types"
+import { FetchError } from "@moetnavss/js-sdk"
+import { HttpTypes, LinkMethodRequest } from "@moetnavss/types"
 import {
   QueryKey,
   UseMutationOptions,

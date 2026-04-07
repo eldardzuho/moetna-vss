@@ -1,9 +1,9 @@
-import type { CreateLocationFulfillmentSetWorkflowInputDTO } from "@medusajs/framework/types"
+import type { CreateLocationFulfillmentSetWorkflowInputDTO } from "@moetnavss/framework/types"
 import {
   WorkflowData,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import { createFulfillmentSets } from "../../fulfillment"
 import { associateFulfillmentSetsWithLocationStep } from "../steps/associate-locations-with-fulfillment-sets"
 

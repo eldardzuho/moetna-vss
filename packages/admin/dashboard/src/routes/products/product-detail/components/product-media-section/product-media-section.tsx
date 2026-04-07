@@ -1,4 +1,4 @@
-import { PencilSquare, ThumbnailBadge } from "@medusajs/icons"
+import { PencilSquare, ThumbnailBadge } from "@moetnavss/icons"
 import {
   Button,
   Checkbox,
@@ -9,13 +9,13 @@ import {
   Tooltip,
   clx,
   usePrompt,
-} from "@medusajs/ui"
+} from "@moetnavss/ui"
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { Link, useNavigate } from "react-router-dom"
 import { ActionMenu } from "../../../../../components/common/action-menu"
 import { useUpdateProduct } from "../../../../../hooks/api/products"
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 
 type ProductMedisaSectionProps = {
   product: HttpTypes.AdminProduct

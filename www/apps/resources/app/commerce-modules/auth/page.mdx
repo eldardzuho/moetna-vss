@@ -33,7 +33,7 @@ Learn more about why modules are isolated in [this documentation](!docs!/learn/f
 
 In your Medusa application, you build flows around Commerce Modules. A flow is built as a [Workflow](!docs!/learn/fundamentals/workflows), which is a special function composed of a series of steps that guarantees data consistency and reliable roll-back mechanism. 
 
-You can build custom workflows and steps. You can also re-use Medusa's workflows and steps, which are provided by the `@medusajs/medusa/core-flows` package.
+You can build custom workflows and steps. You can also re-use Medusa's workflows and steps, which are provided by the `@moetnavss/medusa/core-flows` package.
 
 For example:
 
@@ -47,10 +47,10 @@ import {
   WorkflowResponse,
   createStep,
   StepResponse,
-} from "@medusajs/framework/workflows-sdk"
-import { Modules, MedusaError } from "@medusajs/framework/utils"
-import { MedusaRequest } from "@medusajs/framework/http"
-import { AuthenticationInput } from "@medusajs/framework/types"
+} from "@moetnavss/framework/workflows-sdk"
+import { Modules, MedusaError } from "@moetnavss/framework/utils"
+import { MedusaRequest } from "@moetnavss/framework/http"
+import { AuthenticationInput } from "@moetnavss/framework/types"
 
 type Input = {
   req: MedusaRequest
@@ -113,7 +113,7 @@ You can then execute the workflow in your custom API routes, scheduled jobs, or 
 import type {
   MedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 import { authenticateUserWorkflow } from "../../workflows/authenticate-user"
 
 export async function GET(

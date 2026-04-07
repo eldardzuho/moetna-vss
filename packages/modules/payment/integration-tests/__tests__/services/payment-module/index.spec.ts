@@ -1,6 +1,6 @@
-import { IPaymentModuleService } from "@medusajs/framework/types"
-import { Module, Modules, promiseAll } from "@medusajs/framework/utils"
-import { moduleIntegrationTestRunner } from "@medusajs/test-utils"
+import { IPaymentModuleService } from "@moetnavss/framework/types"
+import { Module, Modules, promiseAll } from "@moetnavss/framework/utils"
+import { moduleIntegrationTestRunner } from "@moetnavss/test-utils"
 import { PaymentModuleService } from "@services"
 import {
   createPaymentCollections,

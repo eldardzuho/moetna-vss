@@ -1,10 +1,10 @@
-import { deleteTaxRateRulesWorkflow } from "@medusajs/core-flows"
+import { deleteTaxRateRulesWorkflow } from "@moetnavss/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 import { refetchTaxRate } from "../../../helpers"
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@moetnavss/framework/types"
 
 export const DELETE = async (
   req: AuthenticatedMedusaRequest<{}, HttpTypes.SelectParams>,

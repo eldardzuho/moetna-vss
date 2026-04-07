@@ -1,6 +1,6 @@
-import { InventoryTypes, ProductVariantDTO } from "@medusajs/types"
+import { InventoryTypes, ProductVariantDTO } from "@moetnavss/types"
 
-import { Checkbox } from "@medusajs/ui"
+import { Checkbox } from "@moetnavss/ui"
 import { createColumnHelper } from "@tanstack/react-table"
 import { useMemo } from "react"
 import { useTranslation } from "react-i18next"

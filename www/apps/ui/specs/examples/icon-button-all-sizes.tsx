@@ -1,5 +1,5 @@
-import { IconButton } from "@medusajs/ui"
-import { PlusMini } from "@medusajs/icons"
+import { IconButton } from "@moetnavss/ui"
+import { PlusMini } from "@moetnavss/icons"
 
 export default function IconButtonAllSizes() {
   return (

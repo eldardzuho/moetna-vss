@@ -1,5 +1,5 @@
-import { DropdownMenu, IconButton } from "@medusajs/ui"
-import { BarsArrowDown } from "@medusajs/icons"
+import { DropdownMenu, IconButton } from "@moetnavss/ui"
+import { BarsArrowDown } from "@moetnavss/icons"
 
 export default function DropdownMenuSubmenu() {
   return (

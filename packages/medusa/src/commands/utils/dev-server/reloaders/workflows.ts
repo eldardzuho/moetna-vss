@@ -1,4 +1,4 @@
-import { Logger } from "@medusajs/framework/types"
+import { Logger } from "@moetnavss/framework/types"
 import { ModuleCacheManager } from "../module-cache-manager"
 import { ResourceRegistry } from "../resource-registry"
 import {
@@ -7,7 +7,7 @@ import {
   ReloadParams,
   FileChangeAction,
 } from "../types"
-import { ResourceEntry, ResourceMap } from "@medusajs/framework/utils"
+import { ResourceEntry, ResourceMap } from "@moetnavss/framework/utils"
 import { BaseReloader } from "./base"
 
 /**

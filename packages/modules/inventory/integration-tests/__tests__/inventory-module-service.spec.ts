@@ -1,4 +1,4 @@
-import { IInventoryService, InventoryItemDTO, ReservationItemDTO } from "@medusajs/framework/types"
+import { IInventoryService, InventoryItemDTO, ReservationItemDTO } from "@moetnavss/framework/types"
 import {
   BigNumber,
   CommonEvents,
@@ -6,11 +6,11 @@ import {
   InventoryEvents,
   Module,
   Modules,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import {
   MockEventBusService,
   moduleIntegrationTestRunner,
-} from "@medusajs/test-utils"
+} from "@moetnavss/test-utils"
 import { InventoryModuleService } from "../../src/services"
 
 jest.setTimeout(100000)

@@ -1,5 +1,5 @@
-import type { AdminOptions, ConfigModule, Logger } from "@medusajs/types"
-import { FileSystem, getConfigFile, getResolvedPlugins } from "@medusajs/utils"
+import type { AdminOptions, ConfigModule, Logger } from "@moetnavss/types"
+import { FileSystem, getConfigFile, getResolvedPlugins } from "@moetnavss/utils"
 import chokidar from "chokidar"
 import { access, constants, copyFile, mkdir, rm } from "fs/promises"
 import path from "path"
@@ -329,7 +329,7 @@ export class Compiler {
 
   /**
    * Builds the frontend source code of a Medusa application
-   * using the "@medusajs/admin-bundler" package.
+   * using the "@moetnavss/admin-bundler" package.
    */
   async buildAppFrontend(
     adminOnly: boolean,
@@ -394,12 +394,25 @@ export class Compiler {
       )
       .filter(Boolean) as string[]
 
+    // Skip plugins whose admin export cannot be resolved (not built yet)
+    const resolvedAdminPlugins = adminPlugins.filter((p) => {
+      try {
+        require.resolve(p)
+        return true
+      } catch {
+        this.#logger.warn(
+          `Plugin admin extension "${p}" could not be resolved. Skipping.`
+        )
+        return false
+      }
+    })
+
     try {
       this.#logger.info("Compiling frontend source...")
       await adminBundler.build({
         disable: false,
         sources: adminSources,
-        plugins: adminPlugins,
+        plugins: resolvedAdminPlugins,
         ...configFile.configModule.admin,
         outDir: adminOnly
           ? this.#adminOnlyDistFolder

@@ -1,4 +1,4 @@
 export * from "./types/container"
-import { createMedusaContainer } from "@medusajs/utils"
+import { createMedusaContainer } from "@moetnavss/utils"
 
 export const container = createMedusaContainer()

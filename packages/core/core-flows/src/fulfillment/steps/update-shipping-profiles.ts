@@ -2,12 +2,12 @@ import {
   FilterableShippingProfileProps,
   IFulfillmentModuleService,
   UpdateShippingProfileDTO,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   Modules,
   getSelectsAndRelationsFromObjectArray,
-} from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/utils"
+import { StepResponse, createStep } from "@moetnavss/framework/workflows-sdk"
 
 /**
  * The data to update a shipping profile.

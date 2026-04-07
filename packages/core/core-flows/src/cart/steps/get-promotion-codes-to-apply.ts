@@ -2,8 +2,8 @@ import {
   ContainerRegistrationKeys,
   MedusaError,
   PromotionActions,
-} from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/utils"
+import { createStep, StepResponse } from "@moetnavss/framework/workflows-sdk"
 
 /**
  * The details of the promotion codes to apply on a cart.

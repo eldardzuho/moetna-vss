@@ -1,5 +1,5 @@
-import { ModuleJoinerConfig } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+import { ModuleJoinerConfig } from "@moetnavss/framework/types"
+import { Modules } from "@moetnavss/framework/utils"
 
 export const StoreCurrencies: ModuleJoinerConfig = {
   isLink: true,

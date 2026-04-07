@@ -1,4 +1,4 @@
-const { defineConfig, Modules } = require("@medusajs/utils")
+const { defineConfig, Modules } = require("@moetnavss/utils")
 const os = require("os")
 const path = require("path")
 
@@ -23,17 +23,17 @@ module.exports = defineConfig({
   },
   modules: {
     [Modules.EVENT_BUS]: {
-      resolve: "@medusajs/event-bus-redis",
+      resolve: "@moetnavss/event-bus-redis",
       options: {
         redisUrl: process.env.REDIS_URL ?? "redis://localhost:6379",
       },
     },
     [Modules.FILE]: {
-      resolve: "@medusajs/file",
+      resolve: "@moetnavss/file",
       options: {
         providers: [
           {
-            resolve: "@medusajs/file-local",
+            resolve: "@moetnavss/file-local",
             id: "local",
             options: {
               upload_dir: path.join(os.tmpdir(), "uploads"),

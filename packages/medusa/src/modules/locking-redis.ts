@@ -1,6 +1,6 @@
-import RedisLockingProvider from "@medusajs/locking-redis"
+import RedisLockingProvider from "@moetnavss/locking-redis"
 
-export * from "@medusajs/locking-redis"
+export * from "@moetnavss/locking-redis"
 
 export default RedisLockingProvider
-export const discoveryPath = require.resolve("@medusajs/locking-redis")
+export const discoveryPath = require.resolve("@moetnavss/locking-redis")

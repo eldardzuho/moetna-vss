@@ -2,9 +2,9 @@ import { csv2json, json2csv } from "json-2-csv"
 import {
   medusaIntegrationTestRunner,
   TestEventUtils,
-} from "@medusajs/test-utils"
-import { IEventBusModuleService } from "@medusajs/types"
-import { CommonEvents, Modules } from "@medusajs/utils"
+} from "@moetnavss/test-utils"
+import { IEventBusModuleService } from "@moetnavss/types"
+import { CommonEvents, Modules } from "@moetnavss/utils"
 import FormData from "form-data"
 import fs from "fs/promises"
 import path from "path"

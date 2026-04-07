@@ -3,11 +3,11 @@ import {
   AuthenticationResponse,
   AuthIdentityProviderService,
   Logger,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   AbstractAuthModuleProvider,
   MedusaError,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import { MedusaCloudAuthProviderOptions } from "@types"
 import crypto from "crypto"
 import jwt, { type JwtPayload } from "jsonwebtoken"

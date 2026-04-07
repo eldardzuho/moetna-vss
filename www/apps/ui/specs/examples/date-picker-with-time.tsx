@@ -1,6 +1,6 @@
 "use client"
 
-import { DatePicker } from "@medusajs/ui"
+import { DatePicker } from "@moetnavss/ui"
 
 export default function DatePickerWithTime() {
   return (

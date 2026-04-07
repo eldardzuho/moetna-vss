@@ -1,4 +1,4 @@
-import { validateAndTransformQuery } from "@medusajs/framework"
+import { validateAndTransformQuery } from "@moetnavss/framework"
 import {
   applyDefaultFilters,
   applyParamsAsFilters,
@@ -9,13 +9,13 @@ import {
   MedusaRequest,
   MedusaResponse,
   MiddlewareRoute,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 import {
   ContainerRegistrationKeys,
   FeatureFlag,
   isPresent,
   ProductStatus,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import IndexEngineFeatureFlag from "../../../feature-flags/index-engine"
 import {
   filterByValidSalesChannels,

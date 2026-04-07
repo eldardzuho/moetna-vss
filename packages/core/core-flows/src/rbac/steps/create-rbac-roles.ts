@@ -1,6 +1,6 @@
-import { Modules } from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
-import { IRbacModuleService } from "@medusajs/types"
+import { Modules } from "@moetnavss/framework/utils"
+import { StepResponse, createStep } from "@moetnavss/framework/workflows-sdk"
+import { IRbacModuleService } from "@moetnavss/types"
 
 export type CreateRbacRoleDTO = {
   name: string

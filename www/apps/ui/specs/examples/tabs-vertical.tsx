@@ -1,4 +1,4 @@
-import { Tabs, Text } from "@medusajs/ui"
+import { Tabs, Text } from "@moetnavss/ui"
 
 export default function TabsVertical() {
   return (

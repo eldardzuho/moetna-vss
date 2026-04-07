@@ -1,1 +1,1 @@
-export * from "@medusajs/deps/opentelemetry/resources"
+export * from "@moetnavss/deps/opentelemetry/resources"

@@ -1,4 +1,4 @@
-import { MedusaContainer, ModuleProvider } from "@medusajs/types"
+import { MedusaContainer, ModuleProvider } from "@moetnavss/types"
 import {
   dynamicImport,
   isFileSkipped,
@@ -6,8 +6,8 @@ import {
   lowerCaseFirst,
   normalizeImportPathWithSource,
   promiseAll,
-} from "@medusajs/utils"
-import { asFunction, Lifetime } from "@medusajs/deps/awilix"
+} from "@moetnavss/utils"
+import { asFunction, Lifetime } from "@moetnavss/deps/awilix"
 
 export async function moduleProviderLoader({
   container,

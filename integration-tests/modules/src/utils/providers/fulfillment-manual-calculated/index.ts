@@ -1,4 +1,4 @@
-import { ModuleProvider, Modules } from "@medusajs/framework/utils"
+import { ModuleProvider, Modules } from "@moetnavss/framework/utils"
 import { ManualFulfillmentService } from "./services/manual-fulfillment"
 
 const services = [ManualFulfillmentService]

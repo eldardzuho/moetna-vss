@@ -1,7 +1,7 @@
 import {
   ModuleProviderExports,
   ModuleServiceInitializeOptions,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 
 export const LockingDefaultProvider = "default_provider"
 export const LockingIdentifiersRegistrationName = "locking_providers_identifier"
@@ -32,9 +32,9 @@ export type LockingModuleOptions = Partial<ModuleServiceInitializeOptions> & {
   }[]
 }
 
-declare module "@medusajs/types" {
+declare module "@moetnavss/types" {
   interface ModuleOptions {
-    "@medusajs/locking": LockingModuleOptions
-    "@medusajs/medusa/locking": LockingModuleOptions
+    "@moetnavss/locking": LockingModuleOptions
+    "@moetnavss/medusa/locking": LockingModuleOptions
   }
 }

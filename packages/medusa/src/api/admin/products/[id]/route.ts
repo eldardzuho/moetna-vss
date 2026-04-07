@@ -1,15 +1,15 @@
 import {
   deleteProductsWorkflow,
   updateProductsWorkflow,
-} from "@medusajs/core-flows"
+} from "@moetnavss/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 import { remapKeysForProduct, remapProductResponse } from "../helpers"
-import { MedusaError } from "@medusajs/framework/utils"
-import { AdditionalData, HttpTypes } from "@medusajs/framework/types"
-import { refetchEntity } from "@medusajs/framework/http"
+import { MedusaError } from "@moetnavss/framework/utils"
+import { AdditionalData, HttpTypes } from "@moetnavss/framework/types"
+import { refetchEntity } from "@moetnavss/framework/http"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.SelectParams>,

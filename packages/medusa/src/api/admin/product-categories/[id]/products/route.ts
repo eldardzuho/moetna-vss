@@ -1,13 +1,13 @@
-import { batchLinkProductsToCategoryWorkflow } from "@medusajs/core-flows"
+import { batchLinkProductsToCategoryWorkflow } from "@moetnavss/core-flows"
 import {
   AdminProductCategoryResponse,
   HttpTypes,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
   refetchEntity,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 
 export const POST = async (
   req: AuthenticatedMedusaRequest<

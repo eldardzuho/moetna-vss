@@ -1,6 +1,6 @@
-import { XCircle } from "@medusajs/icons"
-import { AdminOrderLineItem, HttpTypes } from "@medusajs/types"
-import { Input, Text } from "@medusajs/ui"
+import { XCircle } from "@moetnavss/icons"
+import { AdminOrderLineItem, HttpTypes } from "@moetnavss/types"
+import { Input, Text } from "@moetnavss/ui"
 import { UseFormReturn } from "react-hook-form"
 import { useTranslation } from "react-i18next"
 

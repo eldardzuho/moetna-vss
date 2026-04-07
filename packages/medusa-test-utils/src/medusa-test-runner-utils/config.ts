@@ -2,14 +2,14 @@ import {
   FeatureFlag,
   getConfigFile,
   discoverAndRegisterFeatureFlags,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 
 export async function configLoaderOverride(
   entryDirectory: string,
   override: { clientUrl: string; debug?: boolean }
 ) {
-  const { configManager } = await import("@medusajs/framework/config")
-  const { logger } = await import("@medusajs/framework")
+  const { configManager } = await import("@moetnavss/framework/config")
+  const { logger } = await import("@moetnavss/framework")
 
   await discoverAndRegisterFeatureFlags({
     flagDir: entryDirectory,

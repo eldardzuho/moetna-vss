@@ -144,10 +144,10 @@ const nextConfig = {
     ],
   },
   outputFileTracingExcludes: {
-    "*": ["node_modules/@medusajs/icons"],
+    "*": ["node_modules/@moetnavss/icons"],
   },
   experimental: {
-    optimizePackageImports: ["@medusajs/icons", "@medusajs/ui"],
+    optimizePackageImports: ["@moetnavss/icons", "@moetnavss/ui"],
   },
   rewrites: async () => {
     return {

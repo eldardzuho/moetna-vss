@@ -1,10 +1,10 @@
 "use client"
 
 import React, { useMemo } from "react"
-import { Tabs as UiTabs } from "@medusajs/ui"
+import { Tabs as UiTabs } from "@moetnavss/ui"
 import { ComponentProps } from "react"
 import clsx from "clsx"
-import { EllipseMiniSolid } from "@medusajs/icons"
+import { EllipseMiniSolid } from "@moetnavss/icons"
 import { useMobile } from "@/providers/Mobile"
 
 type TabsProps = ComponentProps<typeof UiTabs> & {

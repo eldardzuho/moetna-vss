@@ -15,9 +15,9 @@ import {
 import {
   validateAndTransformBody,
   validateAndTransformQuery,
-} from "@medusajs/framework"
-import { MiddlewareRoute } from "@medusajs/framework/http"
-import { PolicyOperation } from "@medusajs/framework/utils"
+} from "@moetnavss/framework"
+import { MiddlewareRoute } from "@moetnavss/framework/http"
+import { PolicyOperation } from "@moetnavss/framework/utils"
 import { createLinkBody } from "../../utils/validators"
 
 export const adminCustomerRoutesMiddlewares: MiddlewareRoute[] = [

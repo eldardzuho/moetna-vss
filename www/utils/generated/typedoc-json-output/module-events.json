@@ -6172,7 +6172,7 @@
 			]
 		}
 	],
-	"packageName": "@medusajs/utils",
+	"packageName": "@moetnavss/utils",
 	"symbolIdMap": {
 		"65816": {
 			"sourceFileName": "../../../../packages/core/utils/src/core-flows/events.ts",

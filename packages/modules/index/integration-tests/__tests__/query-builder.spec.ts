@@ -4,13 +4,13 @@ import {
   logger,
   MedusaAppLoader,
   Migrator,
-} from "@medusajs/framework"
-import { asValue } from "@medusajs/framework/awilix"
-import { EntityManager } from "@medusajs/framework/mikro-orm/postgresql"
-import { MedusaAppOutput, MedusaModule } from "@medusajs/framework/modules-sdk"
-import { IndexTypes } from "@medusajs/framework/types"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
-import { initDb, TestDatabaseUtils } from "@medusajs/test-utils"
+} from "@moetnavss/framework"
+import { asValue } from "@moetnavss/framework/awilix"
+import { EntityManager } from "@moetnavss/framework/mikro-orm/postgresql"
+import { MedusaAppOutput, MedusaModule } from "@moetnavss/framework/modules-sdk"
+import { IndexTypes } from "@moetnavss/framework/types"
+import { ContainerRegistrationKeys, Modules } from "@moetnavss/framework/utils"
+import { initDb, TestDatabaseUtils } from "@moetnavss/test-utils"
 import { IndexData, IndexRelation } from "@models"
 import path from "path"
 import { EventBusServiceMock } from "../__fixtures__"

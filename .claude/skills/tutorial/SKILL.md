@@ -47,7 +47,7 @@ Tutorials in the Resources project are:
      - module2
    ---
 
-   import { Github, PlaySolid } from "@medusajs/icons"
+   import { Github, PlaySolid } from "@moetnavss/icons"
    import { Prerequisites, WorkflowDiagram, CardList } from "docs-ui"
 
    export const og Image = "<!-- TODO: Add OG image URL -->"
@@ -157,7 +157,7 @@ Tutorials in the Resources project are:
    ]
 
    ```ts title="src/path/to/file.ts" highlights={highlights}
-   import { Something } from "@medusajs/framework/..."
+   import { Something } from "@moetnavss/framework/..."
 
    export const exampleFunction = () => {
      // Implementation
@@ -183,7 +183,7 @@ Tutorials in the Resources project are:
    Explanation of the workflow and its steps.
 
    ```ts title="src/workflows/feature-workflow.ts"
-   import { createWorkflow } from "@medusajs/framework/workflows-sdk"
+   import { createWorkflow } from "@moetnavss/framework/workflows-sdk"
 
    export const featureWorkflow = createWorkflow(
      "feature-workflow",
@@ -282,7 +282,7 @@ From `docs-ui`:
 - `<Note>` - Callout boxes (use `title` prop for heading)
 - `<CodeTabs>` / `<CodeTab>` - Multi-language/approach examples
 
-From `@medusajs/icons`:
+From `@moetnavss/icons`:
 - `Github` - GitHub icon for repository links
 - `PlaySolid` - Play icon for interactive resources
 

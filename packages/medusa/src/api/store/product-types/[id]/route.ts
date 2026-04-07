@@ -1,12 +1,12 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { StoreProductTypeResponse } from "@medusajs/framework/types"
+} from "@moetnavss/framework/http"
+import { StoreProductTypeResponse } from "@moetnavss/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 
 import { StoreProductTypeParamsType } from "../validators"
 

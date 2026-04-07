@@ -1,5 +1,5 @@
-import { HttpTypes } from "@medusajs/types"
-import { Heading } from "@medusajs/ui"
+import { HttpTypes } from "@moetnavss/types"
+import { Heading } from "@moetnavss/ui"
 import { useTranslation } from "react-i18next"
 import { useParams } from "react-router-dom"
 

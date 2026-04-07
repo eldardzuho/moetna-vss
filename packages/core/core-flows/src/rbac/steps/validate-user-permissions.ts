@@ -2,8 +2,8 @@ import {
   ContainerRegistrationKeys,
   MedusaError,
   toSnakeCase,
-} from "@medusajs/framework/utils"
-import { createStep } from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/utils"
+import { createStep } from "@moetnavss/framework/workflows-sdk"
 
 export type ValidateUserPermissionsStepInput = {
   actor_id: string

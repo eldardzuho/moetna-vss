@@ -1,16 +1,16 @@
-import { createProductsWorkflow } from "@medusajs/core-flows"
+import { createProductsWorkflow } from "@moetnavss/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
   refetchEntities,
   refetchEntity,
-} from "@medusajs/framework/http"
-import { AdditionalData, HttpTypes } from "@medusajs/framework/types"
+} from "@moetnavss/framework/http"
+import { AdditionalData, HttpTypes } from "@moetnavss/framework/types"
 import {
   ContainerRegistrationKeys,
   FeatureFlag,
   isPresent,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import IndexEngineFeatureFlag from "../../../feature-flags/index-engine"
 import { remapKeysForProduct, remapProductResponse } from "./helpers"
 

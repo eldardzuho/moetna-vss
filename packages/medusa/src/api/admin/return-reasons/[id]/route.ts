@@ -1,18 +1,18 @@
 import {
   deleteReturnReasonsWorkflow,
   updateReturnReasonsWorkflow,
-} from "@medusajs/core-flows"
-import { AdminReturnReasonResponse, HttpTypes } from "@medusajs/framework/types"
+} from "@moetnavss/core-flows"
+import { AdminReturnReasonResponse, HttpTypes } from "@moetnavss/framework/types"
 import {
   ContainerRegistrationKeys,
   MedusaError,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
   refetchEntity,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.AdminReturnReasonParams>,

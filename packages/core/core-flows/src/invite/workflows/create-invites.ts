@@ -1,11 +1,11 @@
-import type { InviteDTO, InviteWorkflow } from "@medusajs/framework/types"
-import { InviteWorkflowEvents } from "@medusajs/framework/utils"
+import type { InviteDTO, InviteWorkflow } from "@moetnavss/framework/types"
+import { InviteWorkflowEvents } from "@moetnavss/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
   transform,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import { createRemoteLinkStep } from "../../common/steps/create-remote-links"
 import { emitEventStep } from "../../common/steps/emit-event"
 import { createInviteStep, validateRolesExistStep } from "../steps"

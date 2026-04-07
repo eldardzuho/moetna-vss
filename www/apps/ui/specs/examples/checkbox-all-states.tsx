@@ -1,4 +1,4 @@
-import { Checkbox, Label } from "@medusajs/ui"
+import { Checkbox, Label } from "@moetnavss/ui"
 
 export default function CheckboxAllStates() {
   return (

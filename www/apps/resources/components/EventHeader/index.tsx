@@ -1,6 +1,6 @@
 "use client"
 
-import { Brackets, CheckCircle, SquareTwoStack, Tag } from "@medusajs/icons"
+import { Brackets, CheckCircle, SquareTwoStack, Tag } from "@moetnavss/icons"
 import {
   DropdownMenu,
   H2,

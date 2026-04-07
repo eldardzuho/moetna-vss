@@ -1,14 +1,14 @@
-import { asValue } from "@medusajs/framework/awilix"
-import { logger } from "@medusajs/framework/logger"
-import { Migrator } from "@medusajs/framework/migrations"
-import { MedusaAppOutput } from "@medusajs/framework/modules-sdk"
-import { MedusaContainer } from "@medusajs/framework/types"
+import { asValue } from "@moetnavss/framework/awilix"
+import { logger } from "@moetnavss/framework/logger"
+import { Migrator } from "@moetnavss/framework/migrations"
+import { MedusaAppOutput } from "@moetnavss/framework/modules-sdk"
+import { MedusaContainer } from "@moetnavss/framework/types"
 import {
   ContainerRegistrationKeys,
   createMedusaContainer,
   getResolvedPlugins,
   mergePluginModules,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import { dbTestUtilFactory, getDatabaseURL } from "./database"
 import {
   applyEnvVarsToProcess,
@@ -21,7 +21,7 @@ import {
 } from "./medusa-test-runner-utils"
 import { waitWorkflowExecutions } from "./medusa-test-runner-utils/wait-workflow-executions"
 import { ulid } from "ulid"
-import { createDefaultsWorkflow } from "@medusajs/core-flows"
+import { createDefaultsWorkflow } from "@moetnavss/core-flows"
 
 export interface MedusaSuiteOptions {
   dbConnection: any // knex instance
@@ -157,7 +157,7 @@ class MedusaTestRunner {
   }
 
   private async setupApplication(): Promise<void> {
-    const { container, MedusaAppLoader } = await import("@medusajs/framework")
+    const { container, MedusaAppLoader } = await import("@moetnavss/framework")
     const appLoader = new MedusaAppLoader({
       medusaConfigPath: this.modulesConfigPath,
       cwd: this.cwd,
@@ -281,7 +281,7 @@ class MedusaTestRunner {
     const copiedContainer = createMedusaContainer({}, container)
 
     try {
-      const { MedusaAppLoader } = await import("@medusajs/framework")
+      const { MedusaAppLoader } = await import("@moetnavss/framework")
       const medusaAppLoader = new MedusaAppLoader({
         container: copiedContainer,
         medusaConfigPath: this.modulesConfigPath,

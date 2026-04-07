@@ -1,9 +1,9 @@
-import type { CreateTaxRateDTO, TaxRateDTO } from "@medusajs/framework/types"
+import type { CreateTaxRateDTO, TaxRateDTO } from "@moetnavss/framework/types"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import { createTaxRatesStep } from "../steps"
 
 /**

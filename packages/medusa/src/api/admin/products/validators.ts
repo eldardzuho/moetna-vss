@@ -1,6 +1,6 @@
-import { BatchMethodRequest, HttpTypes } from "@medusajs/framework/types"
-import { ProductStatus } from "@medusajs/framework/utils"
-import { z, type ZodType } from "@medusajs/framework/zod"
+import { BatchMethodRequest, HttpTypes } from "@moetnavss/framework/types"
+import { ProductStatus } from "@moetnavss/framework/utils"
+import { z, type ZodType } from "@moetnavss/framework/zod"
 import {
   applyAndAndOrOperators,
   booleanString,

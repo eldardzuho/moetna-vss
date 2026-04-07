@@ -1,5 +1,5 @@
-import { validateAndTransformBody, validateAndTransformQuery } from "@medusajs/framework"
-import { MiddlewareRoute } from "@medusajs/framework/http"
+import { validateAndTransformBody, validateAndTransformQuery } from "@moetnavss/framework"
+import { MiddlewareRoute } from "@moetnavss/framework/http"
 import * as QueryConfig from "./query-config"
 import {
   AdminCreateViewConfiguration,

@@ -1,5 +1,5 @@
-import { PriceListStatus, PriceListType } from "@medusajs/framework/utils"
-import { z } from "@medusajs/framework/zod"
+import { PriceListStatus, PriceListType } from "@moetnavss/framework/utils"
+import { z } from "@moetnavss/framework/zod"
 import {
   createFindParams,
   createOperatorMap,

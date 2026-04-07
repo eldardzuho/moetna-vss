@@ -1,6 +1,6 @@
-import UserModule from "@medusajs/user"
+import UserModule from "@moetnavss/user"
 
-export * from "@medusajs/user"
+export * from "@moetnavss/user"
 
 export default UserModule
-export const discoveryPath = require.resolve("@medusajs/user")
+export const discoveryPath = require.resolve("@moetnavss/user")

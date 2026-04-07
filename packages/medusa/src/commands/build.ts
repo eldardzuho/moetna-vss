@@ -1,5 +1,5 @@
-import { Compiler } from "@medusajs/framework/build-tools"
-import { ContainerRegistrationKeys } from "@medusajs/framework/utils"
+import { Compiler } from "@moetnavss/framework/build-tools"
+import { ContainerRegistrationKeys } from "@moetnavss/framework/utils"
 import { initializeContainer } from "../loaders"
 import { generateTypes } from "./utils/generate-types"
 
@@ -36,7 +36,7 @@ export default async function build({
     promises.push(compiler.buildAppBackend(tsConfig))
   }
 
-  const bundler = await import("@medusajs/admin-bundler")
+  const bundler = await import("@moetnavss/admin-bundler")
   promises.push(compiler.buildAppFrontend(adminOnly, tsConfig, bundler))
   const responses = await Promise.all(promises)
 

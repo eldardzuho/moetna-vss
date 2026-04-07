@@ -1,5 +1,5 @@
-import { DropdownMenu, IconButton } from "@medusajs/ui"
-import { Trash, BarsThree } from "@medusajs/icons"
+import { DropdownMenu, IconButton } from "@moetnavss/ui"
+import { Trash, BarsThree } from "@moetnavss/icons"
 
 export default function DropdownMenuDisabledAndIcons() {
   return (

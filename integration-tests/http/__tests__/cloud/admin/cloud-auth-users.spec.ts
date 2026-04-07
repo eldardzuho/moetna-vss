@@ -2,9 +2,9 @@ import {
   AuthIdentityDTO,
   IAuthModuleService,
   UserDTO,
-} from "@medusajs/framework/types"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@moetnavss/framework/types"
+import { ContainerRegistrationKeys, Modules } from "@moetnavss/framework/utils"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
 import jwt from "jsonwebtoken"
 import {
   adminHeaders,

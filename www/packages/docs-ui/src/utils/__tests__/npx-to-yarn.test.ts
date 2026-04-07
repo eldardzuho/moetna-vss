@@ -83,8 +83,8 @@ describe("npxToYarn", () => {
     })
 
     it("should handle command with path separators", () => {
-      const result = npxToYarn("npx @medusajs/medusa-cli develop", "yarn")
-      expect(result).toBe("yarn @medusajs/medusa-cli develop")
+      const result = npxToYarn("npx @moetnavss/medusa-cli develop", "yarn")
+      expect(result).toBe("yarn @moetnavss/medusa-cli develop")
     })
 
     it("should handle multi-line commands with backslash continuation", () => {
@@ -133,10 +133,10 @@ pnpm medusa develop --port 9000`)
 
     it("should convert multiple npx commands with executable flag", () => {
       const multipleCommands = `npx create-medusa-app@latest
-npx @medusajs/medusa-cli init`
+npx @moetnavss/medusa-cli init`
       const result = npxToYarn(multipleCommands, "yarn", true)
       expect(result).toBe(`yarn dlx create-medusa-app@latest
-yarn dlx @medusajs/medusa-cli init`)
+yarn dlx @moetnavss/medusa-cli init`)
     })
 
     it("should preserve indentation when converting multiple commands", () => {

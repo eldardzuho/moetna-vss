@@ -1,4 +1,4 @@
-import { IconProps } from "@medusajs/icons/dist/types.js"
+import { IconProps } from "@moetnavss/icons/dist/types.js"
 
 export type NavigationDropdownItemLink = {
   path: string

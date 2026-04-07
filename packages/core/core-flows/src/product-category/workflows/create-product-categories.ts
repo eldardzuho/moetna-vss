@@ -1,15 +1,15 @@
 import {
   ProductCategoryDTO,
   ProductCategoryWorkflow,
-} from "@medusajs/framework/types"
-import { ProductCategoryWorkflowEvents } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { ProductCategoryWorkflowEvents } from "@moetnavss/framework/utils"
 import {
   createHook,
   createWorkflow,
   transform,
   WorkflowData,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import { emitEventStep } from "../../common"
 import { createProductCategoriesStep } from "../steps"
 

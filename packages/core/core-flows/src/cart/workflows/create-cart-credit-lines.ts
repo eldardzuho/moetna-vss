@@ -1,13 +1,13 @@
 import {
   CartCreditLineDTO,
   CreateCartCreditLinesWorkflowInput,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { Modules } from "@moetnavss/framework/utils"
 import {
   WorkflowData,
   WorkflowResponse,
   createWorkflow,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import { createEntitiesStep } from "../../common/steps/create-entities"
 
 export const createCartCreditLinesWorkflowId = "create-cart-credit-lines"

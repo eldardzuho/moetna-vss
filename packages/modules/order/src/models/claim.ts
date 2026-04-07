@@ -1,4 +1,4 @@
-import { ClaimType, model } from "@medusajs/framework/utils"
+import { ClaimType, model } from "@moetnavss/framework/utils"
 import { OrderClaimItem } from "./claim-item"
 import { Order } from "./order"
 import { OrderShipping } from "./order-shipping-method"

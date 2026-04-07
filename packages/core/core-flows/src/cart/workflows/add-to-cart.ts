@@ -3,12 +3,12 @@ import {
   AddToCartWorkflowInputDTO,
   ConfirmVariantInventoryWorkflowInputDTO,
   CreateLineItemForCartDTO,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   CartWorkflowEvents,
   deduplicate,
   isDefined,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import {
   createHook,
   createWorkflow,
@@ -16,7 +16,7 @@ import {
   transform,
   when,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import { getTranslatedLineItemsStep, useQueryGraphStep } from "../../common"
 import { emitEventStep } from "../../common/steps/emit-event"
 import { acquireLockStep, releaseLockStep } from "../../locking"
@@ -93,8 +93,8 @@ export const addToCartWorkflowId = "add-to-cart"
  * You can consume the `setPricingContext` hook to add the `location_id` context to the prices calculation:
  *
  * ```ts
- * import { addToCartWorkflow } from "@medusajs/medusa/core-flows";
- * import { StepResponse } from "@medusajs/workflows-sdk";
+ * import { addToCartWorkflow } from "@moetnavss/medusa/core-flows";
+ * import { StepResponse } from "@moetnavss/workflows-sdk";
  *
  * addToCartWorkflow.hooks.setPricingContext((
  *   { cart, variantIds, items, additional_data }, { container }

@@ -1,4 +1,4 @@
-import { Context, LoadedModule, MedusaContainer } from "@medusajs/types"
+import { Context, LoadedModule, MedusaContainer } from "@moetnavss/types"
 import {
   createMedusaContainer,
   isDefined,
@@ -7,8 +7,8 @@ import {
   MedusaContextType,
   MedusaError,
   MedusaModuleType,
-} from "@medusajs/utils"
-import { asValue } from "@medusajs/deps/awilix"
+} from "@moetnavss/utils"
+import { asValue } from "@moetnavss/deps/awilix"
 import {
   DistributedTransactionEvent,
   DistributedTransactionEvents,

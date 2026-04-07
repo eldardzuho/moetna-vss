@@ -54,14 +54,14 @@ Medusa applies its CORS settings to routes starting with `/store`, `/admin`, and
 For example, if you create a custom route at `/custom-routes`, add a middleware to handle CORS for that route:
 
 ```ts title="src/api/middlewares.ts"
-import { defineMiddlewares } from "@medusajs/framework/http"
+import { defineMiddlewares } from "@moetnavss/framework/http"
 import type { 
   MedusaNextFunction, 
   MedusaRequest, 
   MedusaResponse, 
-} from "@medusajs/framework/http"
-import { ConfigModule } from "@medusajs/framework/types"
-import { parseCorsOrigins } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/http"
+import { ConfigModule } from "@moetnavss/framework/types"
+import { parseCorsOrigins } from "@moetnavss/framework/utils"
 import cors from "cors"
 
 export default defineMiddlewares({

@@ -1,12 +1,12 @@
 import {
   AdminFulfillmentProviderOption,
   HttpTypes,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { Modules } from "@moetnavss/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest,

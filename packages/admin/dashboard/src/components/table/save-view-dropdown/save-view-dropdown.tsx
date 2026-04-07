@@ -4,12 +4,12 @@ import {
   Button,
   toast,
   usePrompt,
-} from "@medusajs/ui"
+} from "@moetnavss/ui"
 import {
   Plus,
   CloudArrowUp,
   SquarePlusMicro,
-} from "@medusajs/icons"
+} from "@moetnavss/icons"
 
 interface SaveViewDropdownProps {
   isDefaultView: boolean

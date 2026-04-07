@@ -27,7 +27,7 @@ By default, the `emailpass` provider is registered to authenticate customers and
 For example:
 
 ```ts title="medusa-config.ts"
-import { Modules, ContainerRegistrationKeys } from "@medusajs/framework/utils"
+import { Modules, ContainerRegistrationKeys } from "@moetnavss/framework/utils"
 
 // ...
 
@@ -35,12 +35,12 @@ module.exports = defineConfig({
   // ...
   modules: [
     {
-      resolve: "@medusajs/medusa/auth",
+      resolve: "@moetnavss/medusa/auth",
       dependencies: [Modules.CACHE, ContainerRegistrationKeys.LOGGER],
       options: {
         providers: [
           {
-            resolve: "@medusajs/medusa/auth-emailpass",
+            resolve: "@moetnavss/medusa/auth-emailpass",
             id: "emailpass",
             options: {
               // provider options...

@@ -1,12 +1,12 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
 import {
   CreateProductDTO,
   IPricingModuleService,
   IProductModuleService,
   ProductDTO,
   ProductVariantDTO,
-} from "@medusajs/types"
-import { Modules, PriceListStatus, PriceListType } from "@medusajs/utils"
+} from "@moetnavss/types"
+import { Modules, PriceListStatus, PriceListType } from "@moetnavss/utils"
 import { createAdminUser } from "../../../../helpers/create-admin-user"
 import { createVariantPriceSet } from "../../../helpers/create-variant-price-set"
 

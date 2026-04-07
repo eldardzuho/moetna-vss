@@ -2,8 +2,8 @@ import {
   Context,
   CreateOrderChangeActionDTO,
   OrderTypes,
-} from "@medusajs/framework/types"
-import { ChangeActionType } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { ChangeActionType } from "@moetnavss/framework/utils"
 
 export async function registerShipment(
   this: any,

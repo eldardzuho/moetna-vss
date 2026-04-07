@@ -1,14 +1,14 @@
 import {
   deleteProductVariantsWorkflow,
   updateProductVariantsWorkflow,
-} from "@medusajs/core-flows"
+} from "@moetnavss/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 
-import { AdditionalData, HttpTypes } from "@medusajs/framework/types"
-import { refetchEntity } from "@medusajs/framework/http"
+import { AdditionalData, HttpTypes } from "@moetnavss/framework/types"
+import { refetchEntity } from "@moetnavss/framework/http"
 import {
   remapKeysForProduct,
   remapKeysForVariant,

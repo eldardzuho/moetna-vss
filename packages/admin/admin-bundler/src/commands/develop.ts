@@ -1,92 +1,42 @@
-import express, { IRouter, RequestHandler } from "express"
-import fs from "fs"
+import express, { IRouter } from "express"
 import path from "path"
-import type { InlineConfig, ViteDevServer } from "vite"
 
 import { BundlerOptions } from "../types"
-import { getViteConfig } from "../utils/config"
+import { writeNextFiles } from "../utils/write-next-files"
+import { generateExtensionModules } from "../utils/generate-extensions"
 
 const router = express.Router()
 
-function findTemplateFilePath(
-  reqPath: string,
-  root: string
-): string | undefined {
-  if (reqPath.endsWith(".html")) {
-    const pathToTest = path.join(root, reqPath)
-    if (fs.existsSync(pathToTest)) {
-      return pathToTest
-    }
-  }
-
-  const basePath = reqPath.slice(0, reqPath.lastIndexOf("/"))
-  const dirs = basePath.split("/")
-
-  while (dirs.length > 0) {
-    const pathToTest = path.join(root, ...dirs, "index.html")
-    if (fs.existsSync(pathToTest)) {
-      return pathToTest
-    }
-    dirs.pop()
-  }
-
-  return undefined
-}
-
-async function injectViteMiddleware(
-  router: express.Router,
-  middleware: RequestHandler
-) {
-  router.use((req, res, next) => {
-    req.path.endsWith(".html") ? next() : middleware(req, res, next)
-  })
-}
-
-async function injectHtmlMiddleware(
-  router: express.Router,
-  server: ViteDevServer
-) {
-  router.use(async (req, res, next) => {
-    if (req.method !== "GET") {
-      return next()
-    }
-
-    const templateFilePath = findTemplateFilePath(req.path, server.config.root)
-    if (!templateFilePath) {
-      return next()
-    }
-
-    const template = fs.readFileSync(templateFilePath, "utf8")
-    const html = await server.transformIndexHtml(
-      templateFilePath,
-      template,
-      req.originalUrl
-    )
-
-    res.send(html)
-  })
-}
-
 export async function develop(options: BundlerOptions): Promise<IRouter> {
-  const vite = await import("vite")
-
   try {
-    const viteConfig = await getViteConfig(options)
+    const nextDir = path.resolve(process.cwd(), ".medusa/admin-next")
 
-    const developConfig: InlineConfig = {
-      mode: "development",
-      logLevel: "error",
-      appType: "spa",
-      server: {
-        middlewareMode: true,
-      },
-    }
+    // Generate Next.js app files and extension barrel modules
+    await writeNextFiles(nextDir, options)
+    await generateExtensionModules(nextDir, options.sources, options.plugins)
 
-    const mergedConfig = vite.mergeConfig(viteConfig, developConfig)
-    const server = await vite.createServer(mergedConfig)
+    // Create Next.js dev server and mount as Express middleware
+    const next = (await import("next")).default
+    const app = next({
+      dev: true,
+      dir: nextDir,
+      quiet: true,
+    })
 
-    await injectViteMiddleware(router, server.middlewares)
-    await injectHtmlMiddleware(router, server)
+    await app.prepare()
+    const handle = app.getRequestHandler()
+
+    const basePath = options.path ?? "/app"
+
+    router.all("*", (req, res) => {
+      // Express strips the mount path (e.g. /app) when using app.use(path, router),
+      // but Next.js basePath expects the full URL including /app prefix.
+      // Reconstruct the original URL so Next.js routing works correctly.
+      // When req.url is just "/" (root), don't append it to avoid "/app/" trailing
+      // slash which causes a 308 redirect loop (Next.js redirects /app/ → /app).
+      req.url = basePath + (req.url === "/" ? "" : req.url)
+      return handle(req, res)
+    })
   } catch (error) {
     console.error(error)
     throw new Error(

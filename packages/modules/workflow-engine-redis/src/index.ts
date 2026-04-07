@@ -1,5 +1,5 @@
 import "./types"
-import { Module, Modules } from "@medusajs/framework/utils"
+import { Module, Modules } from "@moetnavss/framework/utils"
 import { WorkflowsModuleService } from "@services"
 import { loadUtils, redisConnection } from "./loaders"
 

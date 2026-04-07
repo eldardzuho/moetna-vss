@@ -5,8 +5,8 @@ import {
   Context,
   DAL,
   PromotionTypes,
-} from "@medusajs/framework/types"
-import { flattenObjectToKeyValuePairs } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { flattenObjectToKeyValuePairs } from "@moetnavss/framework/utils"
 import { raw, SqlEntityManager } from "@mikro-orm/postgresql"
 
 /**

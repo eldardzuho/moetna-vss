@@ -1,5 +1,5 @@
-import { ModuleJoinerConfig } from "@medusajs/framework/types"
-import { isObject } from "@medusajs/framework/utils"
+import { ModuleJoinerConfig } from "@moetnavss/framework/types"
+import { isObject } from "@moetnavss/framework/utils"
 import {
   GraphQLObjectType,
   GraphQLSchema,

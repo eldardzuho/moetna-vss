@@ -50,7 +50,7 @@ In the template file, define a React component that returns the HTML structure o
 For example, to create an order confirmation email template:
 
 ```tsx title="app/backend/src/email-templates/order-confirmation.tsx" collapsibleLines="40-257"
-import { CustomerDTO, OrderDTO } from "@medusajs/framework/types"
+import { CustomerDTO, OrderDTO } from "@moetnavss/framework/types"
 import {
   Body,
   Column,
@@ -380,7 +380,7 @@ For example, to send an order confirmation email when an order is placed, create
 import type {
   SubscriberArgs,
   SubscriberConfig,
-} from "@medusajs/framework"
+} from "@moetnavss/framework"
 import { render, pretty } from "@react-email/render"
 import getOrderPlacedTemplate from "../email-templates/order-confirmation"
 

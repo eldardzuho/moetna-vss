@@ -3,7 +3,7 @@ import {
   OrchestrationUtils,
   parseStringifyIfNecessary,
   promiseAll,
-} from "@medusajs/utils"
+} from "@moetnavss/utils"
 import * as util from "node:util"
 
 type InputPrimitive = string | Symbol

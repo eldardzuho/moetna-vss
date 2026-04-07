@@ -4,14 +4,14 @@ import {
   ICartModuleService,
   UpdateLineItemWithoutSelectorDTO,
   UpdateLineItemWithSelectorDTO,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   MathBN,
   Modules,
   deepEqualObj,
   isPresent,
-} from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/utils"
+import { StepResponse, createStep } from "@moetnavss/framework/workflows-sdk"
 
 /**
  * The details of the line items to create or update.

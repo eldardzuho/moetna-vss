@@ -1,12 +1,12 @@
 import {
   ContainerRegistrationKeys,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
+} from "@moetnavss/framework/utils"
+import { MedusaRequest, MedusaResponse } from "@moetnavss/framework/http"
 
-import { createInventoryLevelsWorkflow } from "@medusajs/core-flows"
+import { createInventoryLevelsWorkflow } from "@moetnavss/core-flows"
 import { refetchInventoryItem } from "../../helpers"
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@moetnavss/framework/types"
 
 export const POST = async (
   req: MedusaRequest<

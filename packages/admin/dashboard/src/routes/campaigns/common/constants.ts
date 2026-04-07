@@ -1,4 +1,4 @@
-import { CampaignBudgetTypeValues } from "@medusajs/types"
+import { CampaignBudgetTypeValues } from "@moetnavss/types"
 
 export const DEFAULT_CAMPAIGN_VALUES = {
   name: "",

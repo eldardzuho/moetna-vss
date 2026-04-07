@@ -1,17 +1,17 @@
 import {
   InferEntityType,
   IProductModuleService,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   CommonEvents,
   composeMessage,
   Modules,
   ProductEvents,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import {
   MockEventBusService,
   moduleIntegrationTestRunner,
-} from "@medusajs/test-utils"
+} from "@moetnavss/test-utils"
 import { ProductOption } from "../../../src/models"
 import { buildProductAndRelationsData } from "../../__fixtures__/product"
 

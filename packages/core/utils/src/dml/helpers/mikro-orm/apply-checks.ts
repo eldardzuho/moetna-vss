@@ -1,5 +1,5 @@
-import { Check, CheckOptions } from "@medusajs/deps/mikro-orm/core"
-import { CheckConstraint, EntityConstructor } from "@medusajs/types"
+import { Check, CheckOptions } from "@moetnavss/deps/mikro-orm/core"
+import { CheckConstraint, EntityConstructor } from "@moetnavss/types"
 
 /**
  * Defines PostgreSQL constraints using the MikrORM's "@Check"

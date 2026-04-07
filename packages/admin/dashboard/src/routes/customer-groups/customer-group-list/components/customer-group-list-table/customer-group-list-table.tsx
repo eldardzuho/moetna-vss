@@ -1,11 +1,11 @@
-import { PencilSquare, Trash } from "@medusajs/icons"
-import { HttpTypes } from "@medusajs/types"
+import { PencilSquare, Trash } from "@moetnavss/icons"
+import { HttpTypes } from "@moetnavss/types"
 import {
   Container,
   createDataTableColumnHelper,
   toast,
   usePrompt,
-} from "@medusajs/ui"
+} from "@moetnavss/ui"
 import { keepPreviousData } from "@tanstack/react-query"
 import { useCallback, useMemo } from "react"
 import { useTranslation } from "react-i18next"

@@ -3,10 +3,10 @@ import {
   LoaderOptions,
   ModuleServiceInitializeCustomDataLayerOptions,
   ModuleServiceInitializeOptions,
-} from "@medusajs/framework/types"
-import { ModulesSdkUtils } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { ModulesSdkUtils } from "@moetnavss/framework/utils"
 
-import { EntitySchema } from "@medusajs/framework/mikro-orm/core"
+import { EntitySchema } from "@moetnavss/framework/mikro-orm/core"
 
 export function connectionLoader(entity: EntitySchema) {
   return async (

@@ -18,7 +18,7 @@ import {
   TransactionStepStatus,
 } from "./types"
 
-import { Context } from "@medusajs/types"
+import { Context } from "@moetnavss/types"
 import {
   isDefined,
   isErrorLike,
@@ -28,7 +28,7 @@ import {
   promiseAll,
   serializeError,
   TransactionStepState,
-} from "@medusajs/utils"
+} from "@moetnavss/utils"
 import { EventEmitter } from "events"
 import {
   PermanentStepFailureError,

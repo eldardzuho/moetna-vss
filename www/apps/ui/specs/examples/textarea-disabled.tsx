@@ -1,4 +1,4 @@
-import { Textarea } from "@medusajs/ui"
+import { Textarea } from "@moetnavss/ui"
 
 export default function TextareaDisabled() {
   return (

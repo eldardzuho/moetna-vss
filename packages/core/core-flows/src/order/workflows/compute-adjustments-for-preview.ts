@@ -1,11 +1,11 @@
-import { OrderChangeDTO, OrderDTO, PromotionDTO } from "@medusajs/framework/types"
-import { ChangeActionType } from "@medusajs/framework/utils"
+import { OrderChangeDTO, OrderDTO, PromotionDTO } from "@moetnavss/framework/types"
+import { ChangeActionType } from "@moetnavss/framework/utils"
 import {
   createWorkflow,
   transform,
   when,
   WorkflowData,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import {
   getActionsToComputeFromPromotionsStep,
   prepareAdjustmentsFromPromotionActionsStep,

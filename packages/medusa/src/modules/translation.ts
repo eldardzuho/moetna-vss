@@ -1,6 +1,6 @@
-import TranslationModule from "@medusajs/translation"
+import TranslationModule from "@moetnavss/translation"
 
-export * from "@medusajs/translation"
+export * from "@moetnavss/translation"
 
 export default TranslationModule
-export const discoveryPath = require.resolve("@medusajs/translation")
+export const discoveryPath = require.resolve("@moetnavss/translation")

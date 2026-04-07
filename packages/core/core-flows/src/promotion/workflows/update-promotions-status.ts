@@ -1,14 +1,14 @@
 import {
   AdditionalData,
   PromotionStatusValues,
-} from "@medusajs/framework/types"
-import { MedusaError, PromotionStatus } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { MedusaError, PromotionStatus } from "@moetnavss/framework/utils"
 import {
   WorkflowResponse,
   createHook,
   createStep,
   createWorkflow,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 import { updatePromotionsStep } from "../steps"
 
 /**

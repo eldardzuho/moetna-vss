@@ -1,15 +1,15 @@
 import {
   assignUserRolesWorkflow,
   removeUserRolesWorkflow,
-} from "@medusajs/core-flows"
+} from "@moetnavss/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 import {
   ContainerRegistrationKeys,
   MedusaError,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import {
   AdminAssignUserRolesType,
   AdminRemoveUserRolesType,

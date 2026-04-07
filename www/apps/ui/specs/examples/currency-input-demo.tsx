@@ -1,4 +1,4 @@
-import { CurrencyInput } from "@medusajs/ui"
+import { CurrencyInput } from "@moetnavss/ui"
 
 export default function CurrencyInputDemo() {
   return (

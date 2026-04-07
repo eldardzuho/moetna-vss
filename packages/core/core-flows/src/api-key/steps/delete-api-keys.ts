@@ -1,6 +1,6 @@
-import type { IApiKeyModuleService } from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
-import { StepResponse, createStep } from "@medusajs/framework/workflows-sdk"
+import type { IApiKeyModuleService } from "@moetnavss/framework/types"
+import { Modules } from "@moetnavss/framework/utils"
+import { StepResponse, createStep } from "@moetnavss/framework/workflows-sdk"
 
 /**
  * The IDs of the API keys to delete.

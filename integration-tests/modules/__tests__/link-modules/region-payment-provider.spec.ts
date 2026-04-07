@@ -1,6 +1,6 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { IRegionModuleService } from "@medusajs/types"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/utils"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
+import { IRegionModuleService } from "@moetnavss/types"
+import { ContainerRegistrationKeys, Modules } from "@moetnavss/utils"
 
 jest.setTimeout(50000)
 

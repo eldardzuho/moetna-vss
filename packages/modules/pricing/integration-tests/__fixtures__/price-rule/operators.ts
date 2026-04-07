@@ -1,4 +1,4 @@
-import { RuleWithOperator } from "@medusajs/types"
+import { RuleWithOperator } from "@moetnavss/types"
 
 export const withOperator = (
   border,

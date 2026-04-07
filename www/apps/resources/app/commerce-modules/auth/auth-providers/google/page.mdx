@@ -28,7 +28,7 @@ The Google Auth Module Provider allows you to authenticate users with their Goog
 To use the Google Auth Module Provider, add the module to the array of providers passed to the Auth Module in your `medusa-config.ts`:
 
 ```ts title="medusa-config.ts"
-import { Modules, ContainerRegistrationKeys } from "@medusajs/framework/utils"
+import { Modules, ContainerRegistrationKeys } from "@moetnavss/framework/utils"
 
 // ...
 
@@ -37,17 +37,17 @@ module.exports = defineConfig({
   modules: [
     // ...
     {
-      resolve: "@medusajs/medusa/auth",
+      resolve: "@moetnavss/medusa/auth",
       dependencies: [Modules.CACHE, ContainerRegistrationKeys.LOGGER],
       options: {
         providers: [
           // other providers...
           {
-            resolve: "@medusajs/medusa/auth-emailpass",
+            resolve: "@moetnavss/medusa/auth-emailpass",
             id: "emailpass",
           },
           {
-            resolve: "@medusajs/medusa/auth-google",
+            resolve: "@moetnavss/medusa/auth-google",
             id: "google",
             options: {
               clientId: process.env.GOOGLE_CLIENT_ID,

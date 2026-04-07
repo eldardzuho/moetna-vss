@@ -1,5 +1,5 @@
-import { IModuleService } from "@medusajs/types"
-import { MedusaContext } from "@medusajs/utils"
+import { IModuleService } from "@moetnavss/types"
+import { MedusaContext } from "@moetnavss/utils"
 
 // @ts-expect-error
 export class ModuleService implements IModuleService {

@@ -1,8 +1,8 @@
-import { MiddlewareRoute } from "@medusajs/framework/http"
+import { MiddlewareRoute } from "@moetnavss/framework/http"
 import {
   validateAndTransformBody,
   validateAndTransformQuery,
-} from "@medusajs/framework"
+} from "@moetnavss/framework"
 import * as queryConfig from "./query-config"
 import {
   StoreCreatePaymentCollection,

@@ -1,10 +1,10 @@
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
+} from "@moetnavss/framework/http"
+import { HttpTypes } from "@moetnavss/framework/types"
 import { remapKeysForProduct } from "../helpers"
-import { exportProductsWorkflow } from "@medusajs/core-flows"
+import { exportProductsWorkflow } from "@moetnavss/core-flows"
 
 export const POST = async (
   req: AuthenticatedMedusaRequest<{}, HttpTypes.AdminProductExportParams>,

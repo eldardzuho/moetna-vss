@@ -1,5 +1,5 @@
-import { ShoppingBag, TruckFast } from "@medusajs/icons"
-import { Container, Heading } from "@medusajs/ui"
+import { ShoppingBag, TruckFast } from "@moetnavss/icons"
+import { Container, Heading } from "@moetnavss/ui"
 import { useTranslation } from "react-i18next"
 
 import { useStockLocations } from "../../../hooks/api/stock-locations"

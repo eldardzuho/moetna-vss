@@ -1,4 +1,4 @@
-import { z } from "@medusajs/framework/zod"
+import { z } from "@moetnavss/framework/zod"
 import { AddressPayload } from "../../utils/common-validators"
 import {
   createFindParams,
@@ -6,7 +6,7 @@ import {
   createSelectParams,
   WithAdditionalData,
 } from "../../utils/validators"
-import { isString } from "@medusajs/framework/utils"
+import { isString } from "@moetnavss/framework/utils"
 
 export const AdminGetOrdersOrderParams = createSelectParams().merge(
   z.object({

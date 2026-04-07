@@ -15,7 +15,7 @@ import {
   Shopping,
   Users,
   WIP,
-} from "@medusajs/icons"
+} from "@moetnavss/icons"
 import { config } from "../../../config"
 
 const P = MDXComponents.p

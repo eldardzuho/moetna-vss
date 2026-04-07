@@ -1,9 +1,9 @@
-import { logger } from "@medusajs/framework/logger"
+import { logger } from "@moetnavss/framework/logger"
 import {
   AdminOptions,
   ConfigModule,
   PluginDetails,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import { Express } from "express"
 import path from "path"
 import { ADMIN_RELATIVE_OUTPUT_DIR } from "../utils"
@@ -42,7 +42,17 @@ export default async function adminLoader({
     if (plugin.admin.type === "local") {
       sources.push(plugin.admin.resolve)
     } else {
-      pluginAdminPaths.push(plugin.admin.resolve)
+      // Only include plugin admin extensions if the export actually resolves
+      // (i.e. the plugin has been built). Skip unbuilt plugins gracefully.
+      try {
+        require.resolve(plugin.admin.resolve)
+        pluginAdminPaths.push(plugin.admin.resolve)
+      } catch {
+        logger.warn(
+          `Plugin admin extension "${plugin.admin.resolve}" could not be resolved. ` +
+          `Skipping. Run "medusa plugin:build" in the plugin directory to build it.`
+        )
+      }
     }
   }
 
@@ -77,7 +87,7 @@ async function initDevelopmentServer(
   app: Express,
   options: InitializedOptions
 ) {
-  const { develop } = await import("@medusajs/admin-bundler")
+  const { develop } = await import("@moetnavss/admin-bundler")
 
   const adminMiddleware = await develop(options)
   app.use(options.path, adminMiddleware)
@@ -85,7 +95,7 @@ async function initDevelopmentServer(
 }
 
 async function serveProductionBuild(app: Express, options: InitializedOptions) {
-  const { serve } = await import("@medusajs/admin-bundler")
+  const { serve } = await import("@moetnavss/admin-bundler")
 
   const adminRoute = await serve(options)
 

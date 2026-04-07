@@ -5,13 +5,13 @@ import {
   InternalModuleDeclaration,
   Logger,
   Message,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   AbstractEventBusModuleService,
   EventPriority,
   isPresent,
   promiseAll,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import {
   BulkJobOptions,
   Queue,

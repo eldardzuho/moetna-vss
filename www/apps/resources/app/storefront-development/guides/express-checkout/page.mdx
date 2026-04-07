@@ -20,7 +20,7 @@ products:
 ---
 
 import { Card, Prerequisites, Details } from "docs-ui"
-import { Github } from "@medusajs/icons"
+import { Github } from "@moetnavss/icons"
 
 export const ogImage = "https://res.cloudinary.com/dza7lstvk/image/upload/v1739360151/Medusa%20Resources/Express_Checkout_Guide_2025_yizn34.jpg"
 
@@ -161,14 +161,14 @@ Before you start implementing the express checkout flow, you'll install the depe
 Medusa provides a [UI Library](!ui!) that provides the primitives to build applications based on Medusa's design system. To install the UI library, run the following command in your Next.js project:
 
 ```bash npm2yarn
-npm install @medusajs/ui@latest @medusajs/ui-preset@latest @medusajs/icons@latest
+npm install @moetnavss/ui@latest @moetnavss/ui-preset@latest @moetnavss/icons@latest
 ```
 
 You install three packages:
 
-- `@medusajs/ui`: The main [UI library](!ui!).
-- `@medusajs/ui-preset`: The design and style presets for the UI library.
-- `@medusajs/icons`: A package that has [Medusa icons](!ui!/icons/overview) you can use in your application.
+- `@moetnavss/ui`: The main [UI library](!ui!).
+- `@moetnavss/ui-preset`: The design and style presets for the UI library.
+- `@moetnavss/icons`: A package that has [Medusa icons](!ui!/icons/overview) you can use in your application.
 
 Next, to use Medusa's design system in your storefront, change the content of `tailwind.config.ts` to the following:
 
@@ -176,14 +176,14 @@ Next, to use Medusa's design system in your storefront, change the content of `t
 import path from "path"
 import type { Config } from "tailwindcss"
 
-// get the path of the dependency "@medusajs/ui"
+// get the path of the dependency "@moetnavss/ui"
 const medusaUI = path.join(
-  path.dirname(require.resolve("@medusajs/ui")),
+  path.dirname(require.resolve("@moetnavss/ui")),
   "**/*.{js,jsx,ts,tsx}"
 )
 
 export default {
-  presets: [require("@medusajs/ui-preset")],
+  presets: [require("@moetnavss/ui-preset")],
   content: [
     "./app/**/*.{js,ts,jsx,tsx}", 
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -205,10 +205,10 @@ This adds Medusa's UI presets to Tailwind CSS's presets and includes the Medusa 
 To interact with the [Medusa API](!api!/store) in your storefront, you'll use the [Medusa JS SDK](../../../js-sdk/page.mdx). Install the SDK by running the following command in your Next.js project:
 
 ```bash npm2yarn
-npm install @medusajs/js-sdk@latest @medusajs/types@latest
+npm install @moetnavss/js-sdk@latest @moetnavss/types@latest
 ```
 
-Aside from the SDK, you also install the `@medusajs/types` package, which provides TypeScript types useful for your development with the SDK.
+Aside from the SDK, you also install the `@moetnavss/types` package, which provides TypeScript types useful for your development with the SDK.
 
 Next, to use the SDK, you'll export a configured instance and re-use it across your application. So, create the file `lib/sdk.ts` with the following content:
 
@@ -220,7 +220,7 @@ export const sdkHighlights = [
 ]
 
 ```ts title="lib/sdk.ts" highlights={sdkHighlights}
-import Medusa from "@medusajs/js-sdk"
+import Medusa from "@moetnavss/js-sdk"
 
 export let MEDUSA_BACKEND_URL = "http://localhost:9000"
 
@@ -271,7 +271,7 @@ export const regionProviderHighlights1 = [
 import { 
   createContext, 
 } from "react"
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 
 type RegionContextType = {
   region?: HttpTypes.StoreRegion
@@ -464,7 +464,7 @@ export const cartProviderHighlights1 = [
 import { 
   createContext, 
 } from "react"
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 
 type CartContextType = {
   cart?: HttpTypes.StoreCart
@@ -810,7 +810,7 @@ export const secondColHighlights = [
 ```tsx title="components/SecondCol/index.tsx" highlights={secondColHighlights}
 "use client"
 
-import { clx } from "@medusajs/ui"
+import { clx } from "@moetnavss/ui"
 import { useRegion } from "@/providers/region"
 
 export const SecondCol = () => {
@@ -896,7 +896,7 @@ export const layoutHighlights = [
 ]
 
 ```tsx title="components/Layout/index.tsx" highlights={layoutHighlights}
-import { clx } from "@medusajs/ui"
+import { clx } from "@moetnavss/ui"
 import { Inter, Roboto_Mono } from "next/font/google"
 import { RegionProvider } from "@/providers/region"
 import "./globals.css"
@@ -1103,8 +1103,8 @@ export const cardHighlights = [
 ```tsx title="components/Card/index.tsx" highlights={cardHighlights}
 "use client"
 
-import { CheckCircle } from "@medusajs/icons"
-import { clx, Heading } from "@medusajs/ui"
+import { CheckCircle } from "@moetnavss/icons"
+import { clx, Heading } from "@moetnavss/ui"
 import { useRouter } from "next/navigation"
 
 type CardProps = {
@@ -1187,7 +1187,7 @@ export const productHighlights1 = [
 import { 
   useState,
 } from "react"
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 import { useRegion } from "@/providers/region"
 import { useCart } from "@/providers/cart"
 import { useRouter } from "next/navigation"
@@ -1452,8 +1452,8 @@ First, add the following imports at the top of the file:
 
 ```tsx title="components/Product/index.tsx"
 import { Card } from "../Card"
-import { Spinner } from "@medusajs/icons"
-import { Button, Input, Select } from "@medusajs/ui"
+import { Spinner } from "@moetnavss/icons"
+import { Button, Input, Select } from "@moetnavss/ui"
 ```
 
 Then, replace the last `TODO` in the `Product` component with the following:
@@ -1565,11 +1565,11 @@ return (
 
 You wrap the product step with the `Card` component you created earlier. In the card:
 
-- If `loading` is enabled, you show a spinner icon imported from `@medusajs/icons`.
+- If `loading` is enabled, you show a spinner icon imported from `@moetnavss/icons`.
 - If `loading` is disabled and the product isn't found, you show a not found message.
 - If `loading` is disabled and the product is found, you show the product's details, including the product's image, title, price, and description.
 
-You also loop over the product's options and show a select input, imported from `@medusajs/ui`, to allow the customer to select the value of each option.
+You also loop over the product's options and show a select input, imported from `@moetnavss/ui`, to allow the customer to select the value of each option.
 
 Once the customer has selected a variant that's in stock, they can click the button to add the product to the cart, which will execute the `handleAddToCart` function you created earlier.
 
@@ -1799,7 +1799,7 @@ First, add the following imports at the top of the file:
 
 ```tsx title="components/Address/index.tsx"
 import { Card } from "../Card"
-import { Button, Input, Select } from "@medusajs/ui"
+import { Button, Input, Select } from "@moetnavss/ui"
 ```
 
 Then, replace the last `TODO` in the `Address` component with the following:
@@ -1956,7 +1956,7 @@ import {
   useState,
 } from "react"
 import { useCart } from "@/providers/cart"
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 import { useRouter } from "next/navigation"
 
 type ShippingProps = {
@@ -2184,7 +2184,7 @@ First, add the following imports at the top of the file:
 
 ```tsx title="components/Shipping/index.tsx"
 import { Card } from "../Card"
-import { Button, RadioGroup } from "@medusajs/ui"
+import { Button, RadioGroup } from "@moetnavss/ui"
 ```
 
 Then, replace the last `TODO` in the `Shipping` component with the following:
@@ -2298,7 +2298,7 @@ import {
   useState,
 } from "react"
 import { useCart } from "@/providers/cart"
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 import { useRouter } from "next/navigation"
 
 type PaymentProps = {
@@ -2504,7 +2504,7 @@ First, add the following imports at the top of the file:
 
 ```tsx title="components/Payment/index.tsx"
 import { Card } from "../Card"
-import { Button, Input, RadioGroup } from "@medusajs/ui"
+import { Button, Input, RadioGroup } from "@moetnavss/ui"
 ```
 
 Then, replace the last `TODO` in the `Payment` component with the following:
@@ -2683,7 +2683,7 @@ export const confirmationHighlights = [
 ]
 
 ```tsx title="app/confirmation/[id]/page.tsx" highlights={confirmationHighlights}
-import { clx, Heading } from "@medusajs/ui"
+import { clx, Heading } from "@moetnavss/ui"
 import { sdk } from "@/lib/sdk"
 
 type Params = {

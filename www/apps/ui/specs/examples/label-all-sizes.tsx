@@ -1,4 +1,4 @@
-import { Label } from "@medusajs/ui"
+import { Label } from "@moetnavss/ui"
 
 export default function LabelAllSizes() {
   return (

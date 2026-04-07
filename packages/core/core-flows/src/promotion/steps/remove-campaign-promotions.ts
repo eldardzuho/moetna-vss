@@ -1,13 +1,13 @@
 import {
   IPromotionModuleService,
   LinkWorkflowInput,
-} from "@medusajs/framework/types"
-import { Modules } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { Modules } from "@moetnavss/framework/utils"
 import {
   StepResponse,
   WorkflowData,
   createStep,
-} from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
 
 export const removeCampaignPromotionsStepId = "remove-campaign-promotions"
 /**

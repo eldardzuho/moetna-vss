@@ -177,7 +177,7 @@ For example, to send an invite email when a new admin user is invited, create a 
 import type {
   SubscriberArgs,
   SubscriberConfig,
-} from "@medusajs/framework"
+} from "@moetnavss/framework"
 import { render, pretty } from "@react-email/render"
 import getInviteTemplate from "../emails/invite-user"
 
@@ -273,7 +273,7 @@ The Order Placed email template notifies customers when they successfully place 
 You can use the following template for your Order Placed email:
 
 ```tsx title="src/emails/order-placed.tsx" collapsibleLines="36-257"
-import { CustomerDTO, OrderDTO } from "@medusajs/framework/types"
+import { CustomerDTO, OrderDTO } from "@moetnavss/framework/types"
 import {
   Body,
   Column,
@@ -538,7 +538,7 @@ Then, to send the Order Placed email when an order is created, create a subscrib
 import type {
   SubscriberArgs,
   SubscriberConfig,
-} from "@medusajs/framework"
+} from "@moetnavss/framework"
 import { render, pretty } from "@react-email/render"
 import getOrderPlacedTemplate from "../emails/order-placed"
 
@@ -717,8 +717,8 @@ Then, to send the Reset Password email when a password reset is requested, creat
 import {
   SubscriberArgs,
   type SubscriberConfig,
-} from "@medusajs/medusa"
-import { Modules } from "@medusajs/framework/utils"
+} from "@moetnavss/medusa"
+import { Modules } from "@moetnavss/framework/utils"
 import { render, pretty } from "@react-email/render"
 import getResetPasswordTemplate from "../emails/reset-password"
 

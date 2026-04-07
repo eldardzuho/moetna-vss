@@ -1,15 +1,15 @@
 import {
   CreatePromotionDTO,
   IPromotionModuleService,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   ApplicationMethodType,
   CampaignBudgetType,
   Modules,
   PromotionStatus,
   PromotionType,
-} from "@medusajs/framework/utils"
-import { moduleIntegrationTestRunner, SuiteOptions } from "@medusajs/test-utils"
+} from "@moetnavss/framework/utils"
+import { moduleIntegrationTestRunner, SuiteOptions } from "@moetnavss/test-utils"
 import { createCampaigns } from "../../../__fixtures__/campaigns"
 import { createDefaultPromotion } from "../../../__fixtures__/promotion"
 

@@ -2,7 +2,7 @@ import {
   Logger,
   ModuleProviderExports,
   ModuleServiceInitializeOptions,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 
 export type InitializeModuleInjectableDependencies = {
   logger?: Logger
@@ -28,9 +28,9 @@ export type PaymentModuleOptions = Partial<ModuleServiceInitializeOptions> & {
   }[]
 }
 
-declare module "@medusajs/types" {
+declare module "@moetnavss/types" {
   interface ModuleOptions {
-    "@medusajs/payment": PaymentModuleOptions
-    "@medusajs/medusa/payment": PaymentModuleOptions
+    "@moetnavss/payment": PaymentModuleOptions
+    "@moetnavss/medusa/payment": PaymentModuleOptions
   }
 }

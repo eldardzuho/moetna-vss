@@ -1,6 +1,6 @@
 import React from "react"
-import { Button, DropdownMenu, usePrompt } from "@medusajs/ui"
-import { ChevronDownMini } from "@medusajs/icons"
+import { Button, DropdownMenu, usePrompt } from "@moetnavss/ui"
+import { ChevronDownMini } from "@moetnavss/icons"
 
 interface SaveViewDropdownProps {
   isDefaultView: boolean

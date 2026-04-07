@@ -1,4 +1,4 @@
-import { track } from "@medusajs/telemetry"
+import { track } from "@moetnavss/telemetry"
 import boxen from "boxen"
 import chalk from "chalk"
 import { emojify } from "node-emoji"

@@ -1,4 +1,4 @@
-import Medusa from "@medusajs/js-sdk"
+import Medusa from "@moetnavss/js-sdk"
 import { decodeToken } from "react-jwt"
 
 export const sdk = new Medusa({

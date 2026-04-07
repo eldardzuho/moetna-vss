@@ -1,6 +1,6 @@
-import AnalyticsModule from "@medusajs/analytics"
+import AnalyticsModule from "@moetnavss/analytics"
 
-export * from "@medusajs/analytics"
+export * from "@moetnavss/analytics"
 
 export default AnalyticsModule
-export const discoveryPath = require.resolve("@medusajs/analytics")
+export const discoveryPath = require.resolve("@moetnavss/analytics")

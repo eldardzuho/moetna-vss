@@ -1,10 +1,10 @@
-import { createRegionsWorkflow } from "@medusajs/core-flows"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { MedusaContainer, RegionDTO } from "@medusajs/types"
+import { createRegionsWorkflow } from "@moetnavss/core-flows"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
+import { MedusaContainer, RegionDTO } from "@moetnavss/types"
 import {
   ContainerRegistrationKeys,
   remoteQueryObjectFromString,
-} from "@medusajs/utils"
+} from "@moetnavss/utils"
 import { createAdminUser } from "../../../../helpers/create-admin-user"
 
 jest.setTimeout(200000)

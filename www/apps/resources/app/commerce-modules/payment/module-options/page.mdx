@@ -104,7 +104,7 @@ When the Medusa application starts, these providers are registered and can be us
 For example:
 
 ```ts title="medusa-config.ts"
-import { Modules } from "@medusajs/framework/utils"
+import { Modules } from "@moetnavss/framework/utils"
 
 // ...
 
@@ -112,11 +112,11 @@ module.exports = defineConfig({
   // ...
   modules: [
     {
-      resolve: "@medusajs/medusa/payment",
+      resolve: "@moetnavss/medusa/payment",
       options: {
         providers: [
           {
-            resolve: "@medusajs/medusa/payment-stripe",
+            resolve: "@moetnavss/medusa/payment-stripe",
             id: "stripe",
             options: {
               // ...

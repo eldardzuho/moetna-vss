@@ -1,15 +1,15 @@
-import { HttpTypes } from "@medusajs/types"
-import { PencilSquare, Trash } from "@medusajs/icons"
+import { HttpTypes } from "@moetnavss/types"
+import { PencilSquare, Trash } from "@moetnavss/icons"
 import {
   createDataTableColumnHelper,
   StatusBadge,
   toast,
   usePrompt,
-} from "@medusajs/ui"
+} from "@moetnavss/ui"
 import { useTranslation } from "react-i18next"
 import { useMemo } from "react"
 import { useNavigate } from "react-router-dom"
-import { FetchError } from "@medusajs/js-sdk"
+import { FetchError } from "@moetnavss/js-sdk"
 
 import { PlaceholderCell } from "../../../components/table/table-cells/common/placeholder-cell"
 import { getFormattedAddress } from "../../../lib/addresses"

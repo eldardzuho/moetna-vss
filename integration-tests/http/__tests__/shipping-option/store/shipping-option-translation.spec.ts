@@ -1,10 +1,10 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
 import {
   createAdminUser,
   generatePublishableKey,
   generateStoreHeaders,
 } from "../../../../helpers/create-admin-user"
-import { Modules, ProductStatus } from "@medusajs/utils"
+import { Modules, ProductStatus } from "@moetnavss/utils"
 
 jest.setTimeout(50000)
 

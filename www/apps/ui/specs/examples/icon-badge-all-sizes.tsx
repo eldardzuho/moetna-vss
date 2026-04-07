@@ -1,5 +1,5 @@
-import { IconBadge } from "@medusajs/ui"
-import { BuildingTax } from "@medusajs/icons"
+import { IconBadge } from "@moetnavss/ui"
+import { BuildingTax } from "@moetnavss/icons"
 
 export default function IconBadgeAllSizes() {
   return (

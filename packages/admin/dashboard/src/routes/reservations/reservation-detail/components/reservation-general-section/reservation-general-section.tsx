@@ -1,9 +1,9 @@
-import { AdminReservationResponse } from "@medusajs/types"
-import { Container, Heading } from "@medusajs/ui"
+import { AdminReservationResponse } from "@moetnavss/types"
+import { Container, Heading } from "@moetnavss/ui"
 
 import { ActionMenu } from "../../../../../components/common/action-menu"
-import { InventoryTypes } from "@medusajs/types"
-import { PencilSquare } from "@medusajs/icons"
+import { InventoryTypes } from "@moetnavss/types"
+import { PencilSquare } from "@moetnavss/icons"
 import { SectionRow } from "../../../../../components/common/section"
 import { useInventoryItem } from "../../../../../hooks/api/inventory"
 import { useStockLocation } from "../../../../../hooks/api/stock-locations"

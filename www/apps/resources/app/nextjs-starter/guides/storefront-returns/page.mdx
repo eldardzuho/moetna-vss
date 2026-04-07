@@ -8,7 +8,7 @@ products:
 ---
 
 import { Card, Prerequisites, Details, InlineIcon } from "docs-ui"
-import { Github, EllipsisHorizontal } from "@medusajs/icons"
+import { Github, EllipsisHorizontal } from "@moetnavss/icons"
 
 export const metadata = {
   title: `Create Order Returns in the Storefront`,
@@ -108,7 +108,7 @@ Create the file `src/lib/data/returns.ts` with the following content:
 import { sdk } from "@lib/config"
 import { getAuthHeaders, getCacheOptions } from "@lib/data/cookies"
 import medusaError from "@lib/util/medusa-error"
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 
 export const listReturnReasons = async () => {
   const headers = {
@@ -258,7 +258,7 @@ export const returnUtilsHighlights = [
 ]
 
 ```ts title="src/lib/util/returns.ts" highlights={returnUtilsHighlights}
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 
 export type ItemWithDeliveryStatus = HttpTypes.StoreOrderLineItem & {
   deliveredQuantity: number
@@ -341,9 +341,9 @@ export const returnItemSelectorHighlights = [
 ```tsx title="src/modules/account/components/return-item-selector/index.tsx" highlights={returnItemSelectorHighlights} collapsibleLines="1-9" expandButtonLabel="Show Imports"
 "use client"
 
-import { HttpTypes } from "@medusajs/types"
-import { Badge, IconButton, Select, Textarea } from "@medusajs/ui"
-import { Minus, Plus } from "@medusajs/icons"
+import { HttpTypes } from "@moetnavss/types"
+import { Badge, IconButton, Select, Textarea } from "@moetnavss/ui"
+import { Minus, Plus } from "@moetnavss/icons"
 import Thumbnail from "@modules/products/components/thumbnail"
 import { convertToLocale } from "@lib/util/money"
 import { ItemWithDeliveryStatus } from "../../../../lib/util/returns"
@@ -674,11 +674,11 @@ import React, {
   useState,
 } from "react"
 import { RadioGroup } from "@headlessui/react"
-import { HttpTypes } from "@medusajs/types"
-import { clx } from "@medusajs/ui"
+import { HttpTypes } from "@moetnavss/types"
+import { clx } from "@moetnavss/ui"
 import { convertToLocale } from "@lib/util/money"
 import { calculatePriceForShippingOption } from "@lib/data/fulfillment"
-import { Loader } from "@medusajs/icons"
+import { Loader } from "@moetnavss/icons"
 import Radio from "@modules/common/components/radio"
 
 type ReturnShippingSelectorProps = {
@@ -850,15 +850,15 @@ export const returnRequestTemplateHighlights = [
 "use client"
 
 import React, { useState, useActionState } from "react"
-import { XMark } from "@medusajs/icons"
-import { HttpTypes } from "@medusajs/types"
+import { XMark } from "@moetnavss/icons"
+import { HttpTypes } from "@moetnavss/types"
 import { createReturnRequest } from "@lib/data/returns"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import ReturnItemSelector, { ReturnItemSelection } from "@modules/account/components/return-item-selector"
 import ReturnShippingSelector from "@modules/account/components/return-shipping-selector"
 import { convertToLocale } from "@lib/util/money"
 import { enhanceItemsWithReturnStatus } from "@lib/util/returns"
-import { Button } from "@medusajs/ui"
+import { Button } from "@moetnavss/ui"
 
 type ReturnRequestTemplateProps = {
   order: HttpTypes.StoreOrder
@@ -1148,7 +1148,7 @@ Before you test the return request page, you'll add a link to the page from the 
 In `src/modules/order/templates/order-details-template.tsx`, add the following imports at the top of the file:
 
 ```tsx title="src/modules/order/templates/order-details-template.tsx"
-import { Button } from "@medusajs/ui"
+import { Button } from "@moetnavss/ui"
 import { hasReturnableItems } from "@lib/util/returns"
 ```
 

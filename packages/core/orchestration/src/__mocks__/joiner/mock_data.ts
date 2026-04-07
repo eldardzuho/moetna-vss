@@ -1,4 +1,4 @@
-import { JoinerServiceConfig, ModuleJoinerConfig } from "@medusajs/types"
+import { JoinerServiceConfig, ModuleJoinerConfig } from "@moetnavss/types"
 import { remoteJoinerData } from "./../../__fixtures__/joiner/data"
 
 export const serviceConfigs: (JoinerServiceConfig | ModuleJoinerConfig)[] = [

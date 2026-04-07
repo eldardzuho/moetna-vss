@@ -1,8 +1,8 @@
 import {
   InternalModuleDeclaration,
   LoaderOptions,
-} from "@medusajs/framework/types"
-import { asValue } from "@medusajs/framework/awilix"
+} from "@moetnavss/framework/types"
+import { asValue } from "@moetnavss/framework/awilix"
 import Redis from "ioredis"
 import { RedisWorkflowsOptions } from "../types"
 

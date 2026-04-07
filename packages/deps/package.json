@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/deps",
+  "name": "@moetnavss/deps",
   "version": "2.13.3",
   "description": "Dependencies for Medusa",
   "main": "dist/index.js",

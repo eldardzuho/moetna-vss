@@ -6,7 +6,7 @@ import {
   PromotionRuleOperatorValues,
   PromotionStatusValues,
   PromotionTypeValues,
-} from "@medusajs/types"
+} from "@moetnavss/types"
 import {
   Alert,
   Badge,
@@ -22,7 +22,7 @@ import {
   Switch,
   Text,
   toast,
-} from "@medusajs/ui"
+} from "@moetnavss/ui"
 import { useEffect, useMemo, useState } from "react"
 import { useForm, useWatch } from "react-hook-form"
 import { Trans, useTranslation } from "react-i18next"

@@ -7,7 +7,7 @@ import {
   InputConfigWithObjectModules,
   InternalModuleDeclaration,
   MedusaCloudOptions,
-} from "@medusajs/types"
+} from "@moetnavss/types"
 import { FeatureFlag } from "../feature-flags/flag-router"
 import {
   MODULE_PACKAGE_NAMES,
@@ -25,7 +25,7 @@ const MEDUSA_CLOUD_EXECUTION_CONTEXT = "medusa-cloud"
 const DEFAULT_SECRET = "supersecret"
 const DEFAULT_ADMIN_URL = "/"
 const DEFAULT_STORE_CORS = "http://localhost:8000"
-const DEFAULT_DATABASE_URL = "postgres://localhost/medusa-starter-default"
+const DEFAULT_DATABASE_URL = "postgres://localhost/moetnavss-default"
 const DEFAULT_ADMIN_CORS =
   "http://localhost:7000,http://localhost:7001,http://localhost:5173"
 
@@ -145,8 +145,8 @@ function resolvePlugins(
 ): ConfigModule["plugins"] {
   const defaultPlugins: Map<string, ConfigModule["plugins"][number]> = new Map([
     [
-      "@medusajs/draft-order",
-      { resolve: "@medusajs/draft-order", options: {} },
+      "@moetnavss/draft-order",
+      { resolve: "@moetnavss/draft-order", options: {} },
     ],
   ])
 
@@ -210,7 +210,7 @@ function resolveModules(
       options: {
         providers: [
           {
-            resolve: "@medusajs/medusa/auth-emailpass",
+            resolve: "@moetnavss/medusa/auth-emailpass",
             id: "emailpass",
           },
         ],
@@ -230,7 +230,7 @@ function resolveModules(
       options: {
         providers: [
           {
-            resolve: "@medusajs/medusa/fulfillment-manual",
+            resolve: "@moetnavss/medusa/fulfillment-manual",
             id: "manual",
           },
         ],
@@ -241,7 +241,7 @@ function resolveModules(
       options: {
         providers: [
           {
-            resolve: "@medusajs/medusa/notification-local",
+            resolve: "@moetnavss/medusa/notification-local",
             id: "local",
             options: {
               name: "Local Notification Provider",
@@ -265,7 +265,7 @@ function resolveModules(
       options: {
         providers: [
           {
-            resolve: "@medusajs/medusa/file-local",
+            resolve: "@moetnavss/medusa/file-local",
             id: "local",
           },
         ],
@@ -313,7 +313,7 @@ function resolveModules(
         providers: [
           {
             id: "s3",
-            resolve: "@medusajs/medusa/file-s3",
+            resolve: "@moetnavss/medusa/file-s3",
             options: {
               authentication_method: "s3-iam-role",
               file_url: process.env.S3_FILE_URL,
@@ -335,7 +335,7 @@ function resolveModules(
         providers: [
           {
             id: "caching-redis",
-            resolve: "@medusajs/medusa/caching-redis",
+            resolve: "@moetnavss/medusa/caching-redis",
             is_default: true,
             options: {
               redisUrl: process.env.CACHE_REDIS_URL,

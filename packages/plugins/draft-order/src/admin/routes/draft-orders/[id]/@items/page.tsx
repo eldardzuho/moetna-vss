@@ -2,8 +2,8 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 
-import { Check, PencilSquare, Plus } from "@medusajs/icons"
-import { HttpTypes } from "@medusajs/types"
+import { Check, PencilSquare, Plus } from "@moetnavss/icons"
+import { HttpTypes } from "@moetnavss/types"
 import {
   Button,
   createDataTableColumnHelper,
@@ -17,7 +17,7 @@ import {
   Text,
   toast,
   Tooltip,
-} from "@medusajs/ui"
+} from "@moetnavss/ui"
 import { keepPreviousData } from "@tanstack/react-query"
 import { matchSorter } from "match-sorter"
 import { useCallback, useEffect, useMemo, useState } from "react"

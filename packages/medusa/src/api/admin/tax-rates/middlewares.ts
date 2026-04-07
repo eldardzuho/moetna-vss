@@ -4,8 +4,8 @@ import { Entities } from "./query-config"
 import {
   validateAndTransformBody,
   validateAndTransformQuery,
-} from "@medusajs/framework"
-import { PolicyOperation } from "@medusajs/framework/utils"
+} from "@moetnavss/framework"
+import { PolicyOperation } from "@moetnavss/framework/utils"
 import {
   AdminCreateTaxRate,
   AdminCreateTaxRateRule,
@@ -14,7 +14,7 @@ import {
   AdminUpdateTaxRate,
 } from "./validators"
 
-import { MiddlewareRoute } from "@medusajs/framework/http"
+import { MiddlewareRoute } from "@moetnavss/framework/http"
 
 export const adminTaxRateRoutesMiddlewares: MiddlewareRoute[] = [
   {

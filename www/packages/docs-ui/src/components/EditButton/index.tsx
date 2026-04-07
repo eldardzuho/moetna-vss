@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import clsx from "clsx"
-import { ArrowUpRightOnBox } from "@medusajs/icons"
+import { ArrowUpRightOnBox } from "@moetnavss/icons"
 import { EditDate } from "../EditDate"
 
 type EditButtonProps = {

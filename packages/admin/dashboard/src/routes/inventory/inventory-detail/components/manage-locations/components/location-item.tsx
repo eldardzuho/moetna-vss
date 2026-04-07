@@ -1,6 +1,6 @@
-import { Checkbox, Text, clx } from "@medusajs/ui"
+import { Checkbox, Text, clx } from "@moetnavss/ui"
 
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 
 type LocationItemProps = {
   selected: boolean

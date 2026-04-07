@@ -11,7 +11,7 @@ products:
   - order
 ---
 
-import { Github, PlaySolid, ArrowUpRightOnBox } from "@medusajs/icons"
+import { Github, PlaySolid, ArrowUpRightOnBox } from "@moetnavss/icons"
 import { Prerequisites, WorkflowDiagram, CardList, InlineIcon } from "docs-ui"
 
 export const metadata = {
@@ -196,9 +196,9 @@ export const getCustomPriceStepHighlights = [
 ]
 
 ```ts title="src/workflows/steps/get-custom-price.ts" highlights={getCustomPriceStepHighlights}
-import { ProductVariantDTO } from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+import { ProductVariantDTO } from "@moetnavss/framework/types"
+import { MedusaError } from "@moetnavss/framework/utils"
+import { createStep, StepResponse } from "@moetnavss/framework/workflows-sdk"
 
 export type GetCustomPriceStepInput = {
   variant: ProductVariantDTO & {
@@ -262,9 +262,9 @@ export const getCustomPriceWorkflowHighlights = [
 ]
 
 ```ts title="src/workflows/get-custom-price.ts" highlights={getCustomPriceWorkflowHighlights}
-import { QueryContext } from "@medusajs/framework/utils"
-import { createWorkflow, WorkflowResponse } from "@medusajs/framework/workflows-sdk"
-import { useQueryGraphStep } from "@medusajs/medusa/core-flows"
+import { QueryContext } from "@moetnavss/framework/utils"
+import { createWorkflow, WorkflowResponse } from "@moetnavss/framework/workflows-sdk"
+import { useQueryGraphStep } from "@moetnavss/medusa/core-flows"
 import { getCustomPriceStep, GetCustomPriceStepInput } from "./steps/get-custom-price"
 
 type WorkflowInput = {
@@ -351,14 +351,14 @@ export const getPriceApiRouteHighlights =[
 
 <Note>
 
-As of [Medusa v2.13.0](https://github.com/medusajs/medusa/releases/tag/v2.13.0), Zod should be imported from `@medusajs/framework/zod`.
+As of [Medusa v2.13.0](https://github.com/medusajs/medusa/releases/tag/v2.13.0), Zod should be imported from `@moetnavss/framework/zod`.
 
 </Note>
 
 ```ts title="src/api/store/variants/[id]/price/route.ts" highlights={getPriceApiRouteHighlights}
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
+import { MedusaRequest, MedusaResponse } from "@moetnavss/framework/http"
 import { getCustomPriceWorkflow } from "../../../../../workflows/get-custom-price"
-import { z } from "@medusajs/framework/zod"
+import { z } from "@moetnavss/framework/zod"
 
 export const PostCustomPriceSchema = z.object({
   region_id: z.string(),
@@ -416,7 +416,7 @@ export const validateAndTransformBodyHighlights = [
 ]
 
 ```ts title="src/api/middlewares.ts" highlights={validateAndTransformBodyHighlights}
-import { defineMiddlewares, validateAndTransformBody } from "@medusajs/framework/http"
+import { defineMiddlewares, validateAndTransformBody } from "@moetnavss/framework/http"
 import { PostCustomPriceSchema } from "./store/variants/[id]/price/route"
 
 export default defineMiddlewares({
@@ -518,8 +518,8 @@ export const productPriceHighlights = [
 ]
 
 ```tsx title="src/modules/products/components/product-price/index.tsx" badgeLabel="Storefront" badgeColor="blue" highlights={productPriceHighlights}
-import { clx } from "@medusajs/ui"
-import { HttpTypes } from "@medusajs/types"
+import { clx } from "@moetnavss/ui"
+import { HttpTypes } from "@moetnavss/types"
 import { useEffect, useMemo, useState } from "react"
 import { getCustomVariantPrice } from "../../../../lib/data/products"
 import { convertToLocale } from "../../../../lib/util/money"
@@ -797,13 +797,13 @@ export const customAddToCartWorkflowHighlights = [
 ]
 
 ```ts title="src/workflows/custom-add-to-cart.ts" highlights={customAddToCartWorkflowHighlights}
-import { createWorkflow, transform, WorkflowResponse } from "@medusajs/framework/workflows-sdk"
+import { createWorkflow, transform, WorkflowResponse } from "@moetnavss/framework/workflows-sdk"
 import { 
   addToCartWorkflow, 
   acquireLockStep, 
   releaseLockStep, 
   useQueryGraphStep,
-} from "@medusajs/medusa/core-flows"
+} from "@moetnavss/medusa/core-flows"
 import { getCustomPriceWorkflow } from "./get-custom-price"
 
 type CustomAddToCartWorkflowInput = {
@@ -908,13 +908,13 @@ export const PostAddCustomLineItemSchemaHighlights = [
 
 <Note>
 
-As of [Medusa v2.13.0](https://github.com/medusajs/medusa/releases/tag/v2.13.0), Zod should be imported from `@medusajs/framework/zod`.
+As of [Medusa v2.13.0](https://github.com/medusajs/medusa/releases/tag/v2.13.0), Zod should be imported from `@moetnavss/framework/zod`.
 
 </Note>
 
 ```ts title="src/api/store/carts/[id]/line-items-custom/route.ts" highlights={PostAddCustomLineItemSchemaHighlights}
-import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
-import { z } from "@medusajs/framework/zod"
+import { MedusaRequest, MedusaResponse } from "@moetnavss/framework/http"
+import { z } from "@moetnavss/framework/zod"
 import { 
   customAddToCartWorkflow,
 } from "../../../../../workflows/custom-add-to-cart"
@@ -1008,8 +1008,8 @@ export const validatePersonalizedProductHighlights = [
 ]
 
 ```ts title="src/workflows/hooks/validate-personalized-product.ts" highlights={validatePersonalizedProductHighlights}
-import { MedusaError } from "@medusajs/framework/utils"
-import { addToCartWorkflow } from "@medusajs/medusa/core-flows"
+import { MedusaError } from "@moetnavss/framework/utils"
+import { addToCartWorkflow } from "@moetnavss/medusa/core-flows"
 
 addToCartWorkflow.hooks.validate(
   async ({ input }, { container }) => {
@@ -1218,9 +1218,9 @@ export const personalizedOrderItemsWidgetHighlights = [
 ]
 
 ```tsx title="src/admin/widgets/order-personalized.tsx" highlights={personalizedOrderItemsWidgetHighlights}
-import { defineWidgetConfig } from "@medusajs/admin-sdk"
-import { Container, Heading, Text } from "@medusajs/ui"
-import { AdminOrder, DetailWidgetProps } from "@medusajs/framework/types"
+import { defineWidgetConfig } from "@moetnavss/admin-sdk"
+import { Container, Heading, Text } from "@moetnavss/ui"
+import { AdminOrder, DetailWidgetProps } from "@moetnavss/framework/types"
 
 const PersonalizedOrderItemsWidget = ({ 
   data: order,

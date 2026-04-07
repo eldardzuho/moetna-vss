@@ -1,14 +1,14 @@
 import {
   deleteCollectionsWorkflow,
   updateCollectionsWorkflow,
-} from "@medusajs/core-flows"
+} from "@moetnavss/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 
-import { AdditionalData, HttpTypes } from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+import { AdditionalData, HttpTypes } from "@moetnavss/framework/types"
+import { MedusaError } from "@moetnavss/framework/utils"
 import { refetchCollection } from "../helpers"
 import { AdminUpdateCollectionType } from "../validators"
 

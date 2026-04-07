@@ -1,4 +1,4 @@
-import { Select } from "@medusajs/ui"
+import { Select } from "@moetnavss/ui"
 
 export default function SelectItemAligned() {
   return (

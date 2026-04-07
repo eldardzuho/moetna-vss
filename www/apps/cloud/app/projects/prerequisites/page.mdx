@@ -176,7 +176,7 @@ This configuration specifies the packages that are part of your pnpm workspace. 
 Finally, add the `.npmrc` file to your Medusa application's root directory if it doesn't already exist, with the following content:
 
 ```text title="apps/backend/.npmrc"
-public-hoist-pattern[]=*@medusajs/*
+public-hoist-pattern[]=*@moetnavss/*
 public-hoist-pattern[]=@tanstack/react-query
 public-hoist-pattern[]=react-i18next
 public-hoist-pattern[]=react-router-dom
@@ -192,7 +192,7 @@ If you're using `npm` as your package manager, and you're using the [Next.js Sta
 {
   "overrides": {
     // other overrides...
-    "@medusajs/icons": {
+    "@moetnavss/icons": {
       "react": "19.0.4",
       "react-dom": "19.0.4"
     }
@@ -200,7 +200,7 @@ If you're using `npm` as your package manager, and you're using the [Next.js Sta
 }
 ```
 
-This ensures the `@medusajs/icons` package uses compatible versions of `react` and `react-dom` with the Next.js Starter Storefront.
+This ensures the `@moetnavss/icons` package uses compatible versions of `react` and `react-dom` with the Next.js Starter Storefront.
 
 Also, add the following override in your monorepo's root `package.json`:
 

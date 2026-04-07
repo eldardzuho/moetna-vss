@@ -1,12 +1,12 @@
-import { asFunction, asValue, Lifetime } from "@medusajs/framework/awilix"
-import { moduleProviderLoader } from "@medusajs/framework/modules-sdk"
+import { asFunction, asValue, Lifetime } from "@moetnavss/framework/awilix"
+import { moduleProviderLoader } from "@moetnavss/framework/modules-sdk"
 import {
   CreatePaymentProviderDTO,
   LoaderOptions,
   ModuleProvider,
   ModulesSdkTypes,
-} from "@medusajs/framework/types"
-import { MedusaError } from "@medusajs/framework/utils"
+} from "@moetnavss/framework/types"
+import { MedusaError } from "@moetnavss/framework/utils"
 
 import { PaymentProviderService } from "@services"
 import * as providers from "../providers"

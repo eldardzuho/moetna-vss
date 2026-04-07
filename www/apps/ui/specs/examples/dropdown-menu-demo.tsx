@@ -1,5 +1,5 @@
-import { EllipsisHorizontal, PencilSquare, Plus, Trash } from "@medusajs/icons"
-import { DropdownMenu, IconButton } from "@medusajs/ui"
+import { EllipsisHorizontal, PencilSquare, Plus, Trash } from "@moetnavss/icons"
+import { DropdownMenu, IconButton } from "@moetnavss/ui"
 
 export default function DropdownMenuDemo() {
   return (

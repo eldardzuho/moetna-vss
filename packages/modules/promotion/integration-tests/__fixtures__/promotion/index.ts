@@ -2,13 +2,13 @@ import {
   CreatePromotionDTO,
   IPromotionModuleService,
   PromotionDTO,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   isPresent,
   PromotionStatus,
   toMikroORMEntity,
-} from "@medusajs/framework/utils"
-import { SqlEntityManager } from "@medusajs/framework/mikro-orm/postgresql"
+} from "@moetnavss/framework/utils"
+import { SqlEntityManager } from "@moetnavss/framework/mikro-orm/postgresql"
 import { Promotion } from "@models"
 import { defaultPromotionsData } from "./data"
 

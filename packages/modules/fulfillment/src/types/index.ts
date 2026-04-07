@@ -3,7 +3,7 @@ import {
   Logger,
   ModuleProviderExports,
   ModuleServiceInitializeOptions,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 
 export type InitializeModuleInjectableDependencies = {
   logger?: Logger
@@ -34,9 +34,9 @@ export type FulfillmentModuleOptions =
     }[]
   }
 
-declare module "@medusajs/types" {
+declare module "@moetnavss/types" {
   interface ModuleOptions {
-    "@medusajs/fulfillment": FulfillmentModuleOptions
-    "@medusajs/medusa/fulfillment": FulfillmentModuleOptions
+    "@moetnavss/fulfillment": FulfillmentModuleOptions
+    "@moetnavss/medusa/fulfillment": FulfillmentModuleOptions
   }
 }

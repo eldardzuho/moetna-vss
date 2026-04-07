@@ -1,4 +1,4 @@
-import { z } from "@medusajs/framework/zod"
+import { z } from "@moetnavss/framework/zod"
 import { createFindParams, createSelectParams } from "../../utils/validators"
 import { applyAndAndOrOperators } from "../../utils/common-validators"
 

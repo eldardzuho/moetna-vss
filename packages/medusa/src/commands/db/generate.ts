@@ -1,11 +1,11 @@
-import { MedusaAppLoader, Migrator } from "@medusajs/framework"
-import { LinkLoader } from "@medusajs/framework/links"
+import { MedusaAppLoader, Migrator } from "@moetnavss/framework"
+import { LinkLoader } from "@moetnavss/framework/links"
 import {
   ContainerRegistrationKeys,
   getResolvedPlugins,
   MedusaError,
   mergePluginModules,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import { join } from "path"
 import { initializeContainer } from "../../loaders"
 import { ensureDbExists } from "../utils"

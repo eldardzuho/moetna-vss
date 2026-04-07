@@ -1,6 +1,6 @@
-import type { BigNumberInput } from "@medusajs/framework/types"
-import { MedusaError, isPresent } from "@medusajs/framework/utils"
-import { createStep } from "@medusajs/framework/workflows-sdk"
+import type { BigNumberInput } from "@moetnavss/framework/types"
+import { MedusaError, isPresent } from "@moetnavss/framework/utils"
+import { createStep } from "@moetnavss/framework/workflows-sdk"
 
 /**
  * The details of the variants to validate.

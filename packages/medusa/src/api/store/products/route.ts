@@ -1,11 +1,11 @@
-import { MedusaResponse } from "@medusajs/framework/http"
-import { HttpTypes, QueryContextType } from "@medusajs/framework/types"
+import { MedusaResponse } from "@moetnavss/framework/http"
+import { HttpTypes, QueryContextType } from "@moetnavss/framework/types"
 import {
   ContainerRegistrationKeys,
   FeatureFlag,
   isPresent,
   QueryContext,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import IndexEngineFeatureFlag from "../../../feature-flags/index-engine"
 import { wrapVariantsWithInventoryQuantityForSalesChannel } from "../../utils/middlewares"
 import { RequestWithContext, wrapProductsWithTaxPrices } from "./helpers"

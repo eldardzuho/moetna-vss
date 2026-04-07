@@ -1,5 +1,5 @@
-import { ArrowDownTray } from "@medusajs/icons"
-import { Text, clx } from "@medusajs/ui"
+import { ArrowDownTray } from "@moetnavss/icons"
+import { Text, clx } from "@moetnavss/ui"
 import { ChangeEvent, DragEvent, useRef, useState } from "react"
 
 export interface FileType {

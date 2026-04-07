@@ -1,6 +1,6 @@
-import RedisCacheModule from "@medusajs/cache-redis"
+import RedisCacheModule from "@moetnavss/cache-redis"
 
-export * from "@medusajs/cache-redis"
+export * from "@moetnavss/cache-redis"
 
 export default RedisCacheModule
-export const discoveryPath = require.resolve("@medusajs/cache-redis")
+export const discoveryPath = require.resolve("@moetnavss/cache-redis")

@@ -1,9 +1,9 @@
-import { Modules, promiseAll } from "@medusajs/framework/utils"
+import { Modules, promiseAll } from "@moetnavss/framework/utils"
 import {
   IFulfillmentModuleService,
   ValidateFulfillmentDataContext,
-} from "@medusajs/framework/types"
-import { createStep, StepResponse } from "@medusajs/workflows-sdk"
+} from "@moetnavss/framework/types"
+import { createStep, StepResponse } from "@moetnavss/workflows-sdk"
 
 /**
  * The details of the shipping methods to validate.

@@ -3,11 +3,11 @@ import { useEffect, useMemo, useState } from "react"
 import { useTranslation } from "react-i18next"
 import * as zod from "zod"
 
-import { AdminOrder, HttpTypes } from "@medusajs/types"
-import { Alert, Button, Select, Switch, toast } from "@medusajs/ui"
+import { AdminOrder, HttpTypes } from "@moetnavss/types"
+import { Alert, Button, Select, Switch, toast } from "@moetnavss/ui"
 import { useForm, useWatch } from "react-hook-form"
 
-import { OrderLineItemDTO } from "@medusajs/types"
+import { OrderLineItemDTO } from "@moetnavss/types"
 import { Form } from "../../../../../components/common/form"
 import {
   RouteFocusModal,

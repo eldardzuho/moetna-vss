@@ -46,10 +46,10 @@ The rest of this guide always uses the \`src/modules/my-auth\` directory as an e
 </Note>`,
       `## 2. Create the Auth Module Provider's Service
 
-Create the file \`src/modules/my-auth/service.ts\` that holds the module provider's main service. It must extend the \`AbstractAuthModuleProvider\` class imported from \`@medusajs/framework/utils\`:
+Create the file \`src/modules/my-auth/service.ts\` that holds the module provider's main service. It must extend the \`AbstractAuthModuleProvider\` class imported from \`@moetnavss/framework/utils\`:
 
 \`\`\`ts title="src/modules/my-auth/service.ts"
-import { AbstractAuthModuleProvider } from "@medusajs/framework/utils"
+import { AbstractAuthModuleProvider } from "@moetnavss/framework/utils"
 
 class MyAuthProviderService extends AbstractAuthModuleProvider {
   // TODO implement methods
@@ -68,7 +68,7 @@ import MyAuthProviderService from "./service"
 import { 
   ModuleProvider, 
   Modules
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 
 export default ModuleProvider(Modules.AUTH, {
   services: [MyAuthProviderService],
@@ -87,19 +87,19 @@ A auth module provider can have export multiple provider services, where each ar
 To use your Auth Module Provider, add it to the \`providers\` array of the Auth Module in \`medusa-config.ts\`:
 
 \`\`\`ts title="medusa-config.ts"
-import { Modules, ContainerRegistrationKeys } from "@medusajs/framework/utils"
+import { Modules, ContainerRegistrationKeys } from "@moetnavss/framework/utils"
 
 module.exports = defineConfig({
   // ...
   modules: [
     {
-      resolve: "@medusajs/medusa/auth",
+      resolve: "@moetnavss/medusa/auth",
       dependencies: [Modules.CACHE, ContainerRegistrationKeys.LOGGER],
       options: {
         providers: [
           // default provider
           {
-            resolve: "@medusajs/medusa/auth-emailpass",
+            resolve: "@moetnavss/medusa/auth-emailpass",
             id: "emailpass",
           },
           {

@@ -1,4 +1,4 @@
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 
 export function getUniqueShippingProfiles(
   items: HttpTypes.AdminOrderLineItem[]

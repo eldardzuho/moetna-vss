@@ -2,11 +2,11 @@ import {
   LoaderOptions,
   Logger,
   ModulesSdkTypes,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   ContainerRegistrationKeys,
   defaultCurrencies,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import { Currency } from "@models"
 
 export default async ({

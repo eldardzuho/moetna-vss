@@ -5,9 +5,9 @@ import {
   dismissLinksWorkflowId,
   updateLinksWorkflow,
   updateLinksWorkflowId,
-} from "@medusajs/core-flows"
-import { Modules } from "@medusajs/utils"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+} from "@moetnavss/core-flows"
+import { Modules } from "@moetnavss/utils"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
 import {
   adminHeaders,
   createAdminUser,

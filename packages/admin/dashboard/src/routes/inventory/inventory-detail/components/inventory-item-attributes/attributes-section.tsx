@@ -1,8 +1,8 @@
-import { Container, Heading } from "@medusajs/ui"
+import { Container, Heading } from "@moetnavss/ui"
 
 import { ActionMenu } from "../../../../../components/common/action-menu"
-import { InventoryTypes } from "@medusajs/types"
-import { PencilSquare } from "@medusajs/icons"
+import { InventoryTypes } from "@moetnavss/types"
+import { PencilSquare } from "@moetnavss/icons"
 import { SectionRow } from "../../../../../components/common/section"
 import { getFormattedCountry } from "../../../../../lib/addresses"
 import { useTranslation } from "react-i18next"

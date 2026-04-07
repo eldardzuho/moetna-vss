@@ -1,5 +1,5 @@
-import { DAL, ITaxProvider, Logger, TaxTypes } from "@medusajs/framework/types"
-import { ModulesSdkUtils } from "@medusajs/framework/utils"
+import { DAL, ITaxProvider, Logger, TaxTypes } from "@moetnavss/framework/types"
+import { ModulesSdkUtils } from "@moetnavss/framework/utils"
 
 import TaxProvider from "../models/tax-provider"
 

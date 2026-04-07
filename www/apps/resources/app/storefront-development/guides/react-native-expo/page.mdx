@@ -18,7 +18,7 @@ products:
 ---
 
 import { Card, Prerequisites, Details, CodeTabs, CodeTab } from "docs-ui"
-import { Github } from "@medusajs/icons"
+import { Github } from "@moetnavss/icons"
 
 export const metadata = {
   title: `Implement Mobile App with React Native, Expo, and Medusa`,
@@ -120,13 +120,13 @@ In this step, you'll install dependencies that you'll use while building the Exp
 Run the following command to install the required packages:
 
 ```bash npm2yarn
-npm install @medusajs/js-sdk @medusajs/types @react-native-async-storage/async-storage @react-native-picker/picker @react-navigation/drawer
+npm install @moetnavss/js-sdk @moetnavss/types @react-native-async-storage/async-storage @react-native-picker/picker @react-navigation/drawer
 ```
 
 You install the following packages:
 
-- `@medusajs/js-sdk`: Medusa's [JS SDK](../../../js-sdk/page.mdx) to interact with the Medusa backend.
-- `@medusajs/types`: TypeScript types for Medusa, which are useful when working with Medusa's JS SDK.
+- `@moetnavss/js-sdk`: Medusa's [JS SDK](../../../js-sdk/page.mdx) to interact with the Medusa backend.
+- `@moetnavss/types`: TypeScript types for Medusa, which are useful when working with Medusa's JS SDK.
 - `@react-native-async-storage/async-storage`: An asynchronous key-value storage system for React Native, used to store data like cart ID.
 - `@react-native-picker/picker`: A cross-platform picker component for React Native, used for selecting options like country.
 - `@react-navigation/drawer`: A navigation library for React Native that provides a drawer-based navigation experience.
@@ -223,7 +223,7 @@ In this step, you'll set up Medusa's [JS SDK](../../../js-sdk/page.mdx) in your 
 To initialize the SDK, create the file `lib/sdk.ts` in your Expo project with the following content:
 
 ```ts title="lib/sdk.ts"
-import Medusa from "@medusajs/js-sdk"
+import Medusa from "@moetnavss/js-sdk"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 import Constants from "expo-constants"
 
@@ -359,7 +359,7 @@ export const regionContextHighlights = [
 
 ```tsx title="context/region-context.tsx" highlights={regionContextHighlights}
 import { sdk } from "@/lib/sdk"
-import type { HttpTypes } from "@medusajs/types"
+import type { HttpTypes } from "@moetnavss/types"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 import React, { createContext, ReactNode, useContext, useEffect, useState } from "react"
 
@@ -511,7 +511,7 @@ To create the region selector component, create the file `components/region-sele
 import { Colors } from "@/constants/theme"
 import { useRegion } from "@/context/region-context"
 import { useColorScheme } from "@/hooks/use-color-scheme"
-import type { HttpTypes } from "@medusajs/types"
+import type { HttpTypes } from "@moetnavss/types"
 import React, { useMemo } from "react"
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native"
 
@@ -803,8 +803,8 @@ export const cartContextHighlights = [
 
 ```tsx title="context/cart-context.tsx" highlights={cartContextHighlights}
 import { sdk } from "@/lib/sdk"
-import { FetchError } from "@medusajs/js-sdk"
-import type { HttpTypes } from "@medusajs/types"
+import { FetchError } from "@moetnavss/js-sdk"
+import type { HttpTypes } from "@moetnavss/types"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 import React, { createContext, ReactNode, useCallback, useContext, useEffect, useState } from "react"
 import { useRegion } from "./region-context"
@@ -1215,7 +1215,7 @@ import { Colors } from "@/constants/theme"
 import { useRegion } from "@/context/region-context"
 import { useColorScheme } from "@/hooks/use-color-scheme"
 import { formatPrice } from "@/lib/format-price"
-import type { HttpTypes } from "@medusajs/types"
+import type { HttpTypes } from "@moetnavss/types"
 import { Image } from "expo-image"
 import { useRouter } from "expo-router"
 import React from "react"
@@ -1336,7 +1336,7 @@ import { Colors } from "@/constants/theme"
 import { useRegion } from "@/context/region-context"
 import { useColorScheme } from "@/hooks/use-color-scheme"
 import { sdk } from "@/lib/sdk"
-import type { HttpTypes } from "@medusajs/types"
+import type { HttpTypes } from "@moetnavss/types"
 import { Image } from "expo-image"
 import React, { useCallback, useEffect, useState } from "react"
 import { FlatList, RefreshControl, StyleSheet, Text, View } from "react-native"
@@ -2294,7 +2294,7 @@ Next, you'll create a utility function to check if a product variant is in stock
 Create the file `lib/inventory.ts` with the following content:
 
 ```ts title="lib/inventory.ts"
-import type { HttpTypes } from "@medusajs/types"
+import type { HttpTypes } from "@moetnavss/types"
 
 /**
  * Check if a product variant is in stock
@@ -2348,7 +2348,7 @@ import { useColorScheme } from "@/hooks/use-color-scheme"
 import { formatPrice } from "@/lib/format-price"
 import { isVariantInStock } from "@/lib/inventory"
 import { sdk } from "@/lib/sdk"
-import type { HttpTypes } from "@medusajs/types"
+import type { HttpTypes } from "@moetnavss/types"
 import { useLocalSearchParams, useNavigation } from "expo-router"
 import React, { useCallback, useEffect, useMemo, useState } from "react"
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native"
@@ -2838,7 +2838,7 @@ import { IconSymbol } from "@/components/ui/icon-symbol"
 import { Colors } from "@/constants/theme"
 import { useColorScheme } from "@/hooks/use-color-scheme"
 import { formatPrice } from "@/lib/format-price"
-import type { HttpTypes } from "@medusajs/types"
+import type { HttpTypes } from "@moetnavss/types"
 import { Image } from "expo-image"
 import React from "react"
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
@@ -3276,7 +3276,7 @@ Create the file `components/checkout/address-form.tsx` with the following conten
 import { IconSymbol } from "@/components/ui/icon-symbol"
 import { Colors } from "@/constants/theme"
 import { useColorScheme } from "@/hooks/use-color-scheme"
-import type { HttpTypes } from "@medusajs/types"
+import type { HttpTypes } from "@moetnavss/types"
 import { Picker } from "@react-native-picker/picker"
 import React, { useRef, useState } from "react"
 import {
@@ -3844,7 +3844,7 @@ import { Button } from "@/components/ui/button"
 import { Colors } from "@/constants/theme"
 import { useColorScheme } from "@/hooks/use-color-scheme"
 import { formatPrice } from "@/lib/format-price"
-import type { HttpTypes } from "@medusajs/types"
+import type { HttpTypes } from "@moetnavss/types"
 import React from "react"
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
 
@@ -4073,7 +4073,7 @@ import { Colors } from "@/constants/theme"
 import { useColorScheme } from "@/hooks/use-color-scheme"
 import { formatPrice } from "@/lib/format-price"
 import { getPaymentProviderInfo } from "@/lib/payment-providers"
-import type { HttpTypes } from "@medusajs/types"
+import type { HttpTypes } from "@moetnavss/types"
 import React from "react"
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
 
@@ -4333,7 +4333,7 @@ import { Colors } from "@/constants/theme"
 import { useCart } from "@/context/cart-context"
 import { useColorScheme } from "@/hooks/use-color-scheme"
 import { sdk } from "@/lib/sdk"
-import type { HttpTypes } from "@medusajs/types"
+import type { HttpTypes } from "@moetnavss/types"
 import React, { useCallback, useEffect, useState } from "react"
 import { Alert, StyleSheet, Text, View } from "react-native"
 
@@ -4848,7 +4848,7 @@ import { useColorScheme } from "@/hooks/use-color-scheme"
 import { formatPrice } from "@/lib/format-price"
 import { getPaymentProviderInfo } from "@/lib/payment-providers"
 import { sdk } from "@/lib/sdk"
-import type { HttpTypes } from "@medusajs/types"
+import type { HttpTypes } from "@moetnavss/types"
 import { Image } from "expo-image"
 import { useLocalSearchParams, useRouter } from "expo-router"
 import React, { useCallback, useEffect, useRef, useState } from "react"

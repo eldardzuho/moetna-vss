@@ -1,14 +1,14 @@
 import {
   deleteSalesChannelsWorkflow,
   updateSalesChannelsWorkflow,
-} from "@medusajs/core-flows"
-import { MedusaError } from "@medusajs/framework/utils"
+} from "@moetnavss/core-flows"
+import { MedusaError } from "@moetnavss/framework/utils"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 import { refetchSalesChannel } from "../helpers"
-import { HttpTypes } from "@medusajs/framework/types"
+import { HttpTypes } from "@moetnavss/framework/types"
 
 export const GET = async (
   req: AuthenticatedMedusaRequest<HttpTypes.SelectParams>,

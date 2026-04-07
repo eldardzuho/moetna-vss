@@ -6,12 +6,12 @@ import {
   ComputeActionContext,
   InferEntityType,
   PromotionDTO,
-} from "@medusajs/framework/types"
+} from "@moetnavss/framework/types"
 import {
   CampaignBudgetType,
   ComputedActions,
   MathBN,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import { Promotion } from "@models"
 
 /**

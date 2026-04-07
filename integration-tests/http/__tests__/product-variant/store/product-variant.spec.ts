@@ -1,7 +1,7 @@
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
-import { HttpTypes } from "@medusajs/framework/types"
-import { IStoreModuleService } from "@medusajs/types"
-import { ApiKeyType, Modules, ProductStatus } from "@medusajs/utils"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
+import { HttpTypes } from "@moetnavss/framework/types"
+import { IStoreModuleService } from "@moetnavss/types"
+import { ApiKeyType, Modules, ProductStatus } from "@moetnavss/utils"
 import {
   adminHeaders,
   createAdminUser,

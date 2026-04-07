@@ -1,5 +1,5 @@
-import { HttpTypes } from "@medusajs/types"
-import { Container, Heading } from "@medusajs/ui"
+import { HttpTypes } from "@moetnavss/types"
+import { Container, Heading } from "@moetnavss/ui"
 import { useTranslation } from "react-i18next"
 
 import { _DataTable } from "../../../../../components/table/data-table"

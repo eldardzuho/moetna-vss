@@ -1,16 +1,16 @@
 import {
   removeClaimShippingMethodWorkflow,
   updateReturnShippingMethodWorkflow,
-} from "@medusajs/core-flows"
+} from "@moetnavss/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
+} from "@moetnavss/framework/http"
+import { HttpTypes } from "@moetnavss/framework/types"
 import {
   ContainerRegistrationKeys,
   remoteQueryObjectFromString,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 import { defaultAdminDetailsReturnFields } from "../../../../../returns/query-config"
 
 export const POST = async (

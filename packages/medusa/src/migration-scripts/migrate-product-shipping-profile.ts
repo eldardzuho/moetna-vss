@@ -2,16 +2,16 @@ import {
   createRemoteLinkStep,
   createShippingProfilesStep,
   useQueryGraphStep,
-} from "@medusajs/core-flows"
-import { MedusaModule } from "@medusajs/framework/modules-sdk"
-import { ExecArgs } from "@medusajs/framework/types"
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
+} from "@moetnavss/core-flows"
+import { MedusaModule } from "@moetnavss/framework/modules-sdk"
+import { ExecArgs } from "@moetnavss/framework/types"
+import { ContainerRegistrationKeys, Modules } from "@moetnavss/framework/utils"
 import {
   transform,
   when,
   WorkflowResponse,
-} from "@medusajs/framework/workflows-sdk"
-import { createWorkflow } from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/workflows-sdk"
+import { createWorkflow } from "@moetnavss/framework/workflows-sdk"
 
 const assignProductsToShippingProfileWorkflow = createWorkflow(
   "assign-products-to-shipping-profile",

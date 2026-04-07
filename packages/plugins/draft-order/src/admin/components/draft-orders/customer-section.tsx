@@ -1,6 +1,6 @@
-import { ArrowPath, CurrencyDollar, Envelope, FlyingBox } from "@medusajs/icons"
-import { HttpTypes } from "@medusajs/types"
-import { Avatar, Container, Copy, Heading, Text } from "@medusajs/ui"
+import { ArrowPath, CurrencyDollar, Envelope, FlyingBox } from "@moetnavss/icons"
+import { HttpTypes } from "@moetnavss/types"
+import { Avatar, Container, Copy, Heading, Text } from "@moetnavss/ui"
 import { Link } from "react-router-dom"
 import {
   getFormattedAddress,

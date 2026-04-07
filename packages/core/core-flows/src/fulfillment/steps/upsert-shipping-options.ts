@@ -3,9 +3,9 @@ import {
   IFulfillmentModuleService,
   ShippingOptionDTO,
   UpsertShippingOptionDTO,
-} from "@medusajs/framework/types"
-import { arrayDifference, getSelectsAndRelationsFromObjectArray, Modules, } from "@medusajs/framework/utils"
-import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk"
+} from "@moetnavss/framework/types"
+import { arrayDifference, getSelectsAndRelationsFromObjectArray, Modules, } from "@moetnavss/framework/utils"
+import { createStep, StepResponse } from "@moetnavss/framework/workflows-sdk"
 
 /**
  * The data to create or update shipping options.

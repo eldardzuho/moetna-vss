@@ -1,9 +1,9 @@
-import { createOrderEditShippingMethodWorkflow } from "@medusajs/core-flows"
-import { HttpTypes } from "@medusajs/framework/types"
+import { createOrderEditShippingMethodWorkflow } from "@moetnavss/core-flows"
+import { HttpTypes } from "@moetnavss/framework/types"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
+} from "@moetnavss/framework/http"
 import { AdminPostOrderEditsShippingReqSchemaType } from "../../validators"
 
 export const POST = async (

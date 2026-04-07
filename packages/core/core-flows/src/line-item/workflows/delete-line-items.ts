@@ -2,13 +2,13 @@ import {
   createWorkflow,
   parallelize,
   WorkflowData,
-} from "@medusajs/framework/workflows-sdk"
-import { AdditionalData } from "@medusajs/types"
+} from "@moetnavss/framework/workflows-sdk"
+import { AdditionalData } from "@moetnavss/types"
 import { refreshCartItemsWorkflow } from "../../cart/workflows/refresh-cart-items"
 import { acquireLockStep, releaseLockStep } from "../../locking"
 import { deleteLineItemsStep } from "../steps/delete-line-items"
 import { emitEventStep } from "../../common/steps/emit-event"
-import { CartWorkflowEvents } from "@medusajs/framework/utils"
+import { CartWorkflowEvents } from "@moetnavss/framework/utils"
 
 /**
  * The data to delete line items from a cart.

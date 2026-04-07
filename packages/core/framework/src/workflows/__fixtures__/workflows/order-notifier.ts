@@ -2,7 +2,7 @@ import {
   createStep,
   createWorkflow,
   WorkflowResponse,
-} from "@medusajs/workflows-sdk"
+} from "@moetnavss/workflows-sdk"
 
 export const orderWorkflowId = "order-notifier-workflow"
 

@@ -1,1 +1,1 @@
-# @medusajs/admin-sdk
+# @moetnavss/admin-sdk

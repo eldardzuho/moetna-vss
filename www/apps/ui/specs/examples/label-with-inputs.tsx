@@ -1,5 +1,5 @@
-import { Label, Input } from "@medusajs/ui"
-import { Textarea, RadioGroup } from "@medusajs/ui"
+import { Label, Input } from "@moetnavss/ui"
+import { Textarea, RadioGroup } from "@moetnavss/ui"
 
 export default function LabelWithInputs() {
   return (

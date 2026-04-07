@@ -1,4 +1,4 @@
-import { HttpTypes } from "@medusajs/types"
+import { HttpTypes } from "@moetnavss/types"
 import { UIMatch } from "react-router-dom"
 import { useProduct } from "../../../hooks/api"
 

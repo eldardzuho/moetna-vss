@@ -80,7 +80,7 @@ These are developer-focused reference docs that explain features, provide code e
 
    In your Medusa application, you build flows around Commerce Modules. A flow is built as a [Workflow](!docs!/learn/fundamentals/workflows), which is a special function composed of a series of steps that guarantees data consistency and reliable roll-back mechanism.
 
-   You can build custom workflows and steps. You can also re-use Medusa's workflows and steps, which are provided by the `@medusajs/medusa/core-flows` package.
+   You can build custom workflows and steps. You can also re-use Medusa's workflows and steps, which are provided by the `@moetnavss/medusa/core-flows` package.
 
    For example:
 
@@ -94,8 +94,8 @@ These are developer-focused reference docs that explain features, provide code e
      WorkflowResponse,
      createStep,
      StepResponse,
-   } from "@medusajs/framework/workflows-sdk"
-   import { Modules } from "@medusajs/framework/utils"
+   } from "@moetnavss/framework/workflows-sdk"
+   import { Modules } from "@moetnavss/framework/utils"
 
    const exampleStep = createStep(
      "example-step",
@@ -143,8 +143,8 @@ These are developer-focused reference docs that explain features, provide code e
    You can also use the {Module Name} Module's service directly in other resources, such as API routes:
 
    ```ts title="src/api/custom/route.ts"
-   import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
-   import { Modules } from "@medusajs/framework/utils"
+   import { MedusaRequest, MedusaResponse } from "@moetnavss/framework/http"
+   import { Modules } from "@moetnavss/framework/utils"
 
    export async function GET(
      req: MedusaRequest,
@@ -382,7 +382,7 @@ For feature pages:
 
 2. **API route example**:
    ```ts title="src/api/route.ts"
-   import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
+   import { MedusaRequest, MedusaResponse } from "@moetnavss/framework/http"
    // code
    ```
 

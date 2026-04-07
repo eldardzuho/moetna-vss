@@ -1,9 +1,9 @@
-import { ModuleJoinerConfig } from "@medusajs/framework/types"
+import { ModuleJoinerConfig } from "@moetnavss/framework/types"
 import {
   FeatureFlag,
   MEDUSA_SKIP_FILE,
   Modules,
-} from "@medusajs/framework/utils"
+} from "@moetnavss/framework/utils"
 
 export const StoreLocales: ModuleJoinerConfig = {
   [MEDUSA_SKIP_FILE]: !(

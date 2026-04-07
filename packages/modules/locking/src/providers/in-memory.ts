@@ -1,5 +1,5 @@
-import { ILockingProvider } from "@medusajs/framework/types"
-import { isDefined } from "@medusajs/framework/utils"
+import { ILockingProvider } from "@moetnavss/framework/types"
+import { isDefined } from "@moetnavss/framework/utils"
 
 type LockInfo = {
   ownerId: string | null

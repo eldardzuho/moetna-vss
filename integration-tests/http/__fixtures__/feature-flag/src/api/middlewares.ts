@@ -1,8 +1,8 @@
 import {
   defineMiddlewares,
   validateAndTransformBody,
-} from "@medusajs/framework/http"
-import { z } from "@medusajs/framework/zod"
+} from "@moetnavss/framework/http"
+import { z } from "@moetnavss/framework/zod"
 
 const CustomPostSchema = z.object({
   foo: z.string(),

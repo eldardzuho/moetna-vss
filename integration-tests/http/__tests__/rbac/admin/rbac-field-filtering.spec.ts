@@ -1,5 +1,5 @@
-import { ContainerRegistrationKeys, Modules } from "@medusajs/framework/utils"
-import { medusaIntegrationTestRunner } from "@medusajs/test-utils"
+import { ContainerRegistrationKeys, Modules } from "@moetnavss/framework/utils"
+import { medusaIntegrationTestRunner } from "@moetnavss/test-utils"
 import {
   adminHeaders,
   createAdminUser,

@@ -1,9 +1,9 @@
-import { orderEditUpdateItemQuantityWorkflow } from "@medusajs/core-flows"
+import { orderEditUpdateItemQuantityWorkflow } from "@moetnavss/core-flows"
 import {
   AuthenticatedMedusaRequest,
   MedusaResponse,
-} from "@medusajs/framework/http"
-import { HttpTypes } from "@medusajs/framework/types"
+} from "@moetnavss/framework/http"
+import { HttpTypes } from "@moetnavss/framework/types"
 import { AdminPostOrderEditsUpdateItemQuantityReqSchemaType } from "../../../../validators"
 
 export const POST = async (
