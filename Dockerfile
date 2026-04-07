@@ -26,7 +26,7 @@ COPY packages packages
 COPY integration-tests/package.json integration-tests/package.json
 
 # Copy project-root config files needed by the build & runtime
-COPY medusa-config.ts medusa-config.js tsconfig.json ./
+COPY medusa-config.ts medusa-config.js tsconfig.json _tsconfig.base.json ./
 COPY src src
 
 # Install all dependencies (including devDeps needed for build)
