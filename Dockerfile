@@ -33,7 +33,9 @@ COPY src src
 RUN yarn install --immutable 2>/dev/null || yarn install
 
 # Build all packages (turbo run build)
-RUN yarn build
+# Limit concurrency to prevent OOM on low-memory servers
+ENV NODE_OPTIONS="--max-old-space-size=4096"
+RUN yarn build --concurrency=2
 
 # Build the production admin + backend (yarn medusa build)
 # Needs a DATABASE_URL to load config, but won't actually connect during build
